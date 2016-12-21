@@ -2,10 +2,10 @@
 
 ## Objectives
 
-- Use operators &&, ||
+- Use operators `&&`, `||`
 - String concatenation
 - Math operations
 - Precedence / parenthesis
 - Prefix / Postfix notation for integers
-- Variables (var, let, const)
+- Variables (`var`, `let`, `const`)
 - Literals
