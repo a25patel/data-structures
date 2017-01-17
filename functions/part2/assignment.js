@@ -192,3 +192,28 @@ function repeat(str, times) {
 // Return a new object where each key-value pair is from an element in the
 // argument. For example, given [['a', 1], ['b', 2]], then return
 // { a: 1, b: 2 }.
+//
+
+
+// Define a function named pluck that takes in two arguments.
+//     arr (array of objects)
+//     key (string)
+//
+// Return a new array where each element is the keyed value of each object.
+//
+// For example, given the array:
+//    [
+//      { name: 'moe', age: 40 },
+//      { name: 'larry', age: 50 },
+//      { name: 'curly', age: 60 }
+//    ]
+//
+// and the key 'name', then return ['moe', 'larry', 'curly'].
+//
+
+
+// Define a function onlyEvens which takes in one argument:
+//    arr (array of numbers)
+//
+// It returns an array only containing the numbers that are even. For example,
+// given the input, [1, 2, 3, 4, 5], the function would produce [2, 4].

@@ -149,5 +149,26 @@ window.onload = function() {
     });
   });
 
+  suite('pluck', function() {
+    test('grabs the values from an array of object for a specific key', function() {
+      var stooges = [
+        { name: 'moe', age: 40 },
+        { name: 'larry', age: 50 },
+        { name: 'curly', age: 60 }
+      ];
+
+      assert.deepEqual(pluck([], 'foo'), []);
+      assert.deepEqual(pluck(stooges, 'name'), ['moe', 'larry', 'curly']);
+    });
+  });
+
+  suite('onlyEvens', function() {
+    test('returns only the even numbers', function() {
+      assert.deepEqual(onlyEvens([]), []);
+      assert.deepEqual(onlyEvens([1, 2, 3, 4]), [2, 4]);
+      assert.deepEqual(onlyEvens([12, 23, 3, 44, 10]), [12, 44, 10]);
+    });
+  });
+
   mocha.run();
 };
