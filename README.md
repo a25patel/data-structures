@@ -2,6 +2,13 @@
 
 Test-driven code challenges and Assessments to support the JavaScript Curriculum!
 
+### How to use this repository
+
+1. Fork the repository to your own Github account.
+1. Clone your copy of the repository to your development environment.
+1. **Branch** out each time you start on a new standard. `git checkout -b js-expressions` is an example of how to do that.
+1. Keep all work related to that standard on your branch named after what you're working on.
+
 ## Challenges
 
 Challenges allow you to practice the concepts you're learning before taking an assessment to prove you know it.
