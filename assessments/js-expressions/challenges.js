@@ -138,12 +138,13 @@ var kenAge = chandraAge + onokeAge;
 var jimAge = chandraAge % onokeAge * kenAge - 5;
 
 // Who is older, Jim or Ken?
-//
+var jimIsOlderThanKen = undefined; //should evaluate to true or false
 // Who is older, Carol or Jim?
-//
+var carolIsOlderThanJim = undefined;
 // Who is older, Onoke or Sally?
-//
+var onokeIsOlderThanSally = undefined;
 // Who is older, Chandra or Sam?
+var chandraIsOlderThanSam = undefined;
 
 //#Success Criteria - Use logical operators
 //##Challenge 1
