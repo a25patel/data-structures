@@ -4,20 +4,20 @@
 
 //##Challenge 1
 // Create a variable called bikes, store the number 20 in bikes
-
+var bikes = 20;
 //##Challenge 2
-// Create a variable that will not change, called MAX_CONNECTIONS
-
+// Create a variable that will not change, called MAX_CONNECTIONS, assign it the number 5.
+const MAX_CONNECTIONS = 5;
 //##Challenge 3
 // Create a variable called i for the purpose of counting loop iterations, that we won't use again after the loop (don't write the loop)
-
+let i = 0;
 //##Challenge 4
 // Create a variable called totalBears, which we'll update any time we create a new bear.
+var totalBears = 0;
 
-
-//#Success Criteria - Perform Math operations with binary operators
+//#Success Criteria - Perform Math operations with binary operators, Evaluate a statement using language Operator Precedence rules
 //##Challenge 1
-// Your local swamp has wildlife population estimates. We want to know several pieces of information.
+// Your local swamp has wildlife population estimates. We want to know several pieces of information. Feel free to use multiple variables, just make sure all the original variables are filled in.
 // Some information about the local ecosystem:
 // Birds and Crocs eat fish. Birds eat 1 fish a day, while crocs eat 5.
 // Snakes eat Birds, 1 a day.
@@ -32,10 +32,10 @@ var quadrant2Birds = 300;
 var quadrant3Birds = 600;
 var quadrant4Birds = 800;
 
-var quadrant1Fish = 1700;
-var quadrant2Fish = 1600;
-var quadrant3Fish = 2200;
-var quadrant4Fish = 1900;
+var quadrant1Fish = 11700;
+var quadrant2Fish = 21600;
+var quadrant3Fish = 12200;
+var quadrant4Fish = 11900;
 
 var quadrant1Crocs = 50;
 var quadrant2Crocs = 100;
@@ -47,55 +47,50 @@ var quadrant2Snakes = 300;
 var quadrant3Snakes = 300;
 var quadrant4Snakes = 200;
 
-// How many fish a day does it take to feed each quadrant on the first day? The 8th?
-var quadrant1FishDay1 = undefined;
-var quadrant2FishDay1 = undefined;
-var quadrant3FishDay1 = undefined;
-var quadrant4FishDay1 = undefined;
+// How many fish a day does it take to feed each quadrant on the first day?
+var quadrant1FishDay1 = quadrant1Birds + (quadrant1Crocs * 5);
+var quadrant2FishDay1 = quadrant2Birds + (quadrant2Crocs * 5);
+var quadrant3FishDay1 = quadrant3Birds + (quadrant3Crocs * 5);
+var quadrant4FishDay1 = quadrant4Birds + (quadrant4Crocs * 5);
 
-var quadrant1FishDay8 = undefined;
-var quadrant2FishDay8 = undefined;
-var quadrant3FishDay8 = undefined;
-var quadrant4FishDay8 = undefined;
-// How many birds are left after 2 weeks in each quadrant?
-var quadrant1BirdsRemaining = undefined;
-var quadrant2BirdsRemaining = undefined;
-var quadrant3BirdsRemaining = undefined;
-var quadrant4BirdsRemaining = undefined;
+//How many fish does it take to feed each quadrant on the 8th day?
+var quadrant1FishDay8 = (((quadrant1Birds / 2) * 5) + quadrant1Birds) - ((quadrant1Snakes * 8) + quadrant1Snakes) + ((quadrant1Crocs * 5) * 8);
+var quadrant2FishDay8 = (((quadrant2Birds / 2) * 5) + quadrant2Birds) - ((quadrant2Snakes * 8) + quadrant2Snakes) + ((quadrant2Crocs * 5) * 8);
+var quadrant3FishDay8 = (((quadrant3Birds / 2) * 5) + quadrant3Birds) - ((quadrant3Snakes * 8) + quadrant3Snakes) + ((quadrant3Crocs * 5) * 8);
+var quadrant4FishDay8 = (((quadrant4Birds / 2) * 5) + quadrant4Birds) - ((quadrant4Snakes * 8) + quadrant4Snakes) + ((quadrant4Crocs * 5) * 8);
 // How many birds are eaten in a day across the whole swamp for the first 4 weeks?
-var dailyBirdLossWeek1 = undefined;
-var dailyBirdLossWeek2 = undefined;
-var dailyBirdLossWeek3 = undefined;
-var dailyBirdLossWeek4 = undefined;
-// How many birds are there in the whole swamp after 6 weeks?
-var week6BirdPopulation = undefined;
-// How many fish are there after 10 weeks?
-var week10FishPopulation = undefined;
-// How many snakes are left after 20 weeks?
-var week20SnakePopulation = undefined;
-// Will we ever run out of fish? If so, put the number of days it will take. Put -1 if the fish should last forever.
-var fishPopulationCrash = undefined;
-// Will we ever run out of snakes? If so, put the number of days it will take. Put -1 if the snakes should last forever.
-var snakePopulationCrash = undefined;
+var dailyBirdLossWeek1 = quadrant1Snakes + quadrant2Snakes + quadrant3Snakes + quadrant4Snakes;
+var dailyBirdLossWeek2 = ((dailyBirdLossWeek1 / 2) * 2) + dailyBirdLossWeek1;
+var dailyBirdLossWeek3 = ((dailyBirdLossWeek2 / 2) * 2) + dailyBirdLossWeek2;
+var dailyBirdLossWeek4 = ((dailyBirdLossWeek3 / 2) * 2) + dailyBirdLossWeek3;
+var dailyBirdLossWeek5 = ((dailyBirdLossWeek4 / 2) * 2) + dailyBirdLossWeek4;
+var dailyBirdLossWeek6 = ((dailyBirdLossWeek5 / 2) * 2) + dailyBirdLossWeek5;
+// How many birds are there in the whole swamp after 6 weeks? You may need extra variables for this.
+var week1Birds = quadrant1Birds + quadrant2Birds + quadrant3Birds + quadrant4Birds;
+var week2Birds = ((week1Birds - (dailyBirdLossWeek1 * 7)) / 2) * 5;
+var week3Birds = ((week2Birds - (dailyBirdLossWeek2 * 7)) / 2) * 5;
+var week4Birds = ((week3Birds - (dailyBirdLossWeek3 * 7)) / 2) * 5;
+var week5Birds = ((week4Birds - (dailyBirdLossWeek4 * 7)) / 2) * 5;
+var week6BirdPopulation = ((week5Birds - (dailyBirdLossWeek5 * 7)) / 2) * 5;
 
 //#Success Criteria - Prefix / Postfix notation for integers
 //##Challenge 1
-// Replace the string with the count variable - increment it before logging it using Prefix notation
+// Uncomment the loop and replace the string with the count variable - increment it before logging it using Prefix notation
 var x = 30;
 var count = 0;
 
-while (count < x) {
-  console.log("Your answer here")
-}
+// while (count < x) {
+//   console.log("Your answer here")
+// }
 
 //##Challenge 2
-// Replace the string with the count variable - increment it after logging it using Postfix notation
+// Uncomment the loop and replace the string with the count variable - increment it after logging it using Postfix notation
 var x = 30;
 var count = 0;
 
-while (count < x) {
-  console.log("Your answer here")
-}
+// while (count < x) {
+//   console.log("Your answer here")
+// }
 
 //#Success Criteria - Perform String Concatenation
 
