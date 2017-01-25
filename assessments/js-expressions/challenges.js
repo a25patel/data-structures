@@ -102,7 +102,7 @@ var bean = "pinto";
 //These variables should contain a complete song
 var theBeanSong = "My dog (replace with variable) loves to roam, the other day he left his home. He came back all nice and clean where or where has (replace with variable) been?";
 // should read: My dog pinto loves to roam, the other day he left his home. He came back all nice and clean where or where has pinto been?
-var theBeanChorus = "(replace with variable) been (replace with variable) been, where or where has (replace with variable) been.";
+var theBeanChorus = "(replace with variable) been (replace with variable) been, where oh where has (replace with variable) been.";
 // should read: pinto been, pinto been, where oh where has pinto been?
 
 
@@ -159,7 +159,7 @@ var haveEnoughCarDrivers = undefined;
 // Do we have enough space for all the riders if we used vans instead of cars?
 var haveEnoughVanDrivers = undefined;
 
-// If we have to travel 100 miles, which will use more gas, cars or vans? (use the actual number of cars and vans that we would need to use to carry all riders)
+// If we have to travel 100 miles, will cars use more gas than vans? (assuming we have as many cars or vans as we would need)
 var carsOrVans = undefined;
 
 //##Challenge 2
@@ -173,13 +173,13 @@ var samAge = onokeAge * sallyAge;
 var kenAge = chandraAge + onokeAge;
 var jimAge = chandraAge % onokeAge * kenAge - 5;
 
-// Who is older, Jim or Ken?
-var jimIsOlderThanKen = undefined; //should evaluate to true or false
-// Who is older, Carol or Jim?
+// is Jim older than Ken?
+var jimIsOlderThanKen = undefined;
+//  is Carol older than Jim?
 var carolIsOlderThanJim = undefined;
-// Who is older, Onoke or Sally?
+// is Onoke older than Sally?
 var onokeIsOlderThanSally = undefined;
-// Who is older, Chandra or Sam?
+// is Chandra older than Sam?
 var chandraIsOlderThanSam = undefined;
 
 //#Success Criteria - Use logical operators
@@ -187,15 +187,28 @@ var chandraIsOlderThanSam = undefined;
 // You have a global variable for each letter of the alphabet (eg, var a,b,c)
 // You also have 5 global variables for each letter of the alphabet that have a number after them (eg, var a1, a2, a3, a4, a5)
 
+var a1 = b1 = c = d1 = i1 = j = k1 = l1 = q1 = r1 = s1 = t1 = y1= true;
+var e2 = f2 = g2 = h2 = m2 = n2 = o2 = p2 = u2 = v2 = w2 = x2 = z2 = false;
+var e3 = f3 = g3 = h3 = m3 = n3 = o3 = p3 = u3 = v3 = w3 = x3 = z3 = true;
+var a3 = b = c1 = d = i = j1 = k2 = l = q3 = r = s = t3 = y5 = true;
+var a4 = b4 = c4 = d4 = i4 = j4 = k4 = l4 = q4 = r4 = s4 = t4 = y4 = false;
+var e4 = f = g = h = m4 = n4 = o1 = p = u = v = w4 = x = z5 = false;
+var e = f4 = g4 = h4 = m = n5 = o4 = p4 = u4 = v4 = w = x4 = z4 = true;
+var a5 = b5 = c5 = d5 = i5 = j5 = k5 = l5 = q5 = r5 = s5 = t5 = y = true;
+var a = b3 = c3 = d3 = i3 = j3 = k3 = l3 = q = r3 = s3 = t = y3 = true;
+var e5 = f5 = g5 = h5 = m5 = n = o5 = p5 = u5 = v5 = w5 = x5 = z = false;
+var a2 = b2 = c2 = d2 = i2 = j2 = k = l2 = q2 = r2 = s2 = t2 = y2 = true;
+var e1 = f1 = g1 = h1 = m1 = n1 = o = p1 = u1 = v1 = w1 = x1 = z1= false;
+
 //Write a test to see if every variable that starts with a is true
 var allAs = undefined;
 //Write a test to see if every variable that does not have a number after it is true
 var allLettersNoNumbers = undefined;
-//Write a test to see if any of the vowels that have a 3 after them are true
+//Write a test to see if any of the vowels that have a 3 after them are true (include y)
 var allVowels3 = undefined;
-//Write a test that checks to see if all of the variables that start with c are true, or if all of the vowels without numbers are true
+//Write a test that checks to see if all of the variables that start with c are true, or if all of the vowels without numbers are true (include y)
 var allCOrAllVowels = undefined;
 //Write a test that checks to see if any of the first five letter variables are true
 var anyFirstFive = undefined;
-//Write a test that checks if all of the x variables are true or all of the y variables BUT NOT BOTH
+//Write a test that checks if all of the x variables are true or all of the y variables BUT NOT BOTH (google this)
 var allXXorAllY = undefined;

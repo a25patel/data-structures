@@ -6,7 +6,7 @@ var fs = require("fs");
 var encryptor = require('simple-encryptor')("Galvanize-Encryption-Key");
 
 var challenges = fs.readFileSync("./challenges.js", "utf-8");
-var challengeAnswers = fs.readFileSync("./challenge.answers.js", "utf-8");
+var challengeAnswers = encryptor.decrypt(fs.readFileSync("./challenge.answers.js", "utf-8"));
 
 describe("Standard - W0002 - Write and Evaluate JavaScript Expressions", function() {
 
@@ -124,113 +124,63 @@ describe("Standard - W0002 - Write and Evaluate JavaScript Expressions", functio
   it("uses prefix notation in a loop", () => {
     expect(challenges).to.contain("count++");
   })
+
+  //#Success Criteria - Perform String Concatenation
+  //##Challenge 1
+  it("uses string concatenation to assemble a song", () => {
+    expect(env.theBeanSong).to.eq("My dog pinto loves to roam, the other day he left his home. He came back all nice and clean where or where has pinto been?");
+    expect(env.theBeanChorus).to.eq("pinto been, pinto been, where oh where has pinto been?");
+    //Make sure they didn't just write the string out
+    expect(challenges).to.not.contain('"My dog pinto loves to roam, the other day he left his home. He came back all nice and clean where or where has pinto been?"');
+    expect(challenges).to.not.contain('"pinto been, pinto been, where oh where has pinto been?"');
+    expect(challenges).to.not.contain("'My dog pinto loves to roam, the other day he left his home. He came back all nice and clean where or where has pinto been?'");
+    expect(challenges).to.not.contain("'pinto been, pinto been, where oh where has pinto been?'");
+  })
+  //##Challenge 2
+  it("uses string concatenation and prefix notation to assemble a song", () => {
+    expect(env.day1).to.eq("On the 1st day of Christmas my true love gave to me, a partridge in a pear tree.");
+    expect(env.day2).to.eq("On the 2nd day of Christmas my true love gave to me, two turtle doves and a partridge in a pear tree.");
+    expect(env.day3).to.eq("On the 3rd day of Christmas my true love gave to me, three french hens, two turtle doves and a partridge in a pear tree.");
+    expect(env.day4).to.eq("On the 4rd day of Christmas my true love gave to me, four calling birds, three french hens, two turtle doves and a partridge in a pear tree.");
+    expect(env.day5).to.eq("On the 5rd day of Christmas my true love gave to me, five golden rings! four calling birds, three french hens, two turtle doves and a partridge in a pear tree.");
+  })
+
+  //#Success Criteria - Use comparison operators
+  //##Challenge 1
+  it("uses comparison operators to determine if there is enough space for all the riders and drivers in cars", () => {
+    expect(env.haveRiderCarCapacity).to.eq(answerEnv.haveRiderCarCapacity);
+  })
+
+  it("uses comparison operators to determine if there is enough space for all the riders and drivers in vans", () => {
+    expect(env.haveRiderVanCapacity).to.eq(answerEnv.haveRiderVanCapacity);
+  })
+
+  it("uses comparison operators to determine if there is enough space space for all the riders if each car has to have one driver", () => {
+    expect(env.haveEnoughCarDrivers).to.eq(answerEnv.haveEnoughCarDrivers);
+  })
+
+  it("uses comparison operators to determine if there is enough space space for all the riders if each if we used vans instead of cars", () => {
+    expect(env.haveEnoughVanDrivers).to.eq(answerEnv.haveEnoughVanDrivers);
+  })
+
+  it("uses comparison operators to determine if cars will use more gas than vans", () => {
+    expect(env.carsOrVans).to.eq(answerEnv.carsOrVans);
+  })
+
+  //##Challenge 2
+  it("uses comparison operators to determine who is older", () => {
+    expect(env.jimIsOlderThanKen).to.eq(answerEnv.jimIsOlderThanKen);
+    expect(env.carolIsOlderThanJim).to.eq(answerEnv.carolIsOlderThanJim);
+    expect(env.onokeIsOlderThanSally).to.eq(answerEnv.onokeIsOlderThanSally);
+    expect(env.chandraIsOlderThanSam).to.eq(answerEnv.chandraIsOlderThanSam);
+  })
+
+  it("uses logical operators to determine if a series of variables are true or false", () => {
+    expect(env.allAs).to.be.eq(answerEnv.allAs)
+    expect(env.allLettersNoNumbers).to.be.eq(answerEnv.allLettersNoNumbers)
+    expect(env.allVowels3).to.be.eq(answerEnv.allVowels3)
+    expect(env.allCOrAllVowels).to.be.eq(answerEnv.allCOrAllVowels)
+    expect(env.anyFirstFive).to.be.eq(answerEnv.anyFirstFive)
+    expect(env.allXXorAllY).to.be.eq(answerEnv.allXXorAllY)
+  })
 })
-
-
-//#Success Criteria - Perform String Concatenation
-//##Challenge 1
-//Given the following variables, create statements that say:
-
-// Variables
-var bean = "pinto";
-
-//These variables should contain a complete song
-var theBeanSong = "My dog (replace with variable) loves to roam, the other day he left his home. He came back all nice and clean where or where has (replace with variable) been?";
-// should read: My dog pinto loves to roam, the other day he left his home. He came back all nice and clean where or where has pinto been?
-var theBeanChorus = "(replace with variable) been (replace with variable) been, where or where has (replace with variable) been.";
-// should read: pinto been, pinto been, where oh where has pinto been?
-
-
-//##Challenge 2
-//Using a single numerical variable and prefix notation, make this classic song:
-// On the 1st day of Christmas my true love gave to me, a partridge in a pear tree.
-// On the 2nd day of Christmas my true love gave to me, two turtle doves and a partridge in a pear tree.
-// On the 3rd day of Christmas my true love gave to me, three french hens, two turtle doves and a partridge in a pear tree.
-// On the 4rd day of Christmas my true love gave to me, four calling birds, three french hens, two turtle doves and a partridge in a pear tree.
-// On the 5rd day of Christmas my true love gave to me, five golden rings! four calling birds, three french hens, two turtle doves and a partridge in a pear tree.
-
-var day = 0;
-
-var st = "st";
-var nd = "nd";
-var rd = "rd";
-var th = "th";
-
-var dayOfXmas = "day of Christmas my true love gave to me,"
-var one = "a partridge in a pear tree"
-var two = "two turtle doves and"
-var three = "three french hens"
-var four = "four calling birds"
-var five = "five golden rings"
-
-var day1 = "";
-var day2 = "";
-var day3 = "";
-var day4 = "";
-var day5 = "";
-
-
-
-//#Success Criteria - Use comparison operators
-//##Challenge 1
-// Given the following variables, create a comparison statement to see if:
-var cars = 50;
-var vans = 20;
-var riders = 200;
-var drivers = 30;
-var carCapacity = 5;
-var vanCapacity = 8;
-var carMPG = 30;
-var vanMPG = 20;
-
-// Do we have enough space for all the riders and drivers in cars?
-var haveRiderCarCapacity = undefined;
-
-// Do we have enough space for all the riders and drivers in vans?
-var haveRiderVanCapacity = undefined;
-
-// Do we have enough space for all the riders if each car has to have one driver?
-var haveEnoughCarDrivers = undefined;
-
-// Do we have enough space for all the riders if we used vans instead of cars?
-var haveEnoughVanDrivers = undefined;
-
-// If we have to travel 100 miles, which will use more gas, cars or vans? (use the actual number of cars and vans that we would need to use to carry all riders)
-var carsOrVans = undefined;
-
-//##Challenge 2
-// Given the following variables, create comparison statements to see if:
-var sallyAge = 10;
-var johnAge = sallyAge * 2;
-var onokeAge = johnAge / 3;
-var carolAge = sallyAge + johnAge;
-var chandraAge = johnAge - sallyAge;
-var samAge = onokeAge * sallyAge;
-var kenAge = chandraAge + onokeAge;
-var jimAge = chandraAge % onokeAge * kenAge - 5;
-
-// Who is older, Jim or Ken?
-//
-// Who is older, Carol or Jim?
-//
-// Who is older, Onoke or Sally?
-//
-// Who is older, Chandra or Sam?
-
-//#Success Criteria - Use logical operators
-//##Challenge 1
-// You have a global variable for each letter of the alphabet (eg, var a,b,c)
-// You also have 5 global variables for each letter of the alphabet that have a number after them (eg, var a1, a2, a3, a4, a5)
-
-//Write a test to see if every variable that starts with a is true
-var allAs = undefined;
-//Write a test to see if every variable that does not have a number after it is true
-var allLettersNoNumbers = undefined;
-//Write a test to see if any of the vowels that have a 3 after them are true
-var allVowels3 = undefined;
-//Write a test that checks to see if all of the variables that start with c are true, or if all of the vowels without numbers are true
-var allCOrAllVowels = undefined;
-//Write a test that checks to see if any of the first five letter variables are true
-var anyFirstFive = undefined;
-//Write a test that checks if all of the x variables are true or all of the y variables BUT NOT BOTH
-var allXXorAllY = undefined;
