@@ -112,37 +112,64 @@ describe("Standard - W0002 - Write and Evaluate JavaScript Expressions", functio
     expect(env.week6BirdPopulation).to.eq(answerEnv.week6BirdPopulation);
   })
 
+  //#Success Criteria - Prefix / Postfix notation for integers
+  //##Challenge 1
+  // Replace the string with the count variable - increment it before logging it using Prefix notation
+  it("uses prefix notation in a loop", () => {
+    expect(challenges).to.contain("++count");
+  })
+
+  //##Challenge 2
+  // Replace the string with the count variable - increment it after logging it using Postfix notation
+  it("uses prefix notation in a loop", () => {
+    expect(challenges).to.contain("count++");
+  })
 })
 
 
-
-
-
-
-
-
-
-
-//#Success Criteria - Prefix / Postfix notation for integers
+//#Success Criteria - Perform String Concatenation
 //##Challenge 1
-// Replace the string with the count variable - increment it before logging it using Prefix notation
-var x = 30;
-var count = 0;
+//Given the following variables, create statements that say:
 
-// while (count < x) {
-//   console.log("Your answer here")
-// }
+// Variables
+var bean = "pinto";
+
+//These variables should contain a complete song
+var theBeanSong = "My dog (replace with variable) loves to roam, the other day he left his home. He came back all nice and clean where or where has (replace with variable) been?";
+// should read: My dog pinto loves to roam, the other day he left his home. He came back all nice and clean where or where has pinto been?
+var theBeanChorus = "(replace with variable) been (replace with variable) been, where or where has (replace with variable) been.";
+// should read: pinto been, pinto been, where oh where has pinto been?
+
 
 //##Challenge 2
-// Replace the string with the count variable - increment it after logging it using Postfix notation
-var x = 30;
-var count = 0;
+//Using a single numerical variable and prefix notation, make this classic song:
+// On the 1st day of Christmas my true love gave to me, a partridge in a pear tree.
+// On the 2nd day of Christmas my true love gave to me, two turtle doves and a partridge in a pear tree.
+// On the 3rd day of Christmas my true love gave to me, three french hens, two turtle doves and a partridge in a pear tree.
+// On the 4rd day of Christmas my true love gave to me, four calling birds, three french hens, two turtle doves and a partridge in a pear tree.
+// On the 5rd day of Christmas my true love gave to me, five golden rings! four calling birds, three french hens, two turtle doves and a partridge in a pear tree.
 
-// while (count < x) {
-//   console.log("Your answer here")
-// }
+var day = 0;
 
-//#Success Criteria - Perform String Concatenation
+var st = "st";
+var nd = "nd";
+var rd = "rd";
+var th = "th";
+
+var dayOfXmas = "day of Christmas my true love gave to me,"
+var one = "a partridge in a pear tree"
+var two = "two turtle doves and"
+var three = "three french hens"
+var four = "four calling birds"
+var five = "five golden rings"
+
+var day1 = "";
+var day2 = "";
+var day3 = "";
+var day4 = "";
+var day5 = "";
+
+
 
 //#Success Criteria - Use comparison operators
 //##Challenge 1

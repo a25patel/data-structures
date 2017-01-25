@@ -93,6 +93,47 @@ var count = 0;
 // }
 
 //#Success Criteria - Perform String Concatenation
+//##Challenge 1
+//Given the following variables, create statements that say:
+
+// Variables
+var bean = "pinto";
+
+//These variables should contain a complete song
+var theBeanSong = "My dog (replace with variable) loves to roam, the other day he left his home. He came back all nice and clean where or where has (replace with variable) been?";
+// should read: My dog pinto loves to roam, the other day he left his home. He came back all nice and clean where or where has pinto been?
+var theBeanChorus = "(replace with variable) been (replace with variable) been, where or where has (replace with variable) been.";
+// should read: pinto been, pinto been, where oh where has pinto been?
+
+
+//##Challenge 2
+//Using a single numerical variable and prefix notation, make this classic song:
+// On the 1st day of Christmas my true love gave to me, a partridge in a pear tree.
+// On the 2nd day of Christmas my true love gave to me, two turtle doves and a partridge in a pear tree.
+// On the 3rd day of Christmas my true love gave to me, three french hens, two turtle doves and a partridge in a pear tree.
+// On the 4rd day of Christmas my true love gave to me, four calling birds, three french hens, two turtle doves and a partridge in a pear tree.
+// On the 5rd day of Christmas my true love gave to me, five golden rings! four calling birds, three french hens, two turtle doves and a partridge in a pear tree.
+
+var day = 0;
+
+var st = "st";
+var nd = "nd";
+var rd = "rd";
+var th = "th";
+
+var dayOfXmas = "day of Christmas my true love gave to me,"
+var one = "a partridge in a pear tree"
+var two = "two turtle doves and"
+var three = "three french hens"
+var four = "four calling birds"
+var five = "five golden rings"
+
+var day1 = "";
+var day2 = "";
+var day3 = "";
+var day4 = "";
+var day5 = "";
+
 
 //#Success Criteria - Use comparison operators
 //##Challenge 1
