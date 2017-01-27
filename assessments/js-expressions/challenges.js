@@ -48,30 +48,25 @@ var quadrant3Snakes = 300;
 var quadrant4Snakes = 200;
 
 // How many fish a day does it take to feed each quadrant on the first day?
-var quadrant1FishDay1 = quadrant1Birds + (quadrant1Crocs * 5);
-var quadrant2FishDay1 = quadrant2Birds + (quadrant2Crocs * 5);
-var quadrant3FishDay1 = quadrant3Birds + (quadrant3Crocs * 5);
-var quadrant4FishDay1 = quadrant4Birds + (quadrant4Crocs * 5);
+var quadrant1FishDay1 = undefined;
+var quadrant2FishDay1 = undefined;
+var quadrant3FishDay1 = undefined;
+var quadrant4FishDay1 = undefined;
 
 //How many fish does it take to feed each quadrant on the 8th day?
-var quadrant1FishDay8 = (((quadrant1Birds / 2) * 5) + quadrant1Birds) - ((quadrant1Snakes * 8) + quadrant1Snakes) + ((quadrant1Crocs * 5) * 8);
-var quadrant2FishDay8 = (((quadrant2Birds / 2) * 5) + quadrant2Birds) - ((quadrant2Snakes * 8) + quadrant2Snakes) + ((quadrant2Crocs * 5) * 8);
-var quadrant3FishDay8 = (((quadrant3Birds / 2) * 5) + quadrant3Birds) - ((quadrant3Snakes * 8) + quadrant3Snakes) + ((quadrant3Crocs * 5) * 8);
-var quadrant4FishDay8 = (((quadrant4Birds / 2) * 5) + quadrant4Birds) - ((quadrant4Snakes * 8) + quadrant4Snakes) + ((quadrant4Crocs * 5) * 8);
+var quadrant1FishDay8 = undefined;
+var quadrant2FishDay8 = undefined;
+var quadrant3FishDay8 = undefined;
+var quadrant4FishDay8 = undefined;
 // How many birds are eaten in a day across the whole swamp for the first 4 weeks?
-var dailyBirdLossWeek1 = quadrant1Snakes + quadrant2Snakes + quadrant3Snakes + quadrant4Snakes;
-var dailyBirdLossWeek2 = ((dailyBirdLossWeek1 / 2) * 2) + dailyBirdLossWeek1;
-var dailyBirdLossWeek3 = ((dailyBirdLossWeek2 / 2) * 2) + dailyBirdLossWeek2;
-var dailyBirdLossWeek4 = ((dailyBirdLossWeek3 / 2) * 2) + dailyBirdLossWeek3;
-var dailyBirdLossWeek5 = ((dailyBirdLossWeek4 / 2) * 2) + dailyBirdLossWeek4;
-var dailyBirdLossWeek6 = ((dailyBirdLossWeek5 / 2) * 2) + dailyBirdLossWeek5;
+var dailyBirdLossWeek1 = undefined;
+var dailyBirdLossWeek2 = undefined;
+var dailyBirdLossWeek3 = undefined;
+var dailyBirdLossWeek4 = undefined;
+var dailyBirdLossWeek5 = undefined;
+var dailyBirdLossWeek6 = undefined;
 // How many birds are there in the whole swamp after 6 weeks? You may need extra variables for this.
-var week1Birds = quadrant1Birds + quadrant2Birds + quadrant3Birds + quadrant4Birds;
-var week2Birds = ((week1Birds - (dailyBirdLossWeek1 * 7)) / 2) * 5;
-var week3Birds = ((week2Birds - (dailyBirdLossWeek2 * 7)) / 2) * 5;
-var week4Birds = ((week3Birds - (dailyBirdLossWeek3 * 7)) / 2) * 5;
-var week5Birds = ((week4Birds - (dailyBirdLossWeek4 * 7)) / 2) * 5;
-var week6BirdPopulation = ((week5Birds - (dailyBirdLossWeek5 * 7)) / 2) * 5;
+var week6BirdPopulation = undefined;
 
 //#Success Criteria - Prefix / Postfix notation for integers
 //##Challenge 1
