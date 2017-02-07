@@ -29,32 +29,32 @@ describe("Standard - W0002 - Write and Evaluate JavaScript Expressions", functio
       }
     });
   })
-  //#Success Criteria - Dimension Variables with `var`, `let`, `const`
+  //** Success Criteria - Dimension Variables with `var`, `let`, `const`
 
-  //##Challenge 1
+  //* Challenge 1
   // Create a variable called bikes, store the number 20 in bikes
   it("has a variable called bikes with 20", () => {
     expect(env.bikes).to.eq(20);
   })
 
-  //##Challenge 2
+  //* Challenge 2
   // Create a variable that will not change, called MAX_CONNECTIONS
   it("has a variable called MAX_CONNECTIONS, declared with const", () => {
     expect(challenges).to.contain("const MAX_CONNECTIONS");
   })
-  //##Challenge 3
+  //* Challenge 3
   // Create a variable called i for the purpose of counting loop iterations, that we won't use again after the loop (don't write the loop)
   it("has a variable called i, declared with let", () => {
     expect(challenges).to.contain("let i");
   })
-  //##Challenge 4
+  //* Challenge 4
   // Create a variable called totalBears, which we'll update any time we create a new bear.
   it("has a variable called totalBears, declared with var", () => {
     expect(challenges).to.contain("var totalBears");
   })
 
-  //#Success Criteria - Perform Math operations with binary operators, Evaluate a statement using language Operator Precedence rules
-  //##Challenge 1
+  //** Success Criteria - Perform Math operations with binary operators, Evaluate a statement using language Operator Precedence rules
+  //* Challenge 1
   // Your local swamp has wildlife population estimates. We want to know several pieces of information.
   // Some information about the local ecosystem:
   // Birds and Crocs eat fish. Birds eat 1 fish a day, while crocs eat 5.
@@ -112,21 +112,21 @@ describe("Standard - W0002 - Write and Evaluate JavaScript Expressions", functio
     expect(env.week6BirdPopulation).to.eq(answerEnv.week6BirdPopulation);
   })
 
-  //#Success Criteria - Prefix / Postfix notation for integers
-  //##Challenge 1
+  //** Success Criteria - Prefix / Postfix notation for integers
+  //* Challenge 1
   // Replace the string with the count variable - increment it before logging it using Prefix notation
   it("uses prefix notation in a loop", () => {
     expect(challenges).to.contain("++count");
   })
 
-  //##Challenge 2
+  //* Challenge 2
   // Replace the string with the count variable - increment it after logging it using Postfix notation
   it("uses prefix notation in a loop", () => {
     expect(challenges).to.contain("count++");
   })
 
-  //#Success Criteria - Perform String Concatenation
-  //##Challenge 1
+  //** Success Criteria - Perform String Concatenation
+  //* Challenge 1
   it("uses string concatenation to assemble a song", () => {
     expect(env.theBeanSong).to.eq("My dog pinto loves to roam, the other day he left his home. He came back all nice and clean where or where has pinto been?");
     expect(env.theBeanChorus).to.eq("pinto been, pinto been, where oh where has pinto been?");
@@ -136,7 +136,7 @@ describe("Standard - W0002 - Write and Evaluate JavaScript Expressions", functio
     expect(challenges).to.not.contain("'My dog pinto loves to roam, the other day he left his home. He came back all nice and clean where or where has pinto been?'");
     expect(challenges).to.not.contain("'pinto been, pinto been, where oh where has pinto been?'");
   })
-  //##Challenge 2
+  //* Challenge 2
   it("uses string concatenation and prefix notation to assemble a song", () => {
     expect(env.day1).to.eq("On the 1st day of Christmas my true love gave to me, a partridge in a pear tree.");
     expect(env.day2).to.eq("On the 2nd day of Christmas my true love gave to me, two turtle doves and a partridge in a pear tree.");
@@ -145,8 +145,8 @@ describe("Standard - W0002 - Write and Evaluate JavaScript Expressions", functio
     expect(env.day5).to.eq("On the 5rd day of Christmas my true love gave to me, five golden rings! four calling birds, three french hens, two turtle doves and a partridge in a pear tree.");
   })
 
-  //#Success Criteria - Use comparison operators
-  //##Challenge 1
+  //** Success Criteria - Use comparison operators
+  //* Challenge 1
   it("uses comparison operators to determine if there is enough space for all the riders and drivers in cars", () => {
     expect(env.haveRiderCarCapacity).to.eq(answerEnv.haveRiderCarCapacity);
   })
@@ -167,7 +167,7 @@ describe("Standard - W0002 - Write and Evaluate JavaScript Expressions", functio
     expect(env.carsOrVans).to.eq(answerEnv.carsOrVans);
   })
 
-  //##Challenge 2
+  //* Challenge 2
   it("uses comparison operators to determine who is older", () => {
     expect(env.jimIsOlderThanKen).to.eq(answerEnv.jimIsOlderThanKen);
     expect(env.carolIsOlderThanJim).to.eq(answerEnv.carolIsOlderThanJim);

@@ -1,22 +1,22 @@
 // Standard - W0002 - Write and Evaluate JavaScript Expressions
 
-//#Success Criteria - Dimension Variables with `var`, `let`, `const`
+//** Success Criteria - Dimension Variables with `var`, `let`, `const`
 
-//##Challenge 1
+//* Challenge 1
 // Create a variable called bikes, store the number 20 in bikes
 var bikes = 20;
-//##Challenge 2
+//* Challenge 2
 // Create a variable that will not change, called MAX_CONNECTIONS, assign it the number 5.
 const MAX_CONNECTIONS = 5;
-//##Challenge 3
+//* Challenge 3
 // Create a variable called i for the purpose of counting loop iterations, that we won't use again after the loop (don't write the loop)
 let i = 0;
-//##Challenge 4
+//* Challenge 4
 // Create a variable called totalBears, which we'll update any time we create a new bear.
 var totalBears = 0;
 
-//#Success Criteria - Perform Math operations with binary operators, Evaluate a statement using language Operator Precedence rules
-//##Challenge 1
+//** Success Criteria - Perform Math operations with binary operators, Evaluate a statement using language Operator Precedence rules
+//* Challenge 1
 // Your local swamp has wildlife population estimates. We want to know several pieces of information. Feel free to use multiple variables, just make sure all the original variables are filled in.
 // Some information about the local ecosystem:
 // Birds and Crocs eat fish. Birds eat 1 fish a day, while crocs eat 5.
@@ -68,8 +68,8 @@ var dailyBirdLossWeek6 = undefined;
 // How many birds are there in the whole swamp after 6 weeks? You may need extra variables for this.
 var week6BirdPopulation = undefined;
 
-//#Success Criteria - Prefix / Postfix notation for integers
-//##Challenge 1
+//** Success Criteria - Prefix / Postfix notation for integers
+//* Challenge 1
 // Uncomment the loop and replace the string with the count variable - increment it before logging it using Prefix notation
 var x = 30;
 var count = 0;
@@ -78,7 +78,7 @@ var count = 0;
 //   console.log("Your answer here")
 // }
 
-//##Challenge 2
+//* Challenge 2
 // Uncomment the loop and replace the string with the count variable - increment it after logging it using Postfix notation
 var x = 30;
 var count = 0;
@@ -87,8 +87,8 @@ var count = 0;
 //   console.log("Your answer here")
 // }
 
-//#Success Criteria - Perform String Concatenation
-//##Challenge 1
+//** Success Criteria - Perform String Concatenation
+//* Challenge 1
 //Given the following variables, create statements that say:
 
 // Variables
@@ -101,7 +101,7 @@ var theBeanChorus = "(replace with variable) been (replace with variable) been, 
 // should read: pinto been, pinto been, where oh where has pinto been?
 
 
-//##Challenge 2
+//* Challenge 2
 //Using a single numerical variable and prefix notation, make this classic song:
 // On the 1st day of Christmas my true love gave to me, a partridge in a pear tree.
 // On the 2nd day of Christmas my true love gave to me, two turtle doves and a partridge in a pear tree.
@@ -130,8 +130,8 @@ var day4 = "";
 var day5 = "";
 
 
-//#Success Criteria - Use comparison operators
-//##Challenge 1
+//** Success Criteria - Use comparison operators
+//* Challenge 1
 // Given the following variables, create a comparison statement to see if:
 var cars = 50;
 var vans = 20;
@@ -157,7 +157,7 @@ var haveEnoughVanDrivers = undefined;
 // If we have to travel 100 miles, will cars use more gas than vans? (assuming we have as many cars or vans as we would need)
 var carsOrVans = undefined;
 
-//##Challenge 2
+//* Challenge 2
 // Given the following variables, create comparison statements to see if:
 var sallyAge = 10;
 var johnAge = sallyAge * 2;
@@ -177,8 +177,8 @@ var onokeIsOlderThanSally = undefined;
 // is Chandra older than Sam?
 var chandraIsOlderThanSam = undefined;
 
-//#Success Criteria - Use logical operators
-//##Challenge 1
+//** Success Criteria - Use logical operators
+//* Challenge 1
 // You have a global variable for each letter of the alphabet (eg, var a,b,c)
 // You also have 5 global variables for each letter of the alphabet that have a number after them (eg, var a1, a2, a3, a4, a5)
 
