@@ -4,16 +4,16 @@
 
 //* Challenge 1
 // Create a variable called bikes, store the number 20 in bikes
-var bikes = 20;
+
 //* Challenge 2
 // Create a variable that will not change, called MAX_CONNECTIONS, assign it the number 5.
-const MAX_CONNECTIONS = 5;
+
 //* Challenge 3
 // Create a variable called i for the purpose of counting loop iterations, that we won't use again after the loop (don't write the loop)
-let i = 0;
+
 //* Challenge 4
 // Create a variable called totalBears, which we'll update any time we create a new bear.
-var totalBears = 0;
+
 
 //** Success Criteria - Perform Math operations with binary operators, Evaluate a statement using language Operator Precedence rules
 //* Challenge 1
