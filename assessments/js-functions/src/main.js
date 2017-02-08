@@ -132,14 +132,70 @@ function question5 (weekendActivity) {
 // - Calls the function `question2` with the String 'functions in functions'
 
 //** Success Criteria - Use Functions to mutate state of Objects & Arrays
-//*
+//* Challenge - Write a function called question10 that takes in an array of objects (an example is provided) and a string
+// Reorder the objects by comparing the values of the string as a key in the objects in the array. Alter the original array, and return it.
+
+
+function question10 (inputArray, key) {
+
+}
+
+var musketeers = [{name: "Athos", year: 1615}, {name: "Porthos", year: 1617}, {name: "Aramis", year: 1620}]
+question10(musketeers, "name") // musketeers should be Aramis, Athos, Porthos
+question10(musketeers, "year") // musketeers should be Athos, Porthos, Aramis
+
+//* Challenge - Write a function called question11 that
+// - Takes in an object
+// - Makes sure certain keys are present in that object, with default values. Return the original object.
+// - Don't overwrite values that already exist
+//   - name: empty string
+//   - age: 0
+//   - hometown: empty string
+//   - hasDogs: false
+
+
 
 //** Success Criteria - Write Higher Order Functions
 
+//* Challenge - Write a function called question12 that
+// - Takes in an array
+// - Applies a function to every element of that array that returns true or false
+// - If the result of the function is false, remove the element from the array
+
+//* Challenge - Write a function called question13 that
+// - Takes in two numbers
+// - returns a function that, when called, increments the first number by the second number, and returns the new value of the first number
+// - ensure that the first number cannot be altered by any other means than by calling the function returned by question13
+
+function question13 (count, iterator) {
+
+}
+
+
+var countBy5 = question13(0,5);
+countBy5() // returns 5
+countBy5() // returns 10
+countBy5() // returns 15
+
+
 //** Success Criteria - Use Anonymous Functions with Higher Order Functions
 
+//* Challenge - Given this function:
 
+function mystery(inputArray, cb, singleValue) {
+  cb(0, inputArray[0], singleValue || 0);
+  for (var i = 1; i < inputArray.length; i++) {
+    singleValue = cb(i, inputArray[i], singleValue)
+  }
+  return singleValue;
+}
 
+// Call the mystery function such that the given array produces the value 15
+var cube = [3,5];
+// Call the mystery function such that the given array produces the value 50000
+var nums = [5,0,0,0,0]
+//Call the mystery function such that the given array produces the value 'aeiou'
+var letters = "abcdefghijklmnopqrstuvwxyz".split("");
 
 
 // Leave the code below alone, the tests won't work without it.
@@ -149,5 +205,14 @@ module.exports = {
   question2,
   question3,
   question4,
-  question5
+  question5,
+  question6,
+  question7,
+  question8,
+  question9,
+  question10,
+  question11,
+  question12,
+  question13,
+  mystery
 }
