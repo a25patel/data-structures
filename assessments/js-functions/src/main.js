@@ -1,3 +1,4 @@
+'use strict'
 //** Success Criteria - Write Functions with 0, 1, and 2+ parameters
 
 //* Challenge - Write a function called `question0` that:
@@ -17,11 +18,16 @@
 // - Has no parameters, but can accept any number of parameters
 // - Returns all arguments, converted to strings and concatenated
 
+
 //** Success Criteria - Invoke Functions as Expressions
+//* Challenge - Write a function called `question1` that:
+// - Has no parameters
+// - Returns the phrase 'Hello JavaScript' exactly
+
 
 //* Challenge - Write a function called `question7` that:
 // - Has no parameters, but can accept any number of parameters
-// - uses the results of your question3 function and the question6 function to log out:
+// - uses the results of the `question6` function to log out:
 // "You input [n] arguments, and together they make the string: [str]",
 // Instead of [n], put the number of arguments that were passed into the function
 // Instead of [str], put the result of the `question6` function.
@@ -81,7 +87,7 @@ for (var i=0; i<student4.quizGrades; i++) {
 student4.courseAverage = average / student4.quizGrades;
 
 //* Challenge - Write a function called `postOffice` that takes in any object, formatted like the example object below.
-// - The function should take two parameters, both of which are objects, the first being a package and the second being customs fees information.
+// - The function should take two parameters, both of which are objects, the first being a package (examples provided) and the second being customs fees information.
 // The first object will have a weight and a destination string
 // The second object's keys will always correspond with the country code in the destination string.
 // - The function should call one of two functions, depending on whether or not the letter is to be sent internationally
@@ -102,8 +108,12 @@ var examplePackage2 = {
 var customs = {
   "USA": 0,
   "IN": 3.5,
-  "CA": .3,
-  "MX": 5
+  "CA": 0.3,
+  "MX": 1
+}
+
+function postOffice() {
+
 }
 
 //* Challenge - Modify the function below so that the switch statement is encased in a
@@ -131,12 +141,12 @@ function question5 (weekendActivity) {
 // - Has no parameters
 // - Calls the function `question2` with the String 'functions in functions'
 
+
 //** Success Criteria - Use Functions to mutate state of Objects & Arrays
 //* Challenge - Write a function called question10 that takes in an array of objects (an example is provided) and a string
 // Reorder the objects by comparing the values of the string as a key in the objects in the array. Alter the original array, and return it.
 
-
-function question10 (inputArray, key) {
+function question10 () {
 
 }
 
@@ -154,20 +164,21 @@ question10(musketeers, "year") // musketeers should be Athos, Porthos, Aramis
 //   - hasDogs: false
 
 
-
 //** Success Criteria - Write Higher Order Functions
 
 //* Challenge - Write a function called question12 that
-// - Takes in an array
+// - Takes in an array and a function
 // - Applies a function to every element of that array that returns true or false
-// - If the result of the function is false, remove the element from the array
+// - If the result of the function is false, remove the element from the input array
+
+
 
 //* Challenge - Write a function called question13 that
 // - Takes in two numbers
 // - returns a function that, when called, increments the first number by the second number, and returns the new value of the first number
 // - ensure that the first number cannot be altered by any other means than by calling the function returned by question13
 
-function question13 (count, iterator) {
+function question13 () {
 
 }
 
@@ -183,7 +194,7 @@ countBy5() // returns 15
 //* Challenge - Given this function:
 
 function mystery(inputArray, cb, singleValue) {
-  cb(0, inputArray[0], singleValue || 0);
+  singleValue = cb(0, inputArray[0], singleValue || 0);
   for (var i = 1; i < inputArray.length; i++) {
     singleValue = cb(i, inputArray[i], singleValue)
   }
@@ -191,11 +202,15 @@ function mystery(inputArray, cb, singleValue) {
 }
 
 // Call the mystery function such that the given array produces the value 15
+
 var cube = [3,5];
+var cubeResult = mystery(cube);
 // Call the mystery function such that the given array produces the value 50000
-var nums = [5,0,0,0,0]
+var nums = [5,0,0,0,0];
+var numResult = mystery(nums);
 //Call the mystery function such that the given array produces the value 'aeiou'
 var letters = "abcdefghijklmnopqrstuvwxyz".split("");
+var lettersResult = mystery(letters);
 
 
 // Leave the code below alone, the tests won't work without it.
@@ -214,5 +229,9 @@ module.exports = {
   question11,
   question12,
   question13,
-  mystery
+  postOffice,
+  customs,
+  cubeResult,
+  numResult,
+  lettersResult
 }
