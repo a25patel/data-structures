@@ -118,4 +118,5 @@
 
   }
 
-module.exports = { question0, question1, question2 }
+//Leave this line alone, the tests won't work without it!
+module.exports = { question0, question1, question2, question3, question4, question5, question6, question8, question9, question10, question11 }

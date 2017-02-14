@@ -40,8 +40,8 @@ Use functions to organize code, use return values to move data between execution
 Assessments prove to us that you know the material.
 
 **[Write and Evaluate JS Expressions (W0002)](./assessments/js-expressions/README.md)**  
+**[Use conditionals and loops to control the flow of a program (W0099)](./assessments/js-loops-and-conditionals/README.md)**  
 <!--  
-**[Use conditionals and loops to control the flow of a program (W0099)](./assessments/js-conditionals-loops/README.md)**  
 **[Organize code with functions (W0003)](./assessments/js-functions/README.md)**  
 **[Solve problems with accumulator patterns (W0004)](./assessments/js-accumulators/README.md)**  
 **[Describe how key parts of JavaScript work (W0006)](./assessments/js-describe/README.md)**  
