@@ -2,6 +2,8 @@
 
 Test-driven code challenges and Assessments to support the JavaScript Curriculum!
 
+These exercises contain JavaScript Language drills. For exercises and assessments related to the browser and the Document Object Model, see [Browser DOM Drills](https://github.com/gSchool/browser-dom-drills).
+
 ### How to use this repository
 
 1. Fork the repository to your own Github account.
