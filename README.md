@@ -17,6 +17,9 @@ Challenges allow you to practice the concepts you're learning before taking an a
 
 Operators, String concatenation, Math, Precedence / Parenthesis, Prefix / Postfix notation for integers, Variables, Literals.
 
+**[Organize Code with Functions](./functions/README.md)**
+Function syntax, Return values, Scope, References.
+
 <!--
 **[Use conditionals and loops to control the flow of a program (W0099)](./js-conditionals-loops/README.md)**
 
