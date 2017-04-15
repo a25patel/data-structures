@@ -1,11 +1,32 @@
-# W0002 - Write and Evaluate JavaScript Expressions
+# Write and Evaluate JS Expressions
 
-This folder contains questions and challenges related to this standard.
+This checkpoint relates to the following standards:
 
-- Answer the questions in [the questions file](questions.md) by replacing "Your answer here..." with your response. You may not be able to answer each one right away, but once you've answered them all correctly you've mastered this standard.
+- Problem Solving with JavaScript
+- Storing and Manipulating Data
 
-> If the question asks what something evaluates to, be sure to answer with *valid JavaScript syntax*. (eg. `true`, not `True` or `It evaluates to True` or `1`). The quiz is automatically graded, so the computer will not recognize your answers otherwise.
+It covers the following component skills:
 
-- Make all of the challenges pass by running `npm test` to check your work. You might not be able to finish every challenge right away, but return once you've covered the necessary material to complete all of the challenges.
+- Problem Solving with JavaScript: Programming Techniques: Control Flow, Logical Expressions, and Operators
+- Storing and Manipulating Data: Data Types
+- Storing and Manipulating Data: Data Operations: Comparison
+- Storing and Manipulating Data: Data Operations: Math and String Manipulation
+- Storing and Manipulating Data: Data Structures: Arrays
+- Storing and Manipulating Data: Data Structures: Objects
 
-> If there is a variable that is set to `undefined`, it is intended that you replace `undefined` with your answer. These variables are being tested by automatic tests that are counting on the variables to be named exactly as they are, so do not change the variable names.
+## Objectives
+
+- Define each primitive data type in Javascript (String, Number, Boolean, Undefined, Null)
+- Use logical operators(&&, ||)
+- Use comparison Operators ==, ===, !=, !==
+- Perform String Concatenation
+- Perform Math operations with binary operators
+- Evaluate a statement using language Operator Precedence rules
+- Prefix / Postfix notation for integers
+- Dimension Variables with var, let, const
+- Identify Function, Object, Array and Primitive Literals
+
+To get started with the assessment, answer the questions in the links below.
+
+- [Reading JavaScript Expressions](./reading_javascript_expressions.md)
+- [Writing JavaScript Expressions](./writing_javascript_expressions.md)
