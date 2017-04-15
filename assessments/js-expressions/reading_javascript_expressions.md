@@ -19,7 +19,7 @@ What are the five primitive datatypes in JavaScript?
 
 ##### !answer
 
-/((?=.*\b[sS]tring)(?=.*\b[nN]umber)(?=.*\b[Bb]oolean)(?=.*\b[uU]ndefined)(?=.*\b[nN]ull)).+$/*  
+/((?=.*\b[sS]tring)(?=.*\b[nN]umber)(?=.*\b[Bb]oolean)(?=.*\b[uU]ndefined)(?=.*\b[nN]ull)).+$/  
 
 ##### !end-answer
 
