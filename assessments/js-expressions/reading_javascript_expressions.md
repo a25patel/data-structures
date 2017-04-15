@@ -662,7 +662,7 @@ var y = 100 % x;
 
 ### !challenge
 
-* type: short-answer
+* type: paragraph
 * id: b810c853-376b-406c-99fb-2b40510d805b
 * title: Evaluate Math operations with Binary Operators
 
