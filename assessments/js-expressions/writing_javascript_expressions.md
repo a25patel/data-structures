@@ -26,19 +26,19 @@ Choose between `var`, `let` and `const` to create these variables.
 ### !placeholder
 
 // Do we have enough space for all the riders and drivers in cars?
-var haveRiderCarCapacity = null;
+haveRiderCarCapacity = null;
 
 // Do we have enough space for all the riders and drivers in vans?
-var haveRiderVanCapacity = null;
+haveRiderVanCapacity = null;
 
 // Do we have enough space for all the riders if each car has to have one driver?
-var haveEnoughCarDrivers = null;
+haveEnoughCarDrivers = null;
 
 // Do we have enough space for all the riders if we used vans instead of cars?
-var haveEnoughVanDrivers = null;
+haveEnoughVanDrivers = null;
 
 // If we have to travel 100 miles, will cars use more gas than vans? (assuming we have as many cars or vans and drivers as we would need)
-var carsMoreThanVans = null;
+carsMoreThanVans = null;
 
 ### !end-placeholder
 
@@ -48,7 +48,39 @@ var carsMoreThanVans = null;
 describe('transportation', function() {
 
     it("has a variable called bikes with 20", function() {
-      expect(bikes, "bikes is not the right variable").to.eq(20)
+      expect(bikes, "bikes is not the right value").to.eq(20)
+    })
+
+    it("has a variable called cars with 50", function() {
+      expect(cars, "cars is not the right value").to.eq(50)
+    })
+
+    it("has a variable called vans with 20", function() {
+      expect(vans, "vans is not the right value").to.eq(20)
+    })
+
+    it("has a variable called riders with 200", function() {
+      expect(riders, "riders is not the right value").to.eq(200)
+    })
+
+    it("has a variable called drivers with 30", function() {
+      expect(drivers, "drivers is not the right value").to.eq(30)
+    })
+
+    it("has a variable called carCapacity with 5", function() {
+      expect(carCapacity, "carCapacity is not the right value").to.eq(5)
+    })
+
+    it("has a variable called vanCapacity with 8", function() {
+      expect(vanCapacity, "vanCapacity is not the right value").to.eq(8)
+    })
+
+    it("has a variable called vanMPG with 20", function() {
+      expect(vanMPG, "vanMPG is not the right value").to.eq(20)
+    })
+
+    it("has a variable called carMPG with 30", function() {
+      expect(carMPG, "carMPG is not the right value").to.eq(30)
     })
 
     it("uses comparison operators to determine if there is enough space for all the riders and drivers in cars", () => {
