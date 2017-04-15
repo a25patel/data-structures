@@ -41,8 +41,6 @@ List the 5 primitives here
 
 ##### !question
 
-### Question
-
 Name the datatype for this expression:  
 
 `5`
@@ -77,8 +75,6 @@ Number
 
 ##### !question
 
-### Question
-
 Name the datatype for this expression:  
 
 `5.5`
@@ -112,8 +108,6 @@ Number
 
 ##### !question
 
-### Question
-
 Name the datatype for this expression:  
 
 `.3`
@@ -146,8 +140,6 @@ Number
 * title: Data Type Identification: Null Types
 
 ##### !question
-
-### Question
 
 Name the datatype for this expression:  
 
@@ -183,8 +175,6 @@ null
 
 ##### !question
 
-### Question
-
 Name the datatype for this expression:  
 
 `undefined`
@@ -218,8 +208,6 @@ undefined
 
 ##### !question
 
-### Question
-
 Name the datatype for this expression:  
 
 `"Hello World"`
@@ -251,7 +239,7 @@ String
 * id: ae35313e-909a-4890-962e-9883679a19fe
 * title: Data Type Identification: String Types
 
-### Question
+##### !question
 
 Name the datatype for this expression:  
 
@@ -284,7 +272,7 @@ String
 * id: ae35313e-909a-4890-962e-9883679a19fe
 * title: Data Type Identification: Data Type Coercion
 
-### Question
+##### !question
 
 Name the datatype for this expression:  
 
@@ -343,8 +331,6 @@ List the 6 falsey values here...
 
 ##### !question
 
-### Question
-
 What does `true || false` evaluate to?
 
 ##### !end-question
@@ -373,8 +359,6 @@ What does `true || false` evaluate to?
 * title: Logical Operators
 
 ##### !question
-
-### Question
 
 What does `false || true && true` evaluate to?
 
@@ -407,8 +391,6 @@ What does `false || true && true` evaluate to?
 
 ##### !question
 
-### Question
-
 What will this evaluate to? `5 == '5'`
 
 ##### !end-question
@@ -439,8 +421,6 @@ What will this evaluate to? `5 == '5'`
 
 ##### !question
 
-### Question
-
 What will this evaluate to? `150 === "15" + '0'`
 
 ##### !end-question
@@ -469,8 +449,6 @@ What will this evaluate to? `150 === "15" + '0'`
 * title: Logical Operators
 
 ##### !question
-
-### Question
 
 What will this evaluate to? `1 != 'one'`
 
@@ -501,8 +479,6 @@ What will this evaluate to? `1 != 'one'`
 
 ##### !question
 
-### Question
-
 What will this evaluate to? `'37 cats' === 37 + ' cats'`
 
 ##### !end-question
@@ -529,8 +505,6 @@ What will this evaluate to? `'37 cats' === 37 + ' cats'`
 * title: Logical Operators
 
 ##### !question
-
-### Question
 
 What will this evaluate to? `undefined !== NaN`
 
@@ -559,8 +533,6 @@ What will this evaluate to? `undefined !== NaN`
 * title: Logical Operators
 
 ##### !question
-
-### Question
 
 What will this evaluate to? `500 < "501"`
 
@@ -592,8 +564,6 @@ What will this evaluate to? `500 < "501"`
 * title: Logical Operators
 
 ##### !question
-
-### Question
 
 What will this statement evaluate to?
 
@@ -1221,8 +1191,6 @@ express = require('express')
 
 ##### !question
 
-### Question
-
 What type of literal expression is this:
 
 ```
@@ -1258,8 +1226,6 @@ Array
 
 ##### !question
 
-### Question
-
 What type of literal expression is this:
 
 ```
@@ -1294,8 +1260,6 @@ Object
 * title: Identify Function Literals
 
 ##### !question
-
-### Question
 
 What type of literal expression is this:
 
@@ -1405,8 +1369,6 @@ Object
 * title: Identify Function Literal
 
 ##### !question
-
-### Question
 
 What type of literal expression is contained within the variable:
 
