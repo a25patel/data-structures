@@ -142,7 +142,7 @@ Number
 ### !challenge
 
 * type: multiple-choice
-* id: 41b06b0a-6946-4fd9-b27a-ab0fe90edab4
+* id: b611ee2b-a8b4-489a-b45d-0eba10197f68
 * title: Data Type Identification: Null Types
 
 ##### !question
@@ -178,7 +178,7 @@ null
 ### !challenge
 
 * type: multiple-choice
-* id: 41b06b0a-6946-4fd9-b27a-ab0fe90edab4
+* id: 9d9a36a2-72b4-4d6c-a789-7c50a197bcd3
 * title: Data Type Identification: Null Types
 
 ##### !question
