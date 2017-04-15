@@ -1,6 +1,7 @@
-# W0002 - Write and Evaluate JavaScript Expressions
+# Reading JavaScript Expressions
 
-## Reading JavaScript
+This quiz relates to the following standard:
+W0002 - Write and Evaluate JavaScript Expressions
 
 ### Define each primitive data type in Javascript
 
