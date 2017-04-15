@@ -1,6 +1,6 @@
 # W0002 - Write and Evaluate JavaScript Expressions
 
-## Quiz
+## Reading JavaScript
 
 ### Define each primitive data type in Javascript
 
