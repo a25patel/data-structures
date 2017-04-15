@@ -465,7 +465,7 @@ What will this evaluate to? `1 != 'one'`
 
 ##### !answer
 
-`false`
+`true`
 
 ##### !end-answer
 
