@@ -13,12 +13,7 @@ These exercises contain JavaScript Language drills. For exercises and assessment
 
 Challenges allow you to practice the concepts you're learning before taking an assessment to prove you know it.
 
-**[Write and Evaluate JS Expressions](./js-expressions/README.md)**  
-
-
-**[Organize Code with Functions](./functions/README.md)**
-Function syntax, Return values, Scope, References.
-
+- [JS Fundamentals](fundamentals/README.md)
 
 
 ## Assessments
