@@ -236,7 +236,7 @@ String
 ### !challenge
 
 * type: multiple-choice
-* id: ae35313e-909a-4890-962e-9883679a19fe
+* id: 1a640281-ace3-47b5-a174-163a8b2a6757
 * title: Data Type Identification: String Types
 
 ##### !question
@@ -1115,7 +1115,7 @@ for (i=0; i<100; i++) {
 ### !challenge
 
 * type: multiple-choice
-* id: aebc5454-4330-424f-9f9
+* id: 666526d6-3a74-463c-9162-5701808b52e9
 * title: Dimension Variables with `var`, `let`, `const`
 
 ##### !question
