@@ -11,16 +11,15 @@
 
 Choose between `var`, `let` and `const` to create these variables.
 
-Store the number `20` in `bikes`
-Store the number `50` in `cars`
-Store the number `20` in `vans`
-Store the number `200` in `riders`
-Store the number `30` in `drivers`
-Store the number `5` in `carCapacity`
-Store the number `8` in `vanCapacity`
-Store the number `30` in `carMPG`
-Store the number `20` in `vanMPG`
-
+- Store the number `20` in `bikes`
+- Store the number `50` in `cars`
+- Store the number `20` in `vans`
+- Store the number `200` in `riders`
+- Store the number `30` in `drivers`
+- Store the number `5` in `carCapacity`
+- Store the number `8` in `vanCapacity`
+- Store the number `30` in `carMPG`
+- Store the number `20` in `vanMPG`
 
 ### !end-question
 
