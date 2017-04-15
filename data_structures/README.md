@@ -51,8 +51,4 @@ describe('array access', function() {
 ```
 ### !end-tests
 
-### !explanation
-
-### !end-explanation
-
 ### !end-challenge
