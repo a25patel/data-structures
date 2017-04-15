@@ -1011,7 +1011,7 @@ describe('song', function() {
 ### !challenge
 
 * type: multiple-choice
-* id: 2c045f47-ab70-45e0-a95
+* id: 5049f438-0572-427b-9c9c-e5436b4ea007
 * title: Dimension Variables with `var`, `let`, `const`
 
 ##### !question
@@ -1031,7 +1031,7 @@ y = m * x + b;
 * `var`
 * `let`
 
-#####!end-options
+##### !end-options
 
 ##### !answer
 
