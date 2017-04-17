@@ -911,3 +911,139 @@ describe('Nested Object Access', function() {
 ### !end-tests
 
 ### !end-challenge
+
+### !challenge
+
+* type: code-snippet
+* language: javascript
+* id: abb4c678-865f-4633-8854-ad8120a4f74d
+* title: Object References
+
+### !question
+
+## Objects in Arrays in Objects
+
+Write code that does the following:
+
+1. Adds a new property to each user called `friends` that is an array of every user in the general except the user that the post belongs to.  *Do not re-write it manually!*
+
+2. Write a function called `renderChat` that outputs a chatroom like so:
+
+```
+userName: message text
+userName: message text
+```
+
+3. Write a function called `getUserLog` that displays all of the chats by a single user
+
+### !end-question
+
+### !placeholder
+
+var general = [
+ { user: tammy, message: "I did it!" },
+ { user: tom, message: "seriously?!" },
+ { user: zorro, message: "stack overflow fails again" },
+ { user: jorge, message: "good warmup today" },
+ { user: victoria, message: "yay!" },
+ { user: bobo, message: "Picking up some subway for lunch" }
+]
+
+var random = [
+ { user: tom, message: "machop is the best pokemon because" },
+ { user: zorro, message: "look at this cat you guys" },
+ { user: bobo, message: "I miss the 90s" },
+ { user: jorge, message: "sometimes im wistful lol" },
+ { user: tammy, message: "omg gifs" },
+ { user: tammy, message: "moar gifs" },
+ { user: tammy, message: "all of the gifs" },
+ { user: victoria, message: "im gonna go home, i got that flu that's going around" }
+]
+
+var tammy = {
+ name: "Tammy",
+ awayStatus: "Off to school"
+}
+
+var tom = {
+ name: "Tom",
+ awayStatus: "Learning JavaScript brb in 6 months lol"
+}
+
+var zorro = {
+ name: "Zorro",
+ awayStatus: "Let's crush it"
+}
+
+var jorge = {
+ name: "Jorge",
+ awayStatus: "sleeping "
+}
+
+var victoria = {
+ name: "Victoria",
+ awayStatus: "what is this box for"
+}
+
+var bobo = {
+ name: "Bobo",
+ awayStatus: "lunch || coding"
+}
+
+
+function getUserLog(user, arrayOfChatrooms) {
+
+}
+
+function renderChat(chatroom) {
+
+}
+
+### !end-placeholder
+
+### !tests
+
+```js
+
+describe('stuff', function() {
+
+    it("Users have Friends", function() {
+      expect(bobo).to.deep.include.members([bobo, tammy, zorro, jorge, tom, tammy]);
+      expect(tammy).to.deep.include.members([bobo, tammy, zorro, jorge, tom, tammy]);
+      expect(zorro).to.deep.include.members([bobo, tammy, zorro, jorge, tom, tammy]);
+      expect(jorge).to.deep.include.members([bobo, tammy, zorro, jorge, tom, tammy]);
+      expect(tom).to.deep.include.members([bobo, tammy, zorro, jorge, tom, tammy]);
+      expect(tammy).to.deep.include.members([bobo, tammy, zorro, jorge, tom, tammy]);
+    })
+
+    it("renderChat renders the chatroom", function() {
+
+      expect(renderChat(random), "chatroom rendered incorrectly").to.eq(`tom: machop is the best pokemon because
+zorro: look at this cat you guys
+bobo: I miss the 90s
+jorge: sometimes im wistful lol
+tammy: omg gifs
+tammy: moar gifs
+tammy: all of the gifs
+victoria: im gonna go home, i got that flu that's going around`);
+
+    })
+
+    it("getUserLog logs all the posts from all chatrooms", function() {
+      expect(getUserLog(tammy, [general, random]), "Default value is incorrect").to.eq([
+        { user: tammy, message: "omg gifs" },
+        { user: tammy, message: "moar gifs" },
+        { user: tammy, message: "all of the gifs" },
+        { user: tammy, message: "I did it!" },
+      ])
+    })
+
+})
+```
+### !end-tests
+
+### !explanation
+
+### !end-explanation
+
+### !end-challenge
