@@ -556,6 +556,8 @@ describe('renderUser', function() {
 
 ### !question
 
+# Challenge 4: Objects as Hash Maps
+
 The following objects represent hands in "go fish". The keys are cards that are present in the card. Write a function that looks in the hands for the existence of a card. Remember, in Go Fish, one player says to the other- "Got any 3s?" and the player has to give up any threes, regardless of suit. The function should return false if the is not present, and return true *and delete the property from the card* if it is found (representing the loss of the card.)
 
 ```javascript
@@ -637,7 +639,7 @@ describe('goFish', function() {
 
 ### !question
 
-## Arrays in Objects
+## Challenge 5: Arrays in Objects
 
 Below is a Model of a recipe:
 
@@ -785,7 +787,7 @@ describe('Arrays in Objects', function() {
 
 ### !question
 
-## Challenge 4: Nested Object Access
+## Challenge 6: Nested Object Access
 Given the following object:
 
 ```javascript
@@ -915,7 +917,7 @@ describe('Nested Object Access', function() {
 
 ### !question
 
-## Objects in Arrays in Objects
+## Challenge 7: Objects in Arrays in Objects
 
 Write code that does the following:
 
