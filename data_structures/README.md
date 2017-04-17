@@ -2,6 +2,8 @@
 
 Below are many situations where you might need to manipulate nested objects and arrays. Accessing deeply nested objects and arrays is very common in Web Development, because data is often carried in a format called **JSON**: JavaScript Object Notation. Because of this, you'll often have to access objects within arrays within other objects, et cetera.
 
+## Challenge 1: Array Access
+
 ### !challenge
 
 * type: code-snippet
@@ -10,8 +12,6 @@ Below are many situations where you might need to manipulate nested objects and 
 * title: Array Access
 
 ### !question
-
-## Challenge 1: Array Access
 
 **Using the following array:**
 
@@ -118,14 +118,6 @@ describe('Loop over an array', function() {
 ### !question
 
 
-Given the following arrays:
-
-```javascript
-var cars = ["Chevy Tahoe", "Ford Fiesta", "Toyota Yaris", "Honda Fit"];
-
-var riders = ["Kelly", "Steve", "Georgio", "Fabio"];
-```
-
 Write a loop that `console.log`s the following:  
 
 ```
@@ -134,6 +126,8 @@ Write a loop that `console.log`s the following:
 "Georgio drives a Toyota Yaris"
 "Fabio drives a Honda Fit"
 ```
+
+Given the following arrays:
 
 ### !end-question
 
@@ -1034,7 +1028,7 @@ victoria: im gonna go home, i got that flu that's going around`);
         { user: tammy, message: "omg gifs" },
         { user: tammy, message: "moar gifs" },
         { user: tammy, message: "all of the gifs" },
-        { user: tammy, message: "I did it!" },
+        { user: tammy, message: "I did it!" }
       ])
     })
 
