@@ -638,6 +638,154 @@ describe('goFish', function() {
 
 * type: code-snippet
 * language: javascript
+* id: 6e060852-3864-4804-87a9-a98d09bbd48c
+* title: Data Structures:Arrays Data Structures:Objects Abstract Data Modeling
+
+### !question
+
+## Arrays in Objects
+
+Below is a Model of a recipe:
+
+```javascript
+var cremeBrulee = {
+	ingredients: [
+		"eggs",
+		"heavy cream",
+		"vanilla pods"
+	],
+	cookware: [
+		"mixing bowl",
+		"whisk",
+		"ramekins",
+		"oven",
+		"measuring cups"
+	]
+}
+```
+
+Write statements that do the following:
+
+ 1. Output our Crème Brûlée's ingredients like so:
+ ```javascript
+"Ingredients: eggs, heavy cream, vanilla pods"
+ ```
+
+ 2. Returns our Crème Brûlée's cookwares:
+ ```javascript
+"Cookware Required: mixing bowl, whisk, ramekins, oven, measuring cups"
+ ```
+
+ 3. Returns the first item in our Crème Brûlée's ingredients:
+ ```javascript
+ "Start with: eggs"
+ ```
+
+ 4. Returns the third item in our Crème Brûlée's cookwares:
+ ```javascript
+ "ramekins"
+ ```
+
+ 5. Adds sugar to our Crème Brûlée's ingredients:
+ ```javascript
+ [ "eggs", "heavy cream", "vanilla pods", "sugar"]
+ ```
+
+ 6. Change "eggs" in our Crème Brûlée's ingredients to "egg yolks":
+ ```javascript
+ [ "egg yolks", "heavy cream", "vanilla pods", "sugar"]
+ ```
+
+### Bonus:
+*(the nefarious rival chef!)*   
+
+Make a function called 'spoiled' that takes in the `cremeBrulee` object, and adds 'rotten' in front of all of the ingredients.
+
+### !end-question
+
+### !placeholder
+
+var cremeBrulee = {
+	ingredients: [
+		"eggs",
+		"heavy cream",
+		"vanilla pods"
+	],
+	cookware: [
+		"mixing bowl",
+		"whisk",
+		"ramekins",
+		"oven",
+		"measuring cups"
+	]
+}
+
+### !end-placeholder
+
+### !tests
+
+```js
+require('mocha-sinon')
+function stubFn () { this.sinon.stub(console, 'log') }
+describe('Arrays in Objects', function() {
+
+  before(stubFn)
+
+  it("Outputs the Creme Brulee ingredients", function() {
+    expect(console.log.getCall(1), "First call is incorrect").to.eq("Ingredients: eggs, heavy cream, vanilla pods");
+  })
+
+  it("Outputs the Creme Brulee cookware", function() {
+    expect(console.log.getCall(2), "Second call is incorrect").to.eq("Cookware Required: mixing bowl, whisk, ramekins, oven, measuring cups");
+  })
+
+  it("Outputs the Creme Brulee first ingredient", function() {
+    expect(console.log.getCall(3), "Third call is incorrect").to.eq("Start with: eggs");
+  })
+
+  it("Outputs the Creme Brulee cookware part", function() {
+    expect(console.log.getCall(4), "Fourth call is incorrect").to.eq("ramekins");
+  })
+
+  //rivalChef logic
+  if (cremeBrulee.ingredients[0] === "rotten egg yolks") {
+    it("the nefarious chef has struck!", function() {
+      expect(cremeBrulee.ingredients[0], "rotten ingredients check").to.eq("rotten egg yolks");
+    })
+
+    it("has sugar in the ingredients of the the Creme Brulee", function() {
+      expect(cremeBrulee.ingredients[3], "rotten ingredients check").to.eq("rotten sugar");
+    })
+
+    it("has sugar in the ingredients of the the Creme Brulee", function() {
+      expect(cremeBrulee.ingredients[0], "rotten ingredients check").to.eq("rotten egg yolks");
+    })
+  } else {
+    it("has sugar in the ingredients of the the Creme Brulee", function() {
+      expect(cremeBrulee.ingredients[3], "Fourth call is incorrect").to.eq("sugar");
+    })
+
+    it("has sugar in the ingredients of the the Creme Brulee", function() {
+      expect(cremeBrulee.ingredients[0], "Fourth call is incorrect").to.eq("egg yolks");
+    })
+  }
+
+
+
+})
+```
+### !end-tests
+
+### !explanation
+
+### !end-explanation
+
+### !end-challenge
+
+### !challenge
+
+* type: code-snippet
+* language: javascript
 * id: 765a2bfe-f02a-4b9a-9d39-023900bae8a6
 * title: Nested Object Access
 
@@ -714,11 +862,11 @@ describe('Nested Object Access', function() {
   })
 
   it("Logs the name of the library", function() {
-    expect(console.log.getCall(1), "First call is incorrect").to.eq("SF Public");
+    expect(console.log.getCall(1), "Second call is incorrect").to.eq("SF Public");
   })
 
   it("Logs the bestBook in the library", function() {
-    expect(console.log.getCall(2), "First call is incorrect").to.deep.eq({
+    expect(console.log.getCall(2), "Third call is incorrect").to.deep.eq({
   			title: "JavaScript for Dummies",
   			company: {
   				name: "BookCo",
@@ -743,19 +891,19 @@ describe('Nested Object Access', function() {
   })
 
   it("Logs title of the bestBook in the library", function() {
-    expect(console.log.getCall(3), "First call is incorrect").to.eq("JavaScript for Dummies");
+    expect(console.log.getCall(3), "Fourth call is incorrect").to.eq("JavaScript for Dummies");
   })
 
   it("Logs the name of the company of the bestBook in the library", function() {
-    expect(console.log.getCall(4), "First call is incorrect").to.eq("BookCo");
+    expect(console.log.getCall(4), "Fifth call is incorrect").to.eq("BookCo");
   })
 
   it("Logs the first name of the publisher of the company of the bestBook in the library", function() {
-    expect(console.log.getCall(5), "First call is incorrect").to.eq("Bob");
+    expect(console.log.getCall(5), "Sixth call is incorrect").to.eq("Bob");
   })
 
   it("Logs the second writer's last name of the bestBook in the library", function() {
-    expect(console.log.getCall(5), "First call is incorrect").to.eq("Bob");
+    expect(console.log.getCall(5), "Seventh call is incorrect").to.eq("Bob");
   })
 
 })
