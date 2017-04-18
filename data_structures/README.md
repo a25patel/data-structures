@@ -92,10 +92,10 @@ var songs = ["Call Me Maybe", "Pacabel's Cannon in D", "Smells Like Teen Spirit"
 var sinon = require('sinon');
 
 describe('Loop over an array', function() {
-    beforeEach(function () {
+    before(function () {
       this.cStub = sinon.stub(console, "log");
     });
-    afterEach(function () {
+    afterAll(function () {
       this.cStub.restore();
     });
 
