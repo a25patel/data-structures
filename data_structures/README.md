@@ -265,8 +265,8 @@ describe('Movies Functions: ', function() {
   it("allMovies logs out all movies", function() {
     for (var i = 0; i < trilogies.length; i++) {
       for (var m = 0; m < trilogies[i].length; m++) {
-        consoleCount++;
         expect(console.log.getCall(consoleCount).args[0], `${consoleCount}th call is incorrect`).to.eq(trilogies[i][m])
+        consoleCount++;
       }
     }
   })
