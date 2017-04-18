@@ -126,7 +126,7 @@ describe('Loop over an array', function() {
 ### !question
 
 
-Write a loop that `console.log`s the following:  
+Write a function called `carsAndRiders` loop that `console.log`s the following:  
 
 ```
 "Kelley drives a Chevy Tahoe"
@@ -145,22 +145,29 @@ var cars = ["Chevy Tahoe", "Ford Fiesta", "Toyota Yaris", "Honda Fit"];
 
 var riders = ["Kelly", "Steve", "Georgio", "Fabio"];
 
+function carsAndRiders(cars, riders) {
+
+}
+
 ### !end-placeholder
 
 ### !tests
 
 ```js
-require('mocha-sinon')
-function stubFn () { this.sinon.stub(console, 'log') }
+var sinon = require('sinon');
 describe('Zip Arrays', function() {
-
-  before(stubFn);
+  before(function () {
+    this.cStub = sinon.stub(console, "log");
+  });
+  after(function () {
+    this.cStub.restore();
+  });
 
   it("Prints out the arrays together", function() {
-    expect(console.log.getCall(0), "First call is incorrect").to.eq("Kelley drives a Chevy Tahoe")
-    expect(console.log.getCall(1), "Second call is incorrect").to.eq("Steve drives a Ford Fiesta")
-    expect(console.log.getCall(2), "Third call is incorrect").to.eq("Georgio drives a Toyota Yaris")
-    expect(console.log.getCall(3), "Fourth call is incorrect").to.eq("Fabio drives a Honda Fit")
+    expect(console.log.getCall(0).args[0], "First call is incorrect").to.eq("Kelley drives a Chevy Tahoe")
+    expect(console.log.getCall(1).args[0], "Second call is incorrect").to.eq("Steve drives a Ford Fiesta")
+    expect(console.log.getCall(2).args[0], "Third call is incorrect").to.eq("Georgio drives a Toyota Yaris")
+    expect(console.log.getCall(3).args[0], "Fourth call is incorrect").to.eq("Fabio drives a Honda Fit")
   })
 
 })
@@ -221,8 +228,7 @@ var trilogies = [
 ### !tests
 
 ```js
-require('mocha-sinon')
-function stubFn () { this.sinon.stub(console, 'log') }
+var sinon = require('sinon');
 
 var trilogies = [
 	["The Fellowship of the Ring", "The Two Towers", "The Return of the King"],
@@ -237,13 +243,18 @@ var trilogies = [
 let consoleCount = 0;
 describe('Zip Arrays', function() {
 
-  before(stubFn);
+  before(function () {
+    this.cStub = sinon.stub(console, "log");
+  });
+  after(function () {
+    this.cStub.restore();
+  });
 
   it("Logs out all movies", function() {
     for (var i = 0; i < trilogies.length; i++) {
       for (var m = 0; m < trilogies[i].length; m++) {
         consoleCount++;
-        expect(console.log.getCall(consoleCount), `${consoleCount}th call is incorrect`).to.eq(trilogies[i][m])
+        expect(console.log.getCall(consoleCount).args[0], `${consoleCount}th call is incorrect`).to.eq(trilogies[i][m])
       }
     }
   })
@@ -252,14 +263,14 @@ describe('Zip Arrays', function() {
   it("Logs out the only the first movie in the trilogy", function() {
     for (var i = 0; i < trilogies.length; i++) {
       consoleCount++;
-      expect(console.log.getCall(consoleCount), `${consoleCount}th call is incorrect`).to.eq(trilogies[i][trilogies[i].length-1])
+      expect(console.log.getCall(consoleCount).args[0], `${consoleCount}th call is incorrect`).to.eq(trilogies[i][trilogies[i].length-1])
     }
   })
 
   it("Logs out only the last movie in the trilogy", function() {
     for (var i = 0; i < trilogies.length; i++) {
       consoleCount++;
-      expect(console.log.getCall(consoleCount), `${consoleCount}th call is incorrect`).to.eq(trilogies[i][trilogies[i].length-1])
+      expect(console.log.getCall(consoleCount).args[0], `${consoleCount}th call is incorrect`).to.eq(trilogies[i][trilogies[i].length-1])
     }
   })
 
@@ -268,7 +279,7 @@ describe('Zip Arrays', function() {
       for (var m = 0; m < trilogies[i].length; m++) {
         if (m % 2 !== 0) {
           consoleCount++;
-          expect(console.log.getCall(consoleCount), `${consoleCount}th call is incorrect`).to.eq(trilogies[i][m])
+          expect(console.log.getCall(consoleCount).args[0], `${consoleCount}th call is incorrect`).to.eq(trilogies[i][m])
         }
       }
     }
@@ -729,26 +740,30 @@ var cremeBrulee = {
 ### !tests
 
 ```js
-require('mocha-sinon')
-function stubFn () { this.sinon.stub(console, 'log') }
+var sinon = require('sinon');
 describe('Arrays in Objects', function() {
 
-  before(stubFn)
+  before(function () {
+    this.cStub = sinon.stub(console, "log");
+  });
+  after(function () {
+    this.cStub.restore();
+  });
 
   it("Outputs the Creme Brulee ingredients", function() {
-    expect(console.log.getCall(1), "First call is incorrect").to.eq("Ingredients: eggs, heavy cream, vanilla pods");
+    expect(console.log.getCall(1).args[0], "First call is incorrect").to.eq("Ingredients: eggs, heavy cream, vanilla pods");
   })
 
   it("Outputs the Creme Brulee cookware", function() {
-    expect(console.log.getCall(2), "Second call is incorrect").to.eq("Cookware Required: mixing bowl, whisk, ramekins, oven, measuring cups");
+    expect(console.log.getCall(2).args[0], "Second call is incorrect").to.eq("Cookware Required: mixing bowl, whisk, ramekins, oven, measuring cups");
   })
 
   it("Outputs the Creme Brulee first ingredient", function() {
-    expect(console.log.getCall(3), "Third call is incorrect").to.eq("Start with: eggs");
+    expect(console.log.getCall(3).args[0], "Third call is incorrect").to.eq("Start with: eggs");
   })
 
   it("Outputs the Creme Brulee cookware part", function() {
-    expect(console.log.getCall(4), "Fourth call is incorrect").to.eq("ramekins");
+    expect(console.log.getCall(4).args[0], "Fourth call is incorrect").to.eq("ramekins");
   })
 
   //rivalChef logic
@@ -855,22 +870,26 @@ Write a statement that `console.log`s the following:
 ### !tests
 
 ```js
-require('mocha-sinon')
-function stubFn () { this.sinon.stub(console, 'log') }
+var sinon = require('sinon');
 describe('Nested Object Access', function() {
 
-  before(stubFn)
+  before(function () {
+    this.cStub = sinon.stub(console, "log");
+  });
+  after(function () {
+    this.cStub.restore();
+  });
 
   it("Logs the city of the library", function() {
-    expect(console.log.getCall(0), "First call is incorrect").to.eq("San Francisco");
+    expect(console.log.getCall(0).args[0], "First call is incorrect").to.eq("San Francisco");
   })
 
   it("Logs the name of the library", function() {
-    expect(console.log.getCall(1), "Second call is incorrect").to.eq("SF Public");
+    expect(console.log.getCall(1).args[0], "Second call is incorrect").to.eq("SF Public");
   })
 
   it("Logs the bestBook in the library", function() {
-    expect(console.log.getCall(2), "Third call is incorrect").to.deep.eq({
+    expect(console.log.getCall(2).args[0], "Third call is incorrect").to.deep.eq({
   			title: "JavaScript for Dummies",
   			company: {
   				name: "BookCo",
@@ -895,19 +914,19 @@ describe('Nested Object Access', function() {
   })
 
   it("Logs title of the bestBook in the library", function() {
-    expect(console.log.getCall(3), "Fourth call is incorrect").to.eq("JavaScript for Dummies");
+    expect(console.log.getCall(3).args[0], "Fourth call is incorrect").to.eq("JavaScript for Dummies");
   })
 
   it("Logs the name of the company of the bestBook in the library", function() {
-    expect(console.log.getCall(4), "Fifth call is incorrect").to.eq("BookCo");
+    expect(console.log.getCall(4).args[0], "Fifth call is incorrect").to.eq("BookCo");
   })
 
   it("Logs the first name of the publisher of the company of the bestBook in the library", function() {
-    expect(console.log.getCall(5), "Sixth call is incorrect").to.eq("Bob");
+    expect(console.log.getCall(5).args[0], "Sixth call is incorrect").to.eq("Bob");
   })
 
   it("Logs the second writer's last name of the bestBook in the library", function() {
-    expect(console.log.getCall(5), "Seventh call is incorrect").to.eq("Bob");
+    expect(console.log.getCall(6).args[0], "Seventh call is incorrect").to.eq("Bob");
   })
 
 })
