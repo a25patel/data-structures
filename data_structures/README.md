@@ -70,7 +70,7 @@ Given the following array:
 var songs = ["Call Me Maybe", "Pacabel's Cannon in D", "Smells Like Teen Spirit"]
 ```
 
-Write a loop that `console.log`s the following:  
+Write a function called `printSongs` with a loop that `console.log`s the following:  
 
 ```
 "Call Me Maybe"
@@ -84,6 +84,10 @@ Write a loop that `console.log`s the following:
 
 var songs = ["Call Me Maybe", "Pacabel's Cannon in D", "Smells Like Teen Spirit"];
 
+function printSongs() {
+  //your code here
+}
+
 ### !end-placeholder
 
 ### !tests
@@ -94,6 +98,7 @@ var sinon = require('sinon');
 describe('Loop over an array', function() {
     before(function () {
       this.cStub = sinon.stub(console, "log");
+      printSongs();
     });
     after(function () {
       this.cStub.restore();
