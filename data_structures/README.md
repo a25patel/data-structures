@@ -328,7 +328,7 @@ var gameBoard2 = [
 	["o", "o", "x"],
 	["x", "o", "x"],
 	["x", "x", "o"]
-] // winner "o"
+] // winner "x"
 
 var gameBoard3 = [
 	["x", "x", "x"],
@@ -410,7 +410,7 @@ describe('determineWinner', function() {
 
 
   it("returns x or o when a winner is found diagonally", function() {
-    expect(determineWinner(gameBoard2), "gameBoard2's winner is o").to.eq("x")
+    expect(determineWinner(gameBoard2), "gameBoard2's winner is x").to.eq("x")
     expect(determineWinner(diagonalWin), "Another test case for diagonal winner detection failed").to.eq("o")
   })
 
@@ -470,25 +470,6 @@ var user4 = {
 }
 
 ```
-
-### Bonus
-
-Write a function called `renderUser` that prints a given user an ascii-art business card that looks like this:
-
-```
-###############################################
-#                                             #
-#  Jenny Appleseed                            #
-#  Appleseed and Daughters                    #
-#                                             #
-#                                             #
-#  123 Main street, anytown USA               #
-#  j.appleseed@appleseedanddaughters.com      #
-#                                             #
-###############################################
-```
-
-ProTip: Use a Template String
 
 ### !end-question
 
@@ -555,23 +536,6 @@ describe('validateUser', function() {
     })
 
 })
-
-describe('renderUser', function() {
-
-  it('Renders an ascii art business card', function () {
-    expect(renderUser(user)).to.eq(`###############################################
-#                                             #
-#  Jenny Appleseed                            #
-#  Appleseed and Daughters                    #
-#                                             #
-#                                             #
-#  123 Main street, anytown USA               #
-#  j.appleseed@appleseedanddaughters.com      #
-#                                             #
-###############################################`
-
-    )
-  })
 
 })
 ```
