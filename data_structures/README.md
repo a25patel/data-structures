@@ -95,6 +95,9 @@ function stubFn () { this.sinon.stub(console, 'log') }
 
 describe('Loop over an array', function() {
     before(stubFn)
+    after(function () {
+      this.console.log.restore();
+    })
 
     it("Prints out the entire array", function() {
       expect(console.log.getCall(0), "First call is incorrect").to.eq("Call Me Maybe")
