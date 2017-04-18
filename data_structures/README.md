@@ -345,6 +345,24 @@ This problem is best approached in stages, checking for horizontal, then vertica
 
 ### !placeholder
 
+var gameBoard1 = [
+	["x", "o", "x"],
+	["x", "o", "o"],
+	["x", "x", "o"]
+] // winner "x"
+
+var gameBoard2 = [
+	["x", "o", "o"],
+	["x", "x", "o"],
+	["o", "x", "x"]
+] // winner "o"
+
+var gameBoard3 = [
+	["x", "x", "x"],
+	["o", "x", "o"],
+	["o", "x", "o"]
+] // winner "x"
+
 function determineWinner(board) {
   if (false) {
     return "x"
@@ -359,23 +377,6 @@ function determineWinner(board) {
 ### !tests
 
 ```js
-var gameBoard1 = [
-	["x", "o", "x"],
-	["x", "o", "o"],
-	["x", "x", "o"]
-] // winner "x"
-
-var gameBoard2 = [
-	["o", "o", "x"],
-	["x", "o", "x"],
-	["x", "x", "o"]
-] // winner "o"
-
-var gameBoard3 = [
-	["x", "x", "x"],
-	["o", "x", "o"],
-	["o", "x", "o"]
-] // winner "x"
 
 var verticalWin = [
 	["x", "o", "o"],
@@ -409,7 +410,7 @@ describe('determineWinner', function() {
 
 
   it("returns x or o when a winner is found diagonally", function() {
-    expect(determineWinner(gameBoard2), "gameBoard2's winner is o").to.eq("o")
+    expect(determineWinner(gameBoard2), "gameBoard2's winner is o").to.eq("x")
     expect(determineWinner(diagonalWin), "Another test case for diagonal winner detection failed").to.eq("o")
   })
 
