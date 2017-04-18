@@ -158,6 +158,7 @@ var sinon = require('sinon');
 describe('Zip Arrays', function() {
   before(function () {
     this.cStub = sinon.stub(console, "log");
+    carsAndRiders();
   });
   after(function () {
     this.cStub.restore();
@@ -202,12 +203,12 @@ var trilogies = [
 
 ```
 
-* Write a loop that `console.log`s all movies
-* Write a loop that `console.log`s only the first movie in the trilogy
-* Write a loop that `console.log`s only the last movie in the trilogy
-* Write a loop that `console.log`s only odd-numbered movies (the first, and third, etc)
+Write several functions:
 
-> Do these in order, the tests expect it!
+* `allMovies`: Write a loop that `console.log`s all movies
+* `firstMovies`: Write a loop that `console.log`s only the first movie in the trilogy
+* `lastMovies`: Write a loop that `console.log`s only the last movie in the trilogy
+* `oddMovies`: Write a loop that `console.log`s only odd-numbered movies (the first, and third, etc)
 
 ### !end-question
 
@@ -245,6 +246,10 @@ describe('Zip Arrays', function() {
 
   before(function () {
     this.cStub = sinon.stub(console, "log");
+    allMovies();
+    firstMovies();
+    lastMovies();
+    oddMovies();
   });
   after(function () {
     this.cStub.restore();
