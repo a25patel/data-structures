@@ -658,40 +658,45 @@ var cremeBrulee = {
 
 Write statements that do the following:
 
- 1. Output our Crème Brûlée's ingredients like so:
+ 1. Write a function called `getIngredients(recipe)`. Return our Crème Brûlée's ingredients like so:
  ```javascript
 "Ingredients: eggs, heavy cream, vanilla pods"
  ```
 
- 2. Returns our Crème Brûlée's cookwares:
+ 2. Write a function called `getCookwares(recipe)`. Return our Crème Brûlée's cookwares like so:
  ```javascript
 "Cookware Required: mixing bowl, whisk, ramekins, oven, measuring cups"
  ```
 
- 3. Returns the first item in our Crème Brûlée's ingredients:
+ 3. Write a function called `getFirstIngredient(recipe)`. Return the first item in our Crème Brûlée's ingredients like so:
  ```javascript
  "Start with: eggs"
  ```
 
- 4. Returns the third item in our Crème Brûlée's cookwares:
+ 4. Write a function called `getNthCookware(recipe, n)`. Return the cookware item at the index of `n` in our Crème Brûlée's cookwares like so:
+
  ```javascript
- "ramekins"
+ getNthCookware(cremeBrulee, 3)
+ > "ramekins"
  ```
 
- 5. Adds sugar to our Crème Brûlée's ingredients:
+ 5. Write a function called `addIngredient(recipe, ingredient)`. Adds an ingredient to our object like so: adding sugar to our Crème Brûlée's ingredients:
  ```javascript
+ addIngredient(cremeBrulee, "sugar")
  [ "eggs", "heavy cream", "vanilla pods", "sugar"]
  ```
 
- 6. Change "eggs" in our Crème Brûlée's ingredients to "egg yolks":
+ 6. Write a function called `editIngredient` . It should change the ingredient at the index specified to the string in the third argument.
+ Change "eggs" in our Crème Brûlée's ingredients to "egg yolks":
  ```javascript
+ editIngredient(cremeBrulee, 0, "Egg Yolks")
  [ "egg yolks", "heavy cream", "vanilla pods", "sugar"]
  ```
 
 ### Bonus:
 *(the nefarious rival chef!)*   
 
-Make a function called 'spoiled' that takes in the `cremeBrulee` object, and adds 'rotten' in front of all of the ingredients.
+Make a function called `spoiled(recipe)` that takes in a recipe like the `cremeBrulee` object, and adds 'rotten' in front of all of the ingredients.
 
 ### !end-question
 
@@ -712,6 +717,8 @@ var cremeBrulee = {
 	]
 }
 
+
+
 ### !end-placeholder
 
 ### !tests
@@ -727,24 +734,25 @@ describe('Arrays in Objects', function() {
     this.cStub.restore();
   });
 
-  it("Outputs the Creme Brulee ingredients", function() {
-    expect(console.log.getCall(1).args[0], "First call is incorrect").to.eq("Ingredients: eggs, heavy cream, vanilla pods");
+  it("getIngredients Outputs the recipe's ingredients", function() {
+    expect(getIngredients(cremeBrulee), "getIngredients is incorrect").to.eq("Ingredients: eggs, heavy cream, vanilla pods");
   })
 
-  it("Outputs the Creme Brulee cookware", function() {
-    expect(console.log.getCall(2).args[0], "Second call is incorrect").to.eq("Cookware Required: mixing bowl, whisk, ramekins, oven, measuring cups");
+  it("getCookwares Outputs the recipe's cookware", function() {
+    expect(getCookwares(cremeBrulee), "getCookwares is incorrect").to.eq("Cookware Required: mixing bowl, whisk, ramekins, oven, measuring cups");
   })
 
-  it("Outputs the Creme Brulee first ingredient", function() {
-    expect(console.log.getCall(3).args[0], "Third call is incorrect").to.eq("Start with: eggs");
+  it("getFirstIngredient Outputs the recipe's first ingredient", function() {
+    expect(getFirstIngredient(cremeBrulee), "getFirstIngredient is incorrect").to.eq("Start with: eggs");
   })
 
-  it("Outputs the Creme Brulee cookware part", function() {
-    expect(console.log.getCall(4).args[0], "Fourth call is incorrect").to.eq("ramekins");
+  it("getNthCookwareOutputs the recipe's cookware part", function() {
+    expect(getNthCookware(cremeBrulee, 3), "getNthCookware is incorrect").to.eq("ramekins");
   })
 
   //rivalChef logic
-  if (cremeBrulee.ingredients[0] === "rotten egg yolks") {
+  if (spoiled) {
+    spoiled(cremeBrulee)
     it("the nefarious chef has struck!", function() {
       expect(cremeBrulee.ingredients[0], "rotten ingredients check").to.eq("rotten egg yolks");
     })
@@ -758,11 +766,13 @@ describe('Arrays in Objects', function() {
     })
   } else {
     it("has sugar in the ingredients of the the Creme Brulee", function() {
-      expect(cremeBrulee.ingredients[3], "Fourth call is incorrect").to.eq("sugar");
+      addIngredient(cremeBrulee, "sugar")
+      expect(cremeBrulee.ingredients[3], "addIngredient is incorrect").to.eq("sugar");
     })
 
     it("has sugar in the ingredients of the the Creme Brulee", function() {
-      expect(cremeBrulee.ingredients[0], "Fourth call is incorrect").to.eq("egg yolks");
+      editIngredient(cremeBrulee, 0, "Egg Yolks")
+      expect(cremeBrulee.ingredients[0], "editIngredient is incorrect").to.eq("egg yolks");
     })
   }
 
@@ -821,7 +831,7 @@ var library = {
 
 ```
 
-Write a statement that `console.log`s the following:
+Inside of the `statementPractice` function, write statements that `console.log`s the following:
 
  1. The city of the library
 
@@ -841,6 +851,37 @@ Write a statement that `console.log`s the following:
 
 ### !placeholder
 
+var library = {
+	city: "San Francisco",
+	name: "SF Public",
+	bestBook: {
+			title: "JavaScript for Dummies",
+			company: {
+				name: "BookCo",
+				employees: {
+					writers: [
+						{
+							firstName: "Bob",
+							lastName: "Marley",
+						},
+            {
+              firstName: "Jerry",
+              lastName: "Garcia"
+            }
+					],
+					publisher: {
+						firstName: "Bob",
+						lastName: "Weir"
+					}
+				}
+			}
+		}
+	}
+
+function statementPractice(library) {
+
+}
+
 
 ### !end-placeholder
 
@@ -852,6 +893,7 @@ describe('Nested Object Access', function() {
 
   before(function () {
     this.cStub = sinon.stub(console, "log");
+    statementPractice(library);
   });
   after(function () {
     this.cStub.restore();
@@ -923,9 +965,9 @@ describe('Nested Object Access', function() {
 
 ## Challenge 7: Objects in Arrays in Objects
 
-Write code that does the following:
+Write a function that does the following:
 
-1. Adds a new property to each user called `friends` that is an array of every user in the general except the user that the post belongs to.  *Do not re-write it manually!*
+1. `findFriends(chatroom)` Adds a new property to each user called `friends` that is an array of every user in the chatroom except the user that the post belongs to.  *Do not re-write it manually!*
 
 2. Write a function called `renderChat` that outputs a chatroom like so:
 
@@ -934,7 +976,7 @@ userName: message text
 userName: message text
 ```
 
-3. Write a function called `getUserLog` that displays all of the chats by a single user
+3. Write a function called `getUserLog` that displays all of the chats by a single user, given the chatrooms to search.
 
 ### !end-question
 
@@ -990,6 +1032,9 @@ var bobo = {
  awayStatus: "lunch || coding"
 }
 
+function findFriends(chatroom) {
+
+}
 
 function getUserLog(user, arrayOfChatrooms) {
 
@@ -1008,6 +1053,7 @@ function renderChat(chatroom) {
 describe('stuff', function() {
 
     it("Users have Friends", function() {
+      findFriends(general);
       expect(bobo).to.deep.include.members([bobo, tammy, zorro, jorge, tom, tammy]);
       expect(tammy).to.deep.include.members([bobo, tammy, zorro, jorge, tom, tammy]);
       expect(zorro).to.deep.include.members([bobo, tammy, zorro, jorge, tom, tammy]);
