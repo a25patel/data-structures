@@ -946,7 +946,7 @@ describe('Nested Object Access', function() {
   })
 
   it("Logs the second writer's last name of the bestBook in the library", function() {
-    expect(console.log.getCall(6).args[0], "Seventh call is incorrect").to.eq("Bob");
+    expect(console.log.getCall(6).args[0], "Seventh call is incorrect").to.eq("Garcia");
   })
 
 })
