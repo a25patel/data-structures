@@ -274,7 +274,7 @@ describe('Movies Functions: ', function() {
 
   it("firstMovies logs out the only the first movie in the trilogy", function() {
     for (var i = 0; i < trilogies.length; i++) {
-      expect(console.log.getCall(consoleCount).args[0], `${consoleCount}th call is incorrect`).to.eq(trilogies[i][trilogies[i].length-1])
+      expect(console.log.getCall(consoleCount).args[0], `${consoleCount}th call is incorrect`).to.eq(trilogies[i][0])
       consoleCount++;
     }
   })
