@@ -224,22 +224,29 @@ var trilogies = [
 	["The Hitchhiker's Guide to the Galaxy", "The Restaurant at the End of the Universe","Life, the Universe and Everything","So Long, and Thanks for All the Fish","Mostly Harmless","And Another Thing..."]
 ];
 
+function allMovies() {
+
+}
+
+function firstMovies() {
+
+}
+
+function lastMovies() {
+
+}
+
+function oddMovies() {
+  
+}
+
+
 ### !end-placeholder
 
 ### !tests
 
 ```js
 var sinon = require('sinon');
-
-var trilogies = [
-	["The Fellowship of the Ring", "The Two Towers", "The Return of the King"],
-	["The Empire Strikes Back","Return of the Jedi","A New Hope"],
-	["Back to the Future", "Back to the Future II", "Back to the Future III"],
-	["The Hunger Games", "Catching Fire", "Mockingjay"],
-	["The Matrix", "The Matrix Reloaded", "The Matrix Revolutions"],
-	["Harry Potter and the Sorcerer's Stone", "Harry Potter and the Chamber of Secrets", "Harry Potter and the Prisoner of Askaban", "Harry Potter and the Goblet of Fire", "Harry Potter and the Half Blood Prince", "Harry Potter and the Order of the Phoenix", "Harry Potter and the Deathly Hollows"],
-	["The Hitchhiker's Guide to the Galaxy", "The Restaurant at the End of the Universe","Life, the Universe and Everything","So Long, and Thanks for All the Fish","Mostly Harmless","And Another Thing..."]
-];
 
 let consoleCount = 0;
 describe('Zip Arrays', function() {
