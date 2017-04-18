@@ -89,20 +89,20 @@ var songs = ["Call Me Maybe", "Pacabel's Cannon in D", "Smells Like Teen Spirit"
 ### !tests
 
 ```js
-
-require('mocha-sinon')
-function stubFn () { this.sinon.stub(console, 'log') }
+var sinon = require('sinon');
 
 describe('Loop over an array', function() {
-    before(stubFn)
-    after(function () {
-      this.console.log.restore();
-    })
+    beforeEach(function () {
+      this.cStub = sinon.stub(console, "log");
+    });
+    afterEach(function () {
+      this.cStub.restore();
+    });
 
     it("Prints out the entire array", function() {
-      expect(console.log.getCall(0), "First call is incorrect").to.eq("Call Me Maybe")
-      expect(console.log.getCall(1), "Second call is incorrect").to.eq("Pacabel's Cannon in D")
-      expect(console.log.getCall(2), "Third call is incorrect").to.eq("Smells Like Teen Spirit")
+      expect(console.log.getCall(0).args[0], "First call is incorrect").to.eq("Call Me Maybe")
+      expect(console.log.getCall(1).args[0], "Second call is incorrect").to.eq("Pacabel's Cannon in D")
+      expect(console.log.getCall(2).args[0], "Third call is incorrect").to.eq("Smells Like Teen Spirit")
     })
 
 })
