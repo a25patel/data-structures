@@ -982,27 +982,7 @@ userName: message text
 ### !end-question
 
 ### !placeholder
-
-var general = [
- { user: tammy, message: "I did it!" },
- { user: tom, message: "seriously?!" },
- { user: zorro, message: "stack overflow fails again" },
- { user: jorge, message: "good warmup today" },
- { user: victoria, message: "yay!" },
- { user: bobo, message: "Picking up some subway for lunch" }
-]
-
-var random = [
- { user: tom, message: "machop is the best pokemon because" },
- { user: zorro, message: "look at this cat you guys" },
- { user: bobo, message: "I miss the 90s" },
- { user: jorge, message: "sometimes im wistful lol" },
- { user: tammy, message: "omg gifs" },
- { user: tammy, message: "moar gifs" },
- { user: tammy, message: "all of the gifs" },
- { user: victoria, message: "im gonna go home, i got that flu that's going around" }
-]
-
+// users
 var tammy = {
  name: "Tammy",
  awayStatus: "Off to school"
@@ -1033,6 +1013,27 @@ var bobo = {
  awayStatus: "lunch || coding"
 }
 
+// array of chat messages
+var general = [
+ { user: tammy, message: "I did it!" },
+ { user: tom, message: "seriously?!" },
+ { user: zorro, message: "stack overflow fails again" },
+ { user: jorge, message: "good warmup today" },
+ { user: victoria, message: "yay!" },
+ { user: bobo, message: "Picking up some subway for lunch" }
+]
+
+var random = [
+ { user: tom, message: "machop is the best pokemon because" },
+ { user: zorro, message: "look at this cat you guys" },
+ { user: bobo, message: "I miss the 90s" },
+ { user: jorge, message: "sometimes im wistful lol" },
+ { user: tammy, message: "omg gifs" },
+ { user: tammy, message: "moar gifs" },
+ { user: tammy, message: "all of the gifs" },
+ { user: victoria, message: "im gonna go home, i got that flu that's going around" }
+]
+
 function findFriends(chatroom) {
 
 }
@@ -1055,12 +1056,12 @@ describe('stuff', function() {
 
     it("Users have Friends", function() {
       findFriends(general);
-      expect(bobo).to.deep.include.members([bobo, tammy, zorro, jorge, tom, tammy]);
-      expect(tammy).to.deep.include.members([bobo, tammy, zorro, jorge, tom, tammy]);
-      expect(zorro).to.deep.include.members([bobo, tammy, zorro, jorge, tom, tammy]);
-      expect(jorge).to.deep.include.members([bobo, tammy, zorro, jorge, tom, tammy]);
-      expect(tom).to.deep.include.members([bobo, tammy, zorro, jorge, tom, tammy]);
-      expect(tammy).to.deep.include.members([bobo, tammy, zorro, jorge, tom, tammy]);
+      expect(bobo).to.deep.include.members([tammy, zorro, jorge, tom, tammy]);
+      expect(tammy).to.deep.include.members([bobo, zorro, jorge, tom, tammy]);
+      expect(zorro).to.deep.include.members([bobo, tammy, jorge, tom, tammy]);
+      expect(jorge).to.deep.include.members([bobo, tammy, zorro, tom, tammy]);
+      expect(tom).to.deep.include.members([bobo, tammy, zorro, jorge, tammy]);
+      expect(tammy).to.deep.include.members([bobo, tammy, zorro, jorge, tom]);
     })
 
     it("renderChat renders the chatroom", function() {
