@@ -771,8 +771,8 @@ describe('Arrays in Objects', function() {
       expect(cremeBrulee.ingredients[3], "addIngredient is incorrect").to.eq("sugar");
     })
 
-    it("editIngredient updates the ingredients of the the Creme Brulee", function() {
-      editIngredient(cremeBrulee, 0, "Egg Yolks")
+    it("editIngredient sugar in the ingredients of the the Creme Brulee", function() {
+      editIngredient(cremeBrulee, 0, "egg yolks")
       expect(cremeBrulee.ingredients[0], "editIngredient is incorrect").to.eq("egg yolks");
     })
   }
