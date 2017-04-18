@@ -129,7 +129,7 @@ describe('Loop over an array', function() {
 Write a function called `carsAndRiders` loop that `console.log`s the following:  
 
 ```
-"Kelley drives a Chevy Tahoe"
+"Kelly drives a Chevy Tahoe"
 "Steve drives a Ford Fiesta"
 "Georgio drives a Toyota Yaris"
 "Fabio drives a Honda Fit"
@@ -165,7 +165,7 @@ describe('Zip Arrays', function() {
   });
 
   it("Prints out the arrays together", function() {
-    expect(console.log.getCall(0).args[0], "First call is incorrect").to.eq("Kelley drives a Chevy Tahoe")
+    expect(console.log.getCall(0).args[0], "First call is incorrect").to.eq("Kelly drives a Chevy Tahoe")
     expect(console.log.getCall(1).args[0], "Second call is incorrect").to.eq("Steve drives a Ford Fiesta")
     expect(console.log.getCall(2).args[0], "Third call is incorrect").to.eq("Georgio drives a Toyota Yaris")
     expect(console.log.getCall(3).args[0], "Fourth call is incorrect").to.eq("Fabio drives a Honda Fit")
