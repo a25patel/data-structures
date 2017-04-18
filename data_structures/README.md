@@ -95,7 +95,7 @@ describe('Loop over an array', function() {
     before(function () {
       this.cStub = sinon.stub(console, "log");
     });
-    afterAll(function () {
+    after(function () {
       this.cStub.restore();
     });
 
