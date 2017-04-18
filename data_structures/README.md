@@ -711,11 +711,12 @@ var cremeBrulee = {
 	cookware: [
 		"mixing bowl",
 		"whisk",
-		"ramekins",
 		"oven",
+    "ramekins",
 		"measuring cups"
 	]
 }
+
 
 
 
@@ -750,9 +751,9 @@ describe('Arrays in Objects', function() {
     expect(getNthCookware(cremeBrulee, 3), "getNthCookware is incorrect").to.eq("ramekins");
   })
 
+  spoiled(cremeBrulee)
   //rivalChef logic
-  if (spoiled) {
-    spoiled(cremeBrulee)
+  if (cremeBrulee.ingredients[0] == "rotten egg yolks") {
     it("the nefarious chef has struck!", function() {
       expect(cremeBrulee.ingredients[0], "rotten ingredients check").to.eq("rotten egg yolks");
     })
@@ -765,12 +766,12 @@ describe('Arrays in Objects', function() {
       expect(cremeBrulee.ingredients[0], "rotten ingredients check").to.eq("rotten egg yolks");
     })
   } else {
-    it("has sugar in the ingredients of the the Creme Brulee", function() {
+    it("addIngredient adds sugar in the ingredients of the the Creme Brulee", function() {
       addIngredient(cremeBrulee, "sugar")
       expect(cremeBrulee.ingredients[3], "addIngredient is incorrect").to.eq("sugar");
     })
 
-    it("has sugar in the ingredients of the the Creme Brulee", function() {
+    it("editIngredient updates the ingredients of the the Creme Brulee", function() {
       editIngredient(cremeBrulee, 0, "Egg Yolks")
       expect(cremeBrulee.ingredients[0], "editIngredient is incorrect").to.eq("egg yolks");
     })
@@ -1087,9 +1088,5 @@ victoria: im gonna go home, i got that flu that's going around`);
 })
 ```
 ### !end-tests
-
-### !explanation
-
-### !end-explanation
 
 ### !end-challenge
