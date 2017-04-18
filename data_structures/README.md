@@ -249,7 +249,7 @@ function oddMovies() {
 var sinon = require('sinon');
 
 let consoleCount = 0;
-describe('Zip Arrays', function() {
+describe('Movies Functions: ', function() {
 
   before(function () {
     this.cStub = sinon.stub(console, "log");
@@ -262,7 +262,7 @@ describe('Zip Arrays', function() {
     this.cStub.restore();
   });
 
-  it("Logs out all movies", function() {
+  it("allMovies logs out all movies", function() {
     for (var i = 0; i < trilogies.length; i++) {
       for (var m = 0; m < trilogies[i].length; m++) {
         consoleCount++;
@@ -272,26 +272,26 @@ describe('Zip Arrays', function() {
   })
 
 
-  it("Logs out the only the first movie in the trilogy", function() {
+  it("firstMovies logs out the only the first movie in the trilogy", function() {
     for (var i = 0; i < trilogies.length; i++) {
-      consoleCount++;
       expect(console.log.getCall(consoleCount).args[0], `${consoleCount}th call is incorrect`).to.eq(trilogies[i][trilogies[i].length-1])
+      consoleCount++;
     }
   })
 
-  it("Logs out only the last movie in the trilogy", function() {
+  it("lastMovies logs out only the last movie in the trilogy", function() {
     for (var i = 0; i < trilogies.length; i++) {
-      consoleCount++;
       expect(console.log.getCall(consoleCount).args[0], `${consoleCount}th call is incorrect`).to.eq(trilogies[i][trilogies[i].length-1])
+      consoleCount++;
     }
   })
 
-  it("Logs out only the odd-numbered movies", function() {
+  it("oddMovies logs out only the odd-numbered movies", function() {
     for (var i = 0; i < trilogies.length; i++) {
       for (var m = 0; m < trilogies[i].length; m++) {
         if (m % 2 !== 0) {
-          consoleCount++;
           expect(console.log.getCall(consoleCount).args[0], `${consoleCount}th call is incorrect`).to.eq(trilogies[i][m])
+          consoleCount++;
         }
       }
     }
