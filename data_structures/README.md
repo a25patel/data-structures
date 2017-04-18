@@ -158,7 +158,7 @@ var sinon = require('sinon');
 describe('Zip Arrays', function() {
   before(function () {
     this.cStub = sinon.stub(console, "log");
-    carsAndRiders();
+    carsAndRiders(cars, riders);
   });
   after(function () {
     this.cStub.restore();
@@ -237,7 +237,7 @@ function lastMovies() {
 }
 
 function oddMovies() {
-  
+
 }
 
 
