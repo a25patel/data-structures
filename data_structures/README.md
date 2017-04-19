@@ -182,7 +182,7 @@ describe('Zip Arrays', function() {
 * type: code-snippet
 * language: javascript
 * id: de0a4b25-8e5d-4419-a12d-3e0d29e89c81
-* title: short friendly title
+* title: Nested Arrays
 
 ### !question
 
@@ -479,10 +479,6 @@ function validateUser() {
 
 }
 
-function renderUser() {
-
-}
-
 ### !end-placeholder
 
 ### !tests
@@ -534,8 +530,6 @@ describe('validateUser', function() {
     it("returns false when given a user with an invalid name", function() {
       expect(validateUser(user4), "name was incorrect").to.eq(false)
     })
-
-})
 
 })
 ```
@@ -630,175 +624,12 @@ describe('goFish', function() {
 
 * type: code-snippet
 * language: javascript
-* id: 6e060852-3864-4804-87a9-a98d09bbd48c
-* title: Data Structures:Arrays Data Structures:Objects Abstract Data Modeling
-
-### !question
-
-## Challenge 5: Arrays in Objects
-
-Below is a Model of a recipe:
-
-```javascript
-var cremeBrulee = {
-	ingredients: [
-		"eggs",
-		"heavy cream",
-		"vanilla pods"
-	],
-	cookware: [
-		"mixing bowl",
-		"whisk",
-		"ramekins",
-		"oven",
-		"measuring cups"
-	]
-}
-```
-
-Write statements that do the following:
-
- 1. Write a function called `getIngredients(recipe)`. Return our Crème Brûlée's ingredients like so:
- ```javascript
-"Ingredients: eggs, heavy cream, vanilla pods"
- ```
-
- 2. Write a function called `getCookwares(recipe)`. Return our Crème Brûlée's cookwares like so:
- ```javascript
-"Cookware Required: mixing bowl, whisk, ramekins, oven, measuring cups"
- ```
-
- 3. Write a function called `getFirstIngredient(recipe)`. Return the first item in our Crème Brûlée's ingredients like so:
- ```javascript
- "Start with: eggs"
- ```
-
- 4. Write a function called `getNthCookware(recipe, n)`. Return the cookware item at the index of `n` in our Crème Brûlée's cookwares like so:
-
- ```javascript
- getNthCookware(cremeBrulee, 3)
- > "ramekins"
- ```
-
- 5. Write a function called `addIngredient(recipe, ingredient)`. Adds an ingredient to our object like so: adding sugar to our Crème Brûlée's ingredients:
- ```javascript
- addIngredient(cremeBrulee, "sugar")
- [ "eggs", "heavy cream", "vanilla pods", "sugar"]
- ```
-
- 6. Write a function called `editIngredient` . It should change the ingredient at the index specified to the string in the third argument.
- Change "eggs" in our Crème Brûlée's ingredients to "egg yolks":
- ```javascript
- editIngredient(cremeBrulee, 0, "Egg Yolks")
- [ "egg yolks", "heavy cream", "vanilla pods", "sugar"]
- ```
-
-### Bonus:
-*(the nefarious rival chef!)*   
-
-Make a function called `spoiled(recipe)` that takes in a recipe like the `cremeBrulee` object, and adds 'rotten' in front of all of the ingredients.
-
-### !end-question
-
-### !placeholder
-
-var cremeBrulee = {
-	ingredients: [
-		"eggs",
-		"heavy cream",
-		"vanilla pods"
-	],
-	cookware: [
-		"mixing bowl",
-		"whisk",
-		"oven",
-    "ramekins",
-		"measuring cups"
-	]
-}
-
-
-
-
-### !end-placeholder
-
-### !tests
-
-```js
-var sinon = require('sinon');
-describe('Arrays in Objects', function() {
-
-  before(function () {
-    this.cStub = sinon.stub(console, "log");
-  });
-  after(function () {
-    this.cStub.restore();
-  });
-
-  it("getIngredients Outputs the recipe's ingredients", function() {
-    expect(getIngredients(cremeBrulee), "getIngredients is incorrect").to.eq("Ingredients: eggs, heavy cream, vanilla pods");
-  })
-
-  it("getCookwares Outputs the recipe's cookware", function() {
-    expect(getCookwares(cremeBrulee), "getCookwares is incorrect").to.eq("Cookware Required: mixing bowl, whisk, ramekins, oven, measuring cups");
-  })
-
-  it("getFirstIngredient Outputs the recipe's first ingredient", function() {
-    expect(getFirstIngredient(cremeBrulee), "getFirstIngredient is incorrect").to.eq("Start with: eggs");
-  })
-
-  it("getNthCookwareOutputs the recipe's cookware part", function() {
-    expect(getNthCookware(cremeBrulee, 3), "getNthCookware is incorrect").to.eq("ramekins");
-  })
-
-  spoiled(cremeBrulee)
-  //rivalChef logic
-  if (cremeBrulee.ingredients[0] == "rotten egg yolks") {
-    it("the nefarious chef has struck!", function() {
-      expect(cremeBrulee.ingredients[0], "rotten ingredients check").to.eq("rotten egg yolks");
-    })
-
-    it("has sugar in the ingredients of the the Creme Brulee", function() {
-      expect(cremeBrulee.ingredients[3], "rotten ingredients check").to.eq("rotten sugar");
-    })
-
-    it("has sugar in the ingredients of the the Creme Brulee", function() {
-      expect(cremeBrulee.ingredients[0], "rotten ingredients check").to.eq("rotten egg yolks");
-    })
-  } else {
-    it("addIngredient adds sugar in the ingredients of the the Creme Brulee", function() {
-      addIngredient(cremeBrulee, "sugar")
-      expect(cremeBrulee.ingredients[3], "addIngredient is incorrect").to.eq("sugar");
-    })
-
-    it("editIngredient sugar in the ingredients of the the Creme Brulee", function() {
-      editIngredient(cremeBrulee, 0, "egg yolks")
-      expect(cremeBrulee.ingredients[0], "editIngredient is incorrect").to.eq("egg yolks");
-    })
-  }
-
-
-
-})
-```
-### !end-tests
-
-### !explanation
-
-### !end-explanation
-
-### !end-challenge
-
-### !challenge
-
-* type: code-snippet
-* language: javascript
 * id: 765a2bfe-f02a-4b9a-9d39-023900bae8a6
 * title: Nested Object Access
 
 ### !question
 
-## Challenge 6: Nested Object Access
+## Challenge 5: Nested Object Access
 Given the following object:
 
 ```javascript
@@ -952,6 +783,170 @@ describe('Nested Object Access', function() {
 })
 ```
 ### !end-tests
+
+### !end-challenge
+
+
+### !challenge
+
+* type: code-snippet
+* language: javascript
+* id: 6e060852-3864-4804-87a9-a98d09bbd48c
+* title: Data Structures:Arrays, Data Structures:Objects, Abstract Data Modeling
+
+### !question
+
+## Challenge 6: Arrays in Objects
+
+Below is a Model of a recipe:
+
+```javascript
+var cremeBrulee = {
+	ingredients: [
+		"eggs",
+		"heavy cream",
+		"vanilla pods"
+	],
+	cookware: [
+		"mixing bowl",
+		"whisk",
+		"ramekins",
+		"oven",
+		"measuring cups"
+	]
+}
+```
+
+Write statements that do the following:
+
+ 1. Write a function called `getIngredients(recipe)`. Return our Crème Brûlée's ingredients like so:
+ ```javascript
+"Ingredients: eggs, heavy cream, vanilla pods"
+ ```
+
+ 2. Write a function called `getCookwares(recipe)`. Return our Crème Brûlée's cookwares like so:
+ ```javascript
+"Cookware Required: mixing bowl, whisk, ramekins, oven, measuring cups"
+ ```
+
+ 3. Write a function called `getFirstIngredient(recipe)`. Return the first item in our Crème Brûlée's ingredients like so:
+ ```javascript
+ "Start with: eggs"
+ ```
+
+ 4. Write a function called `getNthCookware(recipe, n)`. Return the cookware item at the index of `n` in our Crème Brûlée's cookwares like so:
+
+ ```javascript
+ getNthCookware(cremeBrulee, 3)
+ > "ramekins"
+ ```
+
+ 5. Write a function called `addIngredient(recipe, ingredient)`. Adds an ingredient to our object like so: adding sugar to our Crème Brûlée's ingredients:
+ ```javascript
+ addIngredient(cremeBrulee, "sugar")
+ [ "eggs", "heavy cream", "vanilla pods", "sugar"]
+ ```
+
+ 6. Write a function called `editIngredient` . It should change the ingredient at the index specified to the string in the third argument.
+ Change "eggs" in our Crème Brûlée's ingredients to "egg yolks":
+ ```javascript
+ editIngredient(cremeBrulee, 0, "Egg Yolks")
+ [ "egg yolks", "heavy cream", "vanilla pods", "sugar"]
+ ```
+
+### Bonus:
+*(the nefarious rival chef!)*   
+
+Make a function called `spoiled(recipe)` that takes in a recipe like the `cremeBrulee` object, and adds 'rotten' in front of all of the ingredients.
+
+### !end-question
+
+### !placeholder
+
+var cremeBrulee = {
+	ingredients: [
+		"eggs",
+		"heavy cream",
+		"vanilla pods"
+	],
+	cookware: [
+		"mixing bowl",
+		"whisk",
+		"oven",
+    "ramekins",
+		"measuring cups"
+	]
+}
+
+
+
+
+### !end-placeholder
+
+### !tests
+
+```js
+var sinon = require('sinon');
+describe('Arrays in Objects', function() {
+
+  before(function () {
+    this.cStub = sinon.stub(console, "log");
+  });
+  after(function () {
+    this.cStub.restore();
+  });
+
+  it("getIngredients Outputs the recipe's ingredients", function() {
+    expect(getIngredients(cremeBrulee), "getIngredients is incorrect").to.eq("Ingredients: eggs, heavy cream, vanilla pods");
+  })
+
+  it("getCookwares Outputs the recipe's cookware", function() {
+    expect(getCookwares(cremeBrulee), "getCookwares is incorrect").to.eq("Cookware Required: mixing bowl, whisk, ramekins, oven, measuring cups");
+  })
+
+  it("getFirstIngredient Outputs the recipe's first ingredient", function() {
+    expect(getFirstIngredient(cremeBrulee), "getFirstIngredient is incorrect").to.eq("Start with: eggs");
+  })
+
+  it("getNthCookwareOutputs the recipe's cookware part", function() {
+    expect(getNthCookware(cremeBrulee, 3), "getNthCookware is incorrect").to.eq("ramekins");
+  })
+
+  spoiled(cremeBrulee)
+  //rivalChef logic
+  if (cremeBrulee.ingredients[0] == "rotten egg yolks") {
+    it("the nefarious chef has struck!", function() {
+      expect(cremeBrulee.ingredients[0], "rotten ingredients check").to.eq("rotten egg yolks");
+    })
+
+    it("has sugar in the ingredients of the the Creme Brulee", function() {
+      expect(cremeBrulee.ingredients[3], "rotten ingredients check").to.eq("rotten sugar");
+    })
+
+    it("has sugar in the ingredients of the the Creme Brulee", function() {
+      expect(cremeBrulee.ingredients[0], "rotten ingredients check").to.eq("rotten egg yolks");
+    })
+  } else {
+    it("addIngredient adds sugar in the ingredients of the the Creme Brulee", function() {
+      addIngredient(cremeBrulee, "sugar")
+      expect(cremeBrulee.ingredients[3], "addIngredient is incorrect").to.eq("sugar");
+    })
+
+    it("editIngredient sugar in the ingredients of the the Creme Brulee", function() {
+      editIngredient(cremeBrulee, 0, "egg yolks")
+      expect(cremeBrulee.ingredients[0], "editIngredient is incorrect").to.eq("egg yolks");
+    })
+  }
+
+
+
+})
+```
+### !end-tests
+
+### !explanation
+
+### !end-explanation
 
 ### !end-challenge
 
