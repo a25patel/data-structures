@@ -134,6 +134,8 @@ const snakes = 100;
 ### !tests
 
 ```js
+const expect = require('chai').expect;
+
 describe('The Swamp', function() {
 
 
