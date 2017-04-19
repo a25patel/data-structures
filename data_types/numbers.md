@@ -77,139 +77,6 @@ describe('Characters with Ages', function() {
 
 * type: code-snippet
 * language: javascript
-* id: 7b08f243-767e-4bd6-95c3-a627156c2a9e
-* title: Operate on Numbers with Loops
-
-### !question
-
-## Swamp Things
-
-Your task in this challenge is to determine how populations of swamp creatures change over time.
-
-You are given several variables representing populations of different creatures in a swamp.
-
-* Birds eat 2 fish a day
-* Snakes eat 1 bird a week
-* Crocs eat 20 fish, 1 snake, and 1 bird a week
-
-If a creature goes without food for a time period it would normally get food in, remove it from the population (it starves 😨)
-
-* Fish reproduce once a month, for every 2 fish there are 100 new fish
-* Birds reproduce once a month, for every 2 birds there are 5 new birds
-* Crocs reproduce once a year (in June), for every 2 crocs there are 5 new crocs
-* Snakes reproduce twice a year (in March and in September), for every 2 snakes there are 10 new snakes
-
-
-Your task is to find out the following information:
-* How many fish are there at the _end of_ March, and September? Create a variable for this, call it `marchFish` and `septFish`
-* How many snakes are there next January? Create a variable for this, call it `snakesAt1Year`
-* Bonus: Will birds go extinct in the next 500 years? If so, how many months will it take? Create a variable called `birdExtinction`, set it to `null` if it won't ever happen.
-
-You can assume the following things:
-* There are 4 weeks in every month (to keep things simple)
-* There are 28 days a month (4 * 7)
-* There 12 months in a year
-* Every reproduction event happens on the first day of a week or month, all at once
-* Creatures eat before they reproduce
-
-Tips:
-* Start by looking at the problem, what do you need to know, and what information do you have?
-* Iterate towards a solution. Start by solving smaller problems that make up the larger problem.
-* If you find yourself repeating the same operations over and over, try using a loop!
-* Don't forget about the `%` operator and the `+=` operator
-
-### !end-question
-
-### !placeholder
-// 1st week January populations (don't modify these, just create new variables if you need them)
-const birds = 700;
-const fish = 11700;
-const crocs = 50;
-const snakes = 100;
-
-
-
-### !end-placeholder
-
-### !tests
-
-```js
-describe('The Swamp', function() {
-
-
-  let birdExtinctionAnswer = null;
-  let marchFishAnswer, septFishAnswer, snakesAt1YearAnswer
-  before(function() {
-
-    // solution
-    const birds = 700;
-    const fish = 11700;
-    const crocs = 50;
-    const snakes = 100;
-
-    let currentBirdPopulation = birds;
-    let currentFishPopulation = fish;
-    let currentCrocsPopulation = crocs;
-    let currentSnakesPopulation = snakes;
-
-
-    for (let month = 1; month < 500; month++) {
-      //eat
-      currentBirdPopulation -= (currentSnakesPopulation * 4) + (currentCrocsPopulation * 4);
-      currentFishPopulation -= ((currentBirdPopulation * 2) * 28) + (currentCrocsPopulation * 20);
-      currentSnakesPopulation -= (currentCrocsPopulation * 4);
-
-      //reproduce
-      currentBirdPopulation += (currentBirdPopulation / 2) * 5;
-      currentFishPopulation += (currentFishPopulation / 2) * 100;
-      if (month % 3 === 0 && month % 6 !== 0) { // march and august, not june and december
-        currentSnakesPopulation += (currentSnakesPopulation / 2) * 10;
-      }
-      if (month % 6 === 0 && month % 12 !== 0) { // only in June, not in December
-        currentCrocsPopulation += (currentCrocsPopulation / 2) * 5;
-      }
-
-      if (currentBirdPopulation <= 0) {
-        birdExtinctionAnswer = month;
-      }
-      if (month === 3) {
-        marchFishAnswer = currentFishPopulation;
-      }
-      if (month === 9) {
-        septFishAnswer = currentFishPopulation;
-      }
-      if (month === 12) {
-        snakesAt1YearAnswer = currentSnakesPopulation;
-      }
-    }
-  })
-
-
-  it("March & September Fish Population ", function() {
-    expect(marchFish, "March Fish is wrong").to.eq(marchFishAnswer);
-    expect(septFish, "Sept Fish is wrong").to.eq(septFishAnswer);
-  })
-
-  it("Snake Population at 1 Year", function() {
-    expect(snakesAt1Year, "Snakes at Year 1 is wrong").to.eq(snakesAt1YearAnswer);
-
-  })
-
-  it("Bird Extinction", function() {
-    expect(birdExtinction, "Bird Extinction Date").to.eq(birdExtinctionAnswer);
-  })
-
-})
-```
-
-### !end-tests
-
-### !end-challenge
-
-### !challenge
-
-* type: code-snippet
-* language: javascript
 * id: 18b6bc49-5313-4076-9866-0fafd1771c6a
 * title: Calculate with Integers
 
@@ -433,8 +300,8 @@ The Math.ceil() and Math.floor() methods round up or down to the nearest integer
 
 * type: code-snippet
 * language: javascript
-* id: guid-goes-here
-* title: short friendly title
+* id: ca53cdc4-85a9-44e9-a1d9-258ae6e72c8a
+* title: Calculate Areas
 
 ### !question
 
@@ -491,5 +358,138 @@ describe('areaOfRing', function() {
 🤔 Try checking your work with a calculator. Note that the least significant digits may be different- 🕵 can you find out why this is?
 
 ### !end-explanation
+
+### !end-challenge
+
+### !challenge
+
+* type: code-snippet
+* language: javascript
+* id: 7b08f243-767e-4bd6-95c3-a627156c2a9e
+* title: Operate on Numbers with Loops
+
+### !question
+
+## Swamp Things
+
+Your task in this challenge is to determine how populations of swamp creatures change over time.
+
+You are given several variables representing populations of different creatures in a swamp.
+
+* Birds eat 2 fish a day
+* Snakes eat 1 bird a week
+* Crocs eat 20 fish, 1 snake, and 1 bird a week
+
+If a creature goes without food for a time period it would normally get food in, remove it from the population (it starves 😨)
+
+* Fish reproduce once a month, for every 2 fish there are 100 new fish
+* Birds reproduce once a month, for every 2 birds there are 5 new birds
+* Crocs reproduce once a year (in June), for every 2 crocs there are 5 new crocs
+* Snakes reproduce twice a year (in March and in September), for every 2 snakes there are 10 new snakes
+
+
+Your task is to find out the following information:
+* How many fish are there at the _end of_ March, and September? Create a variable for this, call it `marchFish` and `septFish`
+* How many snakes are there next January? Create a variable for this, call it `snakesAt1Year`
+* Bonus: Will birds go extinct in the next 500 years? If so, how many months will it take? Create a variable called `birdExtinction`, set it to `null` if it won't ever happen.
+
+You can assume the following things:
+* There are 4 weeks in every month (to keep things simple)
+* There are 28 days a month (4 * 7)
+* There 12 months in a year
+* Every reproduction event happens on the first day of a week or month, all at once
+* Creatures eat before they reproduce
+
+Tips:
+* Start by looking at the problem, what do you need to know, and what information do you have?
+* Iterate towards a solution. Start by solving smaller problems that make up the larger problem.
+* If you find yourself repeating the same operations over and over, try using a loop!
+* Don't forget about the `%` operator and the `+=` operator
+
+### !end-question
+
+### !placeholder
+// 1st week January populations (don't modify these, just create new variables if you need them)
+const birds = 700;
+const fish = 11700;
+const crocs = 50;
+const snakes = 100;
+
+
+
+### !end-placeholder
+
+### !tests
+
+```js
+describe('The Swamp', function() {
+
+
+  let birdExtinctionAnswer = null;
+  let marchFishAnswer, septFishAnswer, snakesAt1YearAnswer
+  before(function() {
+
+    // solution
+    const birds = 700;
+    const fish = 11700;
+    const crocs = 50;
+    const snakes = 100;
+
+    let currentBirdPopulation = birds;
+    let currentFishPopulation = fish;
+    let currentCrocsPopulation = crocs;
+    let currentSnakesPopulation = snakes;
+
+
+    for (let month = 1; month < 500; month++) {
+      //eat
+      currentBirdPopulation -= (currentSnakesPopulation * 4) + (currentCrocsPopulation * 4);
+      currentFishPopulation -= ((currentBirdPopulation * 2) * 28) + (currentCrocsPopulation * 20);
+      currentSnakesPopulation -= (currentCrocsPopulation * 4);
+
+      //reproduce
+      currentBirdPopulation += (currentBirdPopulation / 2) * 5;
+      currentFishPopulation += (currentFishPopulation / 2) * 100;
+      if (month % 3 === 0 && month % 6 !== 0) { // march and august, not june and december
+        currentSnakesPopulation += (currentSnakesPopulation / 2) * 10;
+      }
+      if (month % 6 === 0 && month % 12 !== 0) { // only in June, not in December
+        currentCrocsPopulation += (currentCrocsPopulation / 2) * 5;
+      }
+
+      if (currentBirdPopulation <= 0) {
+        birdExtinctionAnswer = month;
+      }
+      if (month === 3) {
+        marchFishAnswer = currentFishPopulation;
+      }
+      if (month === 9) {
+        septFishAnswer = currentFishPopulation;
+      }
+      if (month === 12) {
+        snakesAt1YearAnswer = currentSnakesPopulation;
+      }
+    }
+  })
+
+
+  it("March & September Fish Population ", function() {
+    expect(marchFish, "March Fish is wrong").to.eq(marchFishAnswer);
+    expect(septFish, "Sept Fish is wrong").to.eq(septFishAnswer);
+  })
+
+  it("Snake Population at 1 Year", function() {
+    expect(snakesAt1Year, "Snakes at Year 1 is wrong").to.eq(snakesAt1YearAnswer);
+
+  })
+
+  it("Bird Extinction", function() {
+    expect(birdExtinction, "Bird Extinction Date").to.eq(birdExtinctionAnswer);
+  })
+
+})
+```
+
+### !end-tests
 
 ### !end-challenge
