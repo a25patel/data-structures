@@ -1077,7 +1077,7 @@ victoria: im gonna go home, i got that flu that's going around`);
     })
 
     it("getUserLog logs all the posts from all chatrooms", function() {
-      expect(getUserLog(tammy, [general, random]), "Default value is incorrect").to.eq([
+      expect(getUserLog(tammy, [general, random]), "Default value is incorrect").to.deep.include.members([
         { user: tammy, message: "omg gifs" },
         { user: tammy, message: "moar gifs" },
         { user: tammy, message: "all of the gifs" },
