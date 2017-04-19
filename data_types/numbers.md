@@ -186,8 +186,8 @@ describe('The Swamp', function() {
 
 
   it("March & September Fish Population ", function() {
-    expect(marchFish, "March Fish is wrong").to.eq(marchFish);
-    expect(septFish, "Sept Fish is wrong").to.eq(septFish);
+    expect(marchFish, "March Fish is wrong").to.eq(marchFishAnswer);
+    expect(septFish, "Sept Fish is wrong").to.eq(septFishAnswer);
   })
 
   it("Snake Population at 1 Year", function() {
