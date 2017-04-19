@@ -39,7 +39,7 @@ In this question, you have a set of constraints you need the numbers to adhere t
 ### !tests
 
 ```js
-describe('Characters ', function() {
+describe('Characters with Ages', function() {
 
   it("Alice is older than Bob", function() {
     expect(alice > bob, "Alice is not older than Bob").to.eq(true)
@@ -206,12 +206,295 @@ describe('The Swamp', function() {
 
 ### !end-challenge
 
+### !challenge
+
+* type: code-snippet
+* language: javascript
+* id: 18b6bc49-5313-4076-9866-0fafd1771c6a
+* title: Calculate with Integers
+
+### !question
+
+* Example: Define a function named `sum` that takes two arguments:
+  * It takes two arguments: a (number), b (number)
+  * Return the sum of these two arguments
+
+
+* Define a function named `product`
+  * It takes two arguments: a (number), b (number)
+  * Return the product of these two arguments
+
+
+Define a function named `sumAndProduct` that takes three arguments:
+* It takes two arguments: x (number) , y (number), z (number)
+* Return the sum of the first two arguments multiplied by the third argument.
+  * For example, given 1, 2, and 5, then return 15.
+
+Tips:
+
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Grouping
+
+
+### !end-question
+
+### !placeholder
+
+function sum(a, b) {
+  return a + b;
+}
+
+function product(a, b) {
+  // YOUR CODE HERE
+}
+
+function sumAndProduct(x, y, z) {
+
+}
+
+### !end-placeholder
+
+### !tests
+
+```js
+describe('sum', function() {
+
+  it("returns the sum of two arguments", function() {
+    expect(sum(1,2), "Return value is incorrect").to.eq(3);
+    expect(sum(11,22), "Return value is incorrect").to.eq(33);
+  })
+
+})
+
+describe('product', function() {
+
+  it("returns the product of two arguments", function() {
+    expect(product(1,2), "Return value is incorrect").to.eq(2);
+    expect(product(11,22), "Return value is incorrect").to.eq(242);
+  })
+
+})
+
+describe('sumAndProduct', function() {
+
+  it("returns the sum and product of three arguments", function() {
+    expect(sumAndProduct(1,2,5), "Return value is incorrect").to.eq(15);
+    expect(sumAndProduct(11,22,33), "Return value is incorrect").to.eq(1089);
+  })
+
+})
+
+```
+### !end-tests
+
+### !explanation
+
+### !end-explanation
+
+### !end-challenge
 
 # Floating-Point Numbers
 
+### !challenge
 
+* type: code-snippet
+* language: javascript
+* id: 1ff36743-4a1f-40ec-9469-d9f683ab7967
+* title: Calculate Averages and Weighted Averages with Floating Point Numbers
+
+### !question
+
+* Define a function named averageMovieReview that takes three arguments
+  * user1, user2, user3 (number between 0 and 5)
+* Return the average of the three arguments
+  * For example, given 2, 2, and 5, then return 3.
+
+
+* Define a function named weightedAverageMovieReview that takes three arguments
+  * user1, user2, user3 (number between 0 and 5)
+* Return the weighted average of the three arguments with the following weights
+  * User 1's weight is 0.25
+  * User 2's weight is 1
+  * User 3's weight is 2.2
+  * For example, given 2, 2, and 5, with the above weights, then return 4.5
+
+
+### !end-question
+
+### !placeholder
+
+function averageMovieReview(user1, user2, user3) {
+
+}
+
+function weightedAverageMovieReview(user1, user2, user3) {
+
+}
+
+### !end-placeholder
+
+### !tests
+
+describe('averageMovieReview', function() {
+  it('calculates the average movie review', function() {
+    expect(averageMovieReview(2, 2, 5).to.eq(3);
+    expect(averageMovieReview(1.5, 2.5, 4.2)).to.eq(2.733333333333333);
+    expect(averageMovieReview(5, 5, 5)).to.eq(5);
+  });
+});
+
+describe('weightedAverageMovieReview', function() {
+  it('calculates the weighted average movie review', function() {
+    expect(weightedAverageMovieReview(2, 2, 5)).to.eq(4.5);
+    expect(weightedAverageMovieReview(1.5, 2.5, 4.2)).to.eq(4.038333333333334);
+    expect(weightedAverageMovieReview(5, 5, 5)).to.eq(5.75);
+  });
+});
+
+### !end-tests
+
+### !explanation
+
+### !end-explanation
+
+### !end-challenge
+
+### !challenge
+
+* type: code-snippet
+* language: javascript
+* id: 6c36d298-4ea1-42fa-98c6-b56475857f7a
+* title: Rounding off Floating Point Numbers
+
+### !question
+
+* Define a function named `roundUp` that takes one argument
+  * decimal (number)
+* Return the argument rounded up to the nearest integer
+
+
+
+* Define a function named `toFahrenheit` that takes one argument
+  * celsius (number)
+* Return the argument converted to Fahrenheit rounded to the nearest integer
+* Use Google to find the formula
+
+Tips:
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/ceil
+
+### !end-question
+
+### !placeholder
+
+function roundUp(decimal) {
+
+}
+
+function toFahrenheit(celsius) {
+
+}
+
+
+### !end-placeholder
+
+### !tests
+
+```js
+describe('roundUp', function() {
+
+    it("rounds up to the nearest integer", function() {
+      expect(roundUp(2.1), "Return value is incorrect").to.eq(3)
+      expect(roundUp(4.7), "Return value is incorrect").to.eq(5)
+      expect(roundUp(6.0), "Return value is incorrect").to.eq(6)
+    })
+
+})
+
+describe('toFahrenheit', function() {
+
+    it("converts from Celsius to Fahrenheit", function() {
+      expect(toFahrenheit(30), "Default value is incorrect").to.eq(86)
+      expect(toFahrenheit(31), "Default value is incorrect").to.eq(88)
+      expect(toFahrenheit(-5), "Default value is incorrect").to.eq(23)
+    })
+
+})
+```
+### !end-tests
+
+### !explanation
+
+The Math.ceil() and Math.floor() methods round up or down to the nearest integer. The Math object is where many of the more advanced math operations are located.
+
+### !end-explanation
+
+### !end-challenge
+
+### !challenge
+
+* type: code-snippet
+* language: javascript
+* id: guid-goes-here
+* title: short friendly title
+
+### !question
+
+* Define a function named `areaOfCircle` that takes one argument
+  * radius (number)
+* Return the area of a circle using that argument. Use Google to find the
+formula.
+
+* Define a function named `areaOfRing` that takes two arguments
+  * outerRadius (number)
+  * innerRadius (number)
+* Return the area of a circular ring using these arguments. Use Google to find
+the formula.
+
+Tips:
+
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/PI
+
+### !end-question
+
+### !placeholder
+
+function areaOfCircle(radius) {
+
+}
+
+function areaOfRing(innerRadius,outerRadius) {
+
+}
+
+### !end-placeholder
+
+### !tests
+
+describe('areaOfCircle', function() {
+  it('calculates the area of a circle', function() {
+    expect(areaOfCircle(10)).to.be.closeTo(314.1592653589793, 0.01);
+    expect(areaOfCircle(20)).to.be.closeTo(1256.6370614359173, 0.01);
+  });
+});
+
+describe('areaOfRing', function() {
+  it('calculates the the area of a circular ring', function() {
+    expect(areaOfRing(10, 5)).to.be.closeTo(235.61944901923448, 0.01);
+    expect(areaOfRing(20, 17)).to.be.closeTo(348.716784548467, 0.01);
+  });
+});
+
+
+### !end-tests
+
+### !explanation
+
+### !end-explanation
+
+### !end-challenge
 
 # Validating Numbers
+
+
 
 
 
