@@ -488,18 +488,8 @@ describe('areaOfRing', function() {
 
 ### !explanation
 
+🤔 Try checking your work with a calculator. Note that the least significant digits may be different- 🕵 can you find out why this is?
+
 ### !end-explanation
 
 ### !end-challenge
-
-# Validating Numbers
-
-
-
-
-
-# Numbers to Strings and Back Again
-
-
-
-# Dealing with Large Numbers
