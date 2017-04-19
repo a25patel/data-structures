@@ -1065,14 +1065,14 @@ describe('stuff', function() {
 
     it("renderChat renders the chatroom", function() {
 
-      expect(renderChat(random), "chatroom rendered incorrectly").to.eq(`tom: machop is the best pokemon because
-zorro: look at this cat you guys
-bobo: I miss the 90s
-jorge: sometimes im wistful lol
-tammy: omg gifs
-tammy: moar gifs
-tammy: all of the gifs
-victoria: im gonna go home, i got that flu that's going around`);
+      expect(renderChat(random), "chatroom rendered incorrectly").to.eq(`Tom: machop is the best pokemon because
+Zorro: look at this cat you guys
+Bobo: I miss the 90s
+Jorge: sometimes im wistful lol
+Tammy: omg gifs
+Tammy: moar gifs
+Tammy: all of the gifs
+Victoria: im gonna go home, i got that flu that's going around`);
 
     })
 
