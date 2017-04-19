@@ -186,17 +186,17 @@ describe('The Swamp', function() {
 
 
   it("March & September Fish Population ", function() {
-    expect(marchFish, "March Fish is wrong").to.be(marchFish);
-    expect(septFish, "Sept Fish is wrong").to.be(septFish);
+    expect(marchFish, "March Fish is wrong").to.eq(marchFish);
+    expect(septFish, "Sept Fish is wrong").to.eq(septFish);
   })
 
   it("Snake Population at 1 Year", function() {
-    expect(snakesAt1Year, "Snakes at Year 1 is wrong").to.be(snakesAt1YearAnswer);
+    expect(snakesAt1Year, "Snakes at Year 1 is wrong").to.eq(snakesAt1YearAnswer);
 
   })
 
   it("Bird Extinction", function() {
-    expect(birdExtinction, "March Fish is wrong").to.be(birdExtinctionAnswer);
+    expect(birdExtinction, "March Fish is wrong").to.eq(birdExtinctionAnswer);
   })
 
 })
