@@ -122,7 +122,7 @@ Tips:
 
 ### !placeholder
 // 1st week January populations (don't modify these, just create new variables if you need them)
-const birds = 500;
+const birds = 700;
 const fish = 11700;
 const crocs = 50;
 const snakes = 100;
@@ -196,7 +196,7 @@ describe('The Swamp', function() {
   })
 
   it("Bird Extinction", function() {
-    expect(birdExtinction, "March Fish is wrong").to.eq(birdExtinctionAnswer);
+    expect(birdExtinction, "Bird Extinction Date").to.eq(birdExtinctionAnswer);
   })
 
 })
