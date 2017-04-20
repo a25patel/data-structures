@@ -329,7 +329,7 @@ function weightedAverageMovieReview(user1, user2, user3) {
 
 describe('averageMovieReview', function() {
   it('calculates the average movie review', function() {
-    expect(averageMovieReview(2, 2, 5).to.eq(3);
+    expect(averageMovieReview(2, 2, 5)).to.eq(3);
     expect(averageMovieReview(1.5, 2.5, 4.2)).to.eq(2.733333333333333);
     expect(averageMovieReview(5, 5, 5)).to.eq(5);
   });
