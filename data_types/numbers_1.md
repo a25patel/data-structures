@@ -39,8 +39,6 @@ Give each character ages as Numbers such that:
 * Dave is younger than Alice but older than Eve
 * Eve is older than Carol and older than Bob
 
-In this question, you have a set of constraints you need the numbers to adhere to, but in order to achieve the final result you might need to use some comparison statements to test whether the numbers you input actually work. In the final answer you submit, _our_ code will check _your_ code to make sure the numbers come out properly, so writing yourself an if statement to check each constraint will help you figure out the answer faster.
-
 ### !end-question
 
 ### !placeholder
@@ -176,16 +174,89 @@ describe('sumAndProduct', function() {
 
 * type: code-snippet
 * language: javascript
+* id: 16446378-3ad2-48b4-961d-73eba848c724
+* title: Numbers and Booleans
+
+### !question
+
+* Define a function named `isEven` that takes one argument
+  * integer (number)
+
+* If the number is even
+  * Return `true`
+* Otherwise
+  * Return `false`
+
+
+* Define a function named `isOdd` that takes one argument
+  * integer (number)
+* If the number is odd
+  * Return `true`
+* Otherwise
+  * Return `false`
+
+Tips:  
+
+* What number will give you a remainder of 0 if the argument is even?
+* If you get stuck, try copy-pasting the directions into your code, and replace each line with a line of JavaScript that does what the directions say.
+
+### !end-question
+
+### !placeholder
+
+
+
+### !end-placeholder
+
+### !tests
+
+```js
+describe('isEven', function() {
+
+    it("returns true when a number is even", function() {
+      expect(isEven(4), "Return value is incorrect").to.eq(true)
+    })
+
+    it("returns false when a number is odd", function() {
+      expect(isEven(5), "Return value is incorrect").to.eq(false)
+    })
+
+})
+
+describe('isOdd', function() {
+
+    it("returns true when a number is even", function() {
+      expect(isOdd(4), "Return value is incorrect").to.eq(false)
+    })
+
+    it("returns false when a number is odd", function() {
+      expect(isOdd(5), "Return value is incorrect").to.eq(true)
+    })
+
+})
+```
+### !end-tests
+
+### !explanation
+
+### !end-explanation
+
+### !end-challenge
+
+### !challenge
+
+* type: code-snippet
+* language: javascript
 * id: c981bc11-842a-4628-a675-d0578f18f6ba
 * title: Calculate using Floating Point Numbers
 
 ### !question
 
-Define a function named `percentage` that takes two arguments
-* numerator (number)
-* denominator (number)
-Return the percentage of the first argument divided by the second as a floating point number. For
-example, given 1 and 4, then return `25.0`.
+* Define a function named `percentage` that takes two arguments
+  * numerator (number)
+  * denominator (number)
+* Return the percentage of the first argument divided by the second as a floating point number. For
+example, given `1` and `4`, then return `25.0`.
 
 ### !end-question
 
@@ -314,6 +385,50 @@ describe('toDollar', function() {
       expect(toDollar(120), "Default value is incorrect").to.eq('$120.00')
     })
 
+})
+```
+### !end-tests
+
+### !explanation
+
+### !end-explanation
+
+### !end-challenge
+
+### !challenge
+
+* type: code-snippet
+* language: javascript
+* id: fb1f6a07-a834-4df4-ab19-1d6a1e503582
+* title: Compare Three Numbers
+
+### !question
+
+* Define a function named `largestOfThree` which takes three arguments
+  * value1, value2, value3 (numbers)
+* Return the largest argument by value
+
+Tips:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
+
+### !end-question
+
+### !placeholder
+
+
+
+### !end-placeholder
+
+### !tests
+
+```js
+describe('largestOfThree', function() {
+
+    it("returns the largest of three integers", function() {
+      expect(largestOfThree(1,2,3), "Default value is incorrect").to.eq(3);
+      expect(largestOfThree(4,5,6), "Default value is incorrect").to.eq(6);
+      expect(largestOfThree(4,5,5), "Default value is incorrect").to.eq(5);
+    })
 
 })
 ```
