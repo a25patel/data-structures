@@ -37,10 +37,6 @@ Bonus:
 
 ### !placeholder
 
-function greet () {
-
-}
-
 ### !end-placeholder
 
 ### !tests
@@ -96,10 +92,6 @@ Tips:
 ### !end-question
 
 ### !placeholder
-
-function repeats(input) {
-// return true if the first half of the string equals the last half, false if not
-}
 
 ### !end-placeholder
 
