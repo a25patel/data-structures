@@ -116,7 +116,7 @@ describe('transportation', function() {
 * type: code-snippet
 * language: javascript
 * id: 64b5ec6e-ae0b-406c-98aa-879da639422a
-* title: Create a Constant
+* title: Create a variable
 
 ### !question
 
@@ -150,7 +150,7 @@ describe('MAX_CONNECTIONS', function() {
 * type: code-snippet
 * language: javascript
 * id: 44c80fcc-1448-404e-bea6-9148ab0e2134
-* title: Create a Variable for iterations
+* title: Create a Variable
 
 ### !question
 
@@ -192,7 +192,7 @@ describe('i', function() {
 * type: code-snippet
 * language: javascript
 * id: ff8f56ea-d05c-407f-a864-f3c741309dae
-* title: Create a Variable, Do String Concatenation, Access an Array
+* title: Create a Variable, String Concatenation, Arrays
 
 ### !question
 

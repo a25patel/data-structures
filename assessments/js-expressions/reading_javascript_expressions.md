@@ -71,7 +71,7 @@ Number
 
 * type: multiple-choice
 * id: fc219c0c-e24c-4606-a899-7ec45091e642
-* title: Data Type Identification: Numbers
+* title: Data Type Identification
 
 ##### !question
 
@@ -104,7 +104,7 @@ Number
 
 * type: multiple-choice
 * id: a0800f51-b1a3-42c9-b1b4-09cb4c66ddef
-* title: Data Type Identification: Numbers
+* title: Data Type Identification
 
 ##### !question
 
@@ -137,7 +137,7 @@ Number
 
 * type: multiple-choice
 * id: b611ee2b-a8b4-489a-b45d-0eba10197f68
-* title: Data Type Identification: Null Types
+* title: Data Type Identification
 
 ##### !question
 
@@ -171,7 +171,7 @@ null
 
 * type: multiple-choice
 * id: 9d9a36a2-72b4-4d6c-a789-7c50a197bcd3
-* title: Data Type Identification: Null Types
+* title: Data Type Identification
 
 ##### !question
 
@@ -204,7 +204,7 @@ undefined
 
 * type: multiple-choice
 * id: 7712973c-b7e5-4fad-a6d8-0d936192b248
-* title: Data Type Identification: String Types
+* title: Data Type Identification
 
 ##### !question
 
@@ -237,7 +237,7 @@ String
 
 * type: multiple-choice
 * id: 1a640281-ace3-47b5-a174-163a8b2a6757
-* title: Data Type Identification: String Types
+* title: Data Type Identification
 
 ##### !question
 
@@ -270,7 +270,7 @@ String
 
 * type: multiple-choice
 * id: ae35313e-909a-4890-962e-9883679a19fe
-* title: Data Type Identification: Data Type Coercion
+* title: Data Type Identification
 
 ##### !question
 
@@ -1187,7 +1187,7 @@ express = require('express')
 
 * type: multiple-choice
 * id: e72fe58c-1ae0-4209-852d-bf4bb7643dee
-* title: Identify Array Literals
+* title: Identify Literals
 
 ##### !question
 
@@ -1222,7 +1222,7 @@ Array
 
 * type: multiple-choice
 * id: 5bad161f-6bbc-40a7-b577-0b9916733040
-* title: Identify Object Literals
+* title: Identify Literals
 
 ##### !question
 
@@ -1257,7 +1257,7 @@ Object
 
 * type: multiple-choice
 * id: fd2fb311-b9bf-430f-82fe-a705adf96326
-* title: Identify Function Literals
+* title: Identify Literals
 
 ##### !question
 
@@ -1291,7 +1291,7 @@ Function
 
 * type: multiple-choice
 * id: 633defce-4392-43cf-82d9-08be3c0869c6
-* title: Identify Array Literals
+* title: Identify Literals
 
 ##### !question
 
@@ -1326,7 +1326,7 @@ Array
 
 * type: multiple-choice
 * id: caba9738-7898-4488-9735-75950c7b8a9a
-* title: Identify Object Literal
+* title: Identify Literals
 
 ##### !question
 
@@ -1366,7 +1366,7 @@ Object
 
 * type: multiple-choice
 * id: 5d12ac4e-79a4-4013-a26b-a4c06a126480
-* title: Identify Function Literal
+* title: Identify Literal
 
 ##### !question
 
