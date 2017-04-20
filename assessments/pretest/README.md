@@ -70,6 +70,10 @@ describe('Pre-Challenge: highestSum', function() {
 ```
 ### !end-tests
 
+### !placeholder
+
+### !end-placeholder
+
 ### !end-challenge
 
 ### !challenge
