@@ -171,6 +171,49 @@ describe('sumAndProduct', function() {
 
 ### !end-challenge
 
+### !challenge
+
+* type: code-snippet
+* language: javascript
+* id: c981bc11-842a-4628-a675-d0578f18f6ba
+* title: Calculate using Floating Point Numbers
+
+### !question
+
+Define a function named `percentage` that takes two arguments
+* numerator (number)
+* denominator (number)
+Return the percentage of the first argument divided by the second as a floating point number. For
+example, given 1 and 4, then return `25.0`.
+
+### !end-question
+
+### !placeholder
+
+
+### !end-placeholder
+
+### !tests
+
+```js
+describe('percentage', function() {
+
+    it("Returns the percentage of the given ratio", function() {
+      expect(percentage(1,4), "Return value is incorrect").to.eq(25);
+      expect(percentage(2,4), "Return value is incorrect").to.eq(50);
+      expect(percentage(1,10), "Return value is incorrect").to.eq(10);
+      expect(percentage(1,4), "Type is incorrect").to.be.a('number');
+    })
+
+})
+```
+### !end-tests
+
+### !explanation
+
+### !end-explanation
+
+### !end-challenge
 
 ### !challenge
 
@@ -181,13 +224,13 @@ describe('sumAndProduct', function() {
 
 ### !question
 
-* Define a function named averageMovieReview that takes three arguments
+* Define a function named `averageMovieReview` that takes three arguments
   * user1, user2, user3 (number between 0 and 5)
 * Return the average of the three arguments
   * For example, given 2, 2, and 5, then return 3.
 
 
-* Define a function named weightedAverageMovieReview that takes three arguments
+* Define a function named `weightedAverageMovieReview` that takes three arguments
   * user1, user2, user3 (number between 0 and 5)
 * Return the weighted average of the three arguments with the following weights
   * User 1's weight is 0.25
