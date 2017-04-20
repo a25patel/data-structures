@@ -16,7 +16,7 @@ Problem Solving with JavaScript
 - Language Implementation
   - Data Types & Primitives
 
-# Solving Computational Problems
+Solving Computational Problems
 - Algorithms
   - Mathematical Algorithms
 
