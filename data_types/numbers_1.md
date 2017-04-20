@@ -409,7 +409,7 @@ describe('toDollar', function() {
 * Return the largest argument by value
 
 Tips:
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
 
 ### !end-question
 
