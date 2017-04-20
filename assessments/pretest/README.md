@@ -52,7 +52,6 @@ Things to accomplish:
 
 ### !tests
 
-```js
 describe('Pre-Challenge: highestSum', function() {
 
   it("highestSum is a function", function() {
@@ -67,7 +66,7 @@ describe('Pre-Challenge: highestSum', function() {
 
 
 })
-```
+
 ### !end-tests
 
 ### !placeholder
