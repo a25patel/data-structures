@@ -161,6 +161,74 @@ describe('areaOfRing', function() {
 
 * type: code-snippet
 * language: javascript
+* id: guid-goes-here
+* title: short friendly title
+
+### !question
+
+* Define a function named `calculateTaxRate` that takes two arguments
+  * salary (number from 1 to 74,900)
+  * status (string that's either 'single' or 'joint')
+
+* If the status is anything other than 'single' or 'joint'
+  * Return a string that says 'Better call an accountant'
+* If the salary is greater than 74,900
+  * Return a string that says 'Better call an accountant'
+* Otherwise
+  * Return the correct tax rate _as a string_ using the table from http://www.efile.com/tax-service/tax-calculator/tax-brackets/
+
+
+### !end-question
+
+### !placeholder
+
+
+### !end-placeholder
+
+### !tests
+
+describe('calculateTaxRate', function() {
+  it('returns a warning if the status is incorrect', function() {
+    expect(calculateTaxRate(100, 'separate')).to.eq('Better call an accountant');
+    expect(calculateTaxRate(100, 'head of household')).to.eq(Better call an accountant');
+  });
+
+  it('returns a warning if the amount is over 74,900', function() {
+    expect(calculateTaxRate(74901, 'single')).to.eq('Better call an accountant');
+    expect(calculateTaxRate(100000, 'joint')).to.eq('Better call an accountant');
+  });
+
+  it('returns the correct tax rate for a single filer', function() {
+    expect(calculateTaxRate(1, 'single')).to.eq('10%');
+    expect(calculateTaxRate(100, 'single')).to.eq('10%');
+    expect(calculateTaxRate(9225, 'single')).to.eq('10%');
+    expect(calculateTaxRate(9276, 'single')).to.eq('15%');
+    expect(calculateTaxRate(15000, 'single')).to.eq('15%');
+    expect(calculateTaxRate(37450, 'single')).to.eq('15%');
+  });
+
+  it('returns the correct tax rate for a joint filer', function() {
+    expect(calculateTaxRate(1, 'joint')).to.eq('10%');
+    expect(calculateTaxRate(100, 'joint')).to.eq('10%');
+    expect(calculateTaxRate(18450, 'joint')).to.eq('10%');
+    expect(calculateTaxRate(18551, 'joint')).to.eq('15%');
+    expect(calculateTaxRate(25000, 'joint')).to.eq('15%');
+    expect(calculateTaxRate(74900, 'joint')).to.eq('15%');
+  });
+});
+
+### !end-tests
+
+### !explanation
+
+### !end-explanation
+
+### !end-challenge
+
+### !challenge
+
+* type: code-snippet
+* language: javascript
 * id: 7b08f243-767e-4bd6-95c3-a627156c2a9e
 * title: Operate on Numbers with Loops
 
