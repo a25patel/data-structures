@@ -278,3 +278,48 @@ describe('weightedAverageMovieReview', function() {
 ### !end-explanation
 
 ### !end-challenge
+
+### !challenge
+
+* type: code-snippet
+* language: javascript
+* id: 61727715-42ea-4857-b54f-67825c71d025
+* title: Convert Numbers to Strings
+
+### !question
+
+Define a function `toDollar` that takes one argument
+  amount (number)
+Return the argument converted to a dollar currency string. For example, given
+`10`, then return `'$10.00'`.
+See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed
+
+### !end-question
+
+### !placeholder
+
+
+
+### !end-placeholder
+
+### !tests
+
+```js
+describe('toDollar', function() {
+
+    it("returns a string formatted as USD when given a number", function() {
+      expect(toDollar(10), "Default value is incorrect").to.eq('$10.00')
+      expect(toDollar(20), "Default value is incorrect").to.eq('$20.00')
+      expect(toDollar(120), "Default value is incorrect").to.eq('$120.00')
+    })
+
+
+})
+```
+### !end-tests
+
+### !explanation
+
+### !end-explanation
+
+### !end-challenge
