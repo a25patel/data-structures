@@ -8,6 +8,7 @@ Storing and Manipulating Data
   - Data Operations
     - Comparison
     - Math
+    - Conversion
 
 Problem Solving with JavaScript
 - Programming Techniques
