@@ -34,8 +34,6 @@ Solving Computational Problems
   * decimal (number)
 * Return the argument rounded up to the nearest integer
 
-
-
 * Define a function named `toFahrenheit` that takes one argument
   * celsius (number)
 * Return the argument converted to Fahrenheit rounded to the nearest integer
