@@ -197,6 +197,56 @@ describe('whisper', function() {
 
 * type: code-snippet
 * language: javascript
+* id: 5dfc636b-6a41-4ef6-b00f-e8b8fc3d647a
+* title: Filter Strings
+
+### !question
+
+* Define a function named `isVowel` that takes one argument
+  * `letter` (string)
+* If the `letter` is a vowel
+  * Return `true`
+* Otherwise
+  * Return `false`
+* Treat `'y'` as a consonant.
+
+### !end-question
+
+### !placeholder
+
+### !end-placeholder
+
+### !tests
+
+describe('isVowel', function() {
+  it('returns true if the letter is a vowel', function() {
+    expect(isVowel('a')).to.eq(true);
+    expect(isVowel('e')).to.eq(true);
+    expect(isVowel('i')).to.eq(true);
+    expect(isVowel('o')).to.eq(true);
+    expect(isVowel('u')).to.eq(true);
+  });
+
+  it('returns false if the letter is not a vowel', function() {
+    expect(isVowel('z')).to.eq(false);
+    expect(isVowel('b')).to.eq(false);
+    expect(isVowel('d')).to.eq(false);
+    expect(isVowel('y')).to.eq(false);
+  });
+});
+
+### !end-tests
+
+### !explanation
+
+### !end-explanation
+
+### !end-challenge
+
+### !challenge
+
+* type: code-snippet
+* language: javascript
 * id: 5c8fdb71-ad0f-4989-89ec-2e1e4d292b6f
 * title: Handling Multiple Dependent Cases
 
