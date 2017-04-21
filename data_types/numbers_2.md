@@ -200,8 +200,8 @@ describe('calculateTaxRate', function() {
     expect(calculateTaxRate(1, 'single')).to.eq('10%');
     expect(calculateTaxRate(100, 'single')).to.eq('10%');
     expect(calculateTaxRate(9225, 'single')).to.eq('10%');
+    expect(calculateTaxRate(15000, 'single')).to.eq('10%');
     expect(calculateTaxRate(19276, 'single')).to.eq('15%');
-    expect(calculateTaxRate(15000, 'single')).to.eq('15%');
     expect(calculateTaxRate(37450, 'single')).to.eq('15%');
   });
 
