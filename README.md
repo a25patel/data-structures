@@ -13,8 +13,11 @@ These exercises contain JavaScript Language drills. For exercises and assessment
 
 Challenges allow you to practice the concepts you're learning before taking an assessment to prove you know it.
 
-- [JS Fundamentals](fundamentals/README.md)
-
+- [Numbers Level 1](data_types/numbers_1.md)
+- [Numbers Level 2](data_types/numbers_2.md)
+- [Strings Level 1](data_types/strings_1.md)
+- [Strings Level 2](data_types/strings_2.md)
+- [Dates Level 1](data_types/dates_1.md)
 
 ## Assessments
 
