@@ -45,9 +45,9 @@ Tips:
 
 describe('longestOfThree', function() {
   it('returns the longest argument by length', function() {
-    it(longestOfThree('eight', 'two', 'five')).to.eq('eight');
-    it(longestOfThree('zero', 'seven', 'four')).to.eq('seven');
-    it(longestOfThree('nine', 'six', 'three')).to.eq('three');
+    expect(longestOfThree('eight', 'two', 'five')).to.eq('eight');
+    expect(longestOfThree('zero', 'seven', 'four')).to.eq('seven');
+    expect(longestOfThree('nine', 'six', 'three')).to.eq('three');
   });
 });
 
