@@ -37,6 +37,10 @@ Bonus:
 
 ### !placeholder
 
+function greet(firstName, lastName) {
+
+}
+
 ### !end-placeholder
 
 ### !tests
