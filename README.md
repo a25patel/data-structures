@@ -26,16 +26,17 @@ Assessments prove to us that you know the material.
 [Writing JavaScript Expressions](./assessments/js-expressions/writing_javascript_expressions.md)  
 [Conditionals and Loops](./assessments/js-loops-and-conditionals/README.md)
 
-This checkpoint relates to the following standards:
+This checkpoint relates to the following standards and component skills:
 
-- Problem Solving with JavaScript
-- Storing and Manipulating Data
+Problem Solving with JavaScript
+  - Programming Techniques:
+    - Control Flow, Logical Expressions, and Operators
 
-It covers the following component skills:
-
-- Problem Solving with JavaScript: Programming Techniques: Control Flow, Logical Expressions, and Operators
-- Storing and Manipulating Data: Data Types
-- Storing and Manipulating Data: Data Operations: Comparison
-- Storing and Manipulating Data: Data Operations: Math and String Manipulation
-- Storing and Manipulating Data: Data Structures: Arrays
-- Storing and Manipulating Data: Data Structures: Objects
+Storing and Manipulating Data
+  - Data Types
+  - Data Operations
+    - Comparison
+    - Math and String Manipulation
+  - Data Structures
+    - Arrays
+    - Objects
