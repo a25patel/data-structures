@@ -159,19 +159,19 @@ describe('areaOfRing', function() {
 
 * type: code-snippet
 * language: javascript
-* id: guid-goes-here
-* title: short friendly title
+* id: 53bb777e-7712-4eaa-9ca4-b60501b124d7
+* title: Multiple Dependent Calculations
 
 ### !question
 
 * Define a function named `calculateTaxRate` that takes two arguments
-  * salary (number from 1 to 74,900)
-  * status (string that's either 'single' or 'joint')
+  * `salary` (number from 1 to 74,900)
+  * `status` (string that's either 'single' or 'joint')
 
-* If the status is anything other than 'single' or 'joint'
-  * Return a string that says 'Better call an accountant'
-* If the salary is greater than 74,900
-  * Return a string that says 'Better call an accountant'
+* If the `status` is anything other than `'single'` or `'joint'`
+  * Return a string that says `'Better call an accountant'`
+* If the `salary` is greater than `74,900`
+  * Return a string that says `'Better call an accountant'`
 * Otherwise
   * Return the correct tax rate _as a string_ using the table from http://www.efile.com/tax-service/tax-calculator/tax-brackets/
 
