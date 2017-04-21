@@ -188,7 +188,7 @@ describe('areaOfRing', function() {
 describe('calculateTaxRate', function() {
   it('returns a warning if the status is incorrect', function() {
     expect(calculateTaxRate(100, 'separate')).to.eq('Better call an accountant');
-    expect(calculateTaxRate(100, 'head of household')).to.eq(Better call an accountant');
+    expect(calculateTaxRate(100, 'head of household')).to.eq('Better call an accountant');
   });
 
   it('returns a warning if the amount is over 74,900', function() {
