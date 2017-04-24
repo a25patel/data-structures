@@ -219,7 +219,7 @@ for (let i = 0; i<bears.length; i++) {
 describe('totalBears', function() {
 
     it("has a variable called coolBears with all the bears, letting them know how cool they are", function() {
-      expect(coolBears, "Default value is incorrect").to.eq(['paddington', 'smokey', 'yogi', 'teddy', 'black', 'brown', 'polar', 'panda'].join("is a pretty cool bear, "))
+      expect(coolBears, "Default value is incorrect").to.eq(['paddington', 'smokey', 'yogi', 'teddy', 'black', 'brown', 'polar', 'panda'].join(" is a pretty cool bear, ") + " is a pretty cool bear")
     })
 
 })
