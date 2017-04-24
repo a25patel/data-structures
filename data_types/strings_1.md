@@ -97,6 +97,10 @@ Tips:
 
 ### !placeholder
 
+function toSentence(word1, word2, word3, oxfordComma) {
+
+}
+
 ### !end-placeholder
 
 ### !tests
@@ -210,6 +214,10 @@ describe('whisper', function() {
 
 ### !placeholder
 
+function isVowel() {
+
+}
+
 ### !end-placeholder
 
 ### !tests
@@ -265,6 +273,9 @@ describe('isVowel', function() {
 
 ### !placeholder
 
+function iceCreamPosition () {
+  
+}
 
 ### !end-placeholder
 

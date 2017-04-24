@@ -48,7 +48,7 @@ Tips:
 
 ### !placeholder
 
-function isStrictlyEqual() {
+function isLooselyEqual() {
   // your code here
 }
 
@@ -122,6 +122,10 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/type
 ### !end-question
 
 ### !placeholder
+
+function superPicky () {
+  
+}
 
 ### !end-placeholder
 
