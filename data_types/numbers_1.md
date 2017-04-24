@@ -118,7 +118,7 @@ Tips:
 ### !placeholder
 
 function sum(a, b) {
-  return a + b;
+  return a + b; // this already works!
 }
 
 function product(a, b) {
@@ -204,7 +204,9 @@ Tips:
 
 ### !placeholder
 
+function isEven() {
 
+}
 
 ### !end-placeholder
 
@@ -262,6 +264,9 @@ example, given `1` and `4`, then return `25.0`.
 
 ### !placeholder
 
+function percentage() {
+
+}
 
 ### !end-placeholder
 
@@ -370,7 +375,9 @@ See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Obj
 
 ### !placeholder
 
+function toDollar() {
 
+}
 
 ### !end-placeholder
 
@@ -415,7 +422,9 @@ Tips:
 
 ### !placeholder
 
-
+function largestOfThree () {
+  
+}
 
 ### !end-placeholder
 
