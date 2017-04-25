@@ -242,7 +242,7 @@ Using a single numerical variable in a loop, choose between `var`, `let` and `co
 On the 1st day of Christmas my true love gave to me, a partridge in a pear tree.
 On the 2nd day of Christmas my true love gave to me, two turtle doves and a partridge in a pear tree.
 On the 3rd day of Christmas my true love gave to me, three french hens, two turtle doves and a partridge in a pear tree.
-On the 4rd day of Christmas my true love gave to me, four calling birds, three french hens, two turtle doves and a partridge in a pear tree.
+On the 4th day of Christmas my true love gave to me, four calling birds, three french hens, two turtle doves and a partridge in a pear tree.
 On the 5th day of Christmas my true love gave to me, five golden rings! four calling birds, three french hens, two turtle doves and a partridge in a pear tree.
 ```
 
