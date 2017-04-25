@@ -24,5 +24,8 @@ The following sets of drills give you the chance to practice:
 
 ### Drills
 
-- [Numbers](./numbers.md)
-- [Strings](./strings.md)
+- [Numbers 1](./numbers_1.md)
+- [Numbers 2](./numbers_2.md)
+- [Strings 1](./strings_1.md)
+- [Strings 1](./strings_2.md)
+- [Dates 1](./dates_1.md)
