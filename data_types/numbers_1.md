@@ -26,8 +26,6 @@ Problem Solving with JavaScript
 
 ### !question
 
-## Ageism
-
 Create 5 variables, named `alice`, `bob`, `carol`, `dave`, `eve`.
 
 Each variable should represent an age.
@@ -423,7 +421,7 @@ Tips:
 ### !placeholder
 
 function largestOfThree () {
-  
+
 }
 
 ### !end-placeholder
