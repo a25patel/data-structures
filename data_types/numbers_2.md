@@ -74,7 +74,7 @@ describe('toFahrenheit', function() {
 
     it("converts from Celsius to Fahrenheit", function() {
       expect(toFahrenheit(30), "Default value is incorrect").to.eq(86)
-      expect(toFahrenheit(31), "Default value is incorrect").to.eq(87.8)
+      expect(toFahrenheit(31), "Default value is incorrect").to.eq(88)
       expect(toFahrenheit(-5), "Default value is incorrect").to.eq(23)
     })
 
