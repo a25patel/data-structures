@@ -273,6 +273,7 @@ describe('Christmas Song', function() {
   const logs = [];
 
   beforeEach(() => {
+    console.log('Setting up beforeEach...');
     const originalLog = console.log;
     console.log = function() {
       logs.push(arguments[0]);
