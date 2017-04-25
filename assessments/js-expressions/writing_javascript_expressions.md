@@ -269,23 +269,27 @@ On the 5th day of Christmas my true love gave to me, five golden rings! four cal
 ### !tests
 
 ```js
-
-require('mocha-sinon')
-function stubFn () { this.sinon.stub(console, 'log') }
-
 describe('Christmas Song', function() {
+  const logs = [];
 
-  beforeEach(stubFn);
+  beforeEach(() => {
+    console.log('Setting up beforeEach...');
+    const originalLog = console.log;
+    console.log = function() {
+      logs.push(arguments[0]);
+      originalLog.apply(this, arguments);
+    }
+  });
 
-  it("",function () {
-    expect(console.log.getCall(0).args[0]).to.match(/[oO]n the 1st day of Christmas my true love gave to me, a partridge in a pear tree./);
-    expect(console.log.getCall(1).args[0]).to.match(/[oO]n the 2nd day of Christmas my true love gave to me, two turtle doves and a partridge in a pear tree./);
-    expect(console.log.getCall(2).args[0]).to.match(/[oO]n the 3rd day of Christmas my true love gave to me, three french hens, two turtle doves and a partridge in a pear tree./);
-    expect(console.log.getCall(3).args[0]).to.match(/[oO]n the 4th day of Christmas my true love gave to me, four calling birds, three french hens, two turtle doves and a partridge in a pear tree./);
-    expect(console.log.getCall(4).args[0]).to.match(/[oO]n the 5th day of Christmas my true love gave to me, five golden rings! four calling birds, three french hens, two turtle doves and a partridge in a pear tree./);
+  it("Sings the song",function () {
+    expect(logs[0]).to.match(/[oO]n the 1st day of Christmas my true love gave to me, a partridge in a pear tree./);
+    expect(logs[1]).to.match(/[oO]n the 2nd day of Christmas my true love gave to me, two turtle doves and a partridge in a pear tree./);
+    expect(logs[2]).to.match(/[oO]n the 3rd day of Christmas my true love gave to me, three french hens, two turtle doves and a partridge in a pear tree./);
+    expect(logs[3]).to.match(/[oO]n the 4th day of Christmas my true love gave to me, four calling birds, three french hens, two turtle doves and a partridge in a pear tree./);
+    expect(logs[4]).to.match(/[oO]n the 5th day of Christmas my true love gave to me, five golden rings! four calling birds, three french hens, two turtle doves and a partridge in a pear tree./);
   })
 
-})
+});
 ```
 ### !end-tests
 
