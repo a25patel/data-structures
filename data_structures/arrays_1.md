@@ -1,6 +1,6 @@
 # Array Access Level 1
 
-In the next few challenges, we're going to practice accessing Arrays by index, as well as looping over Arrays, and the Accumulator Pattern. These are the first two key skills you need in order to work with Arrays.
+In the next few challenges, we're going to practice accessing Arrays by index, as well as looping over Arrays. These are the first two key skills you need in order to work with Arrays.
 
 ## Accessing Arrays
 
