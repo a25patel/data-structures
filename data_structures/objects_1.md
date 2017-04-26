@@ -9,7 +9,7 @@
 
 ## Challenge 3: Object Access
 
-Below you have three users. Write a function that validates the users have all of the data they're supposed to have:
+Below you have four users. Write a function that validates the users have all of the data they're supposed to have:
 
 1. The email address contains an "@" symbol.
 2. The phone number is valid (###-###-####).
