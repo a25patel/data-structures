@@ -78,4 +78,3 @@ Go to [Unit 4 - Intro to Programming](https://github.com/gSchool/wdi-application
 Awesome!  You are probably ready to Enroll!
 
 Go ahead and take the [final technical assessment](https://github.com/gSchool/javascript-drills/blob/master/assessments/pretest/post-test.md)!
->>>>>>> ef44b86ee7ab22d75045f8ee1bcc9cf60c935803
