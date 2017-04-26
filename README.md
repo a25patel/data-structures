@@ -13,11 +13,21 @@ These exercises contain JavaScript Language drills. For exercises and assessment
 
 Challenges allow you to practice the concepts you're learning before taking an assessment to prove you know it.
 
+### Data Types
 - [Numbers Level 1](data_types/numbers_1.md)
 - [Numbers Level 2](data_types/numbers_2.md)
 - [Strings Level 1](data_types/strings_1.md)
 - [Strings Level 2](data_types/strings_2.md)
 - [Dates Level 1](data_types/dates_1.md)
+
+
+### Data Structures
+- [Arrays 1](data_structures/arrays_1.md)
+- [Arrays 2](data_structures/arrays_2.md)
+- [Strings 1](data_structures/strings_1.md)
+- [Strings 2](data_structures/strings_2.md)
+- [Objects 1](data_structures/objects_1.md)
+- [Objects 2](data_structures/objects_2.md)
 
 ## Assessments
 

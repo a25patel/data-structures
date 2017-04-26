@@ -1,3 +1,155 @@
+# JavaScript Objects Level 2
+
+### !challenge
+* type: code-snippet
+* language: javascript
+* id: 243b94dc-a643-4dfd-b1bc-10127bc39b95
+* title: JS letterCount
+
+### !question
+## Letter Count
+
+Write a function named letterCount that takes a string and returns an object with the letters and the number of their occurrences
+
+Example:
+
+- If you pass `"Yo"` it should return `{Y: 1, o: 1}`
+- If you pass `"Hello"` it should return `{"H": 1, "e": 1, "l": 2, "o": 1}`
+### !end-question
+
+### !placeholder
+### !end-placeholder
+
+### !tests
+```js
+describe('letterCount', function() {
+
+  it("returns an empty object when given an empty string", function() {
+    expect(letterCount(""), "Default value is incorrect").to.deep.eq({})
+  })
+
+  it("returns an object that maps letters to the number of occurrences", function() {
+    expect(letterCount("up")).to.deep.eq({u: 1, p: 1})
+    expect(letterCount("Hello")).to.deep.eq({H: 1, e: 1, l: 2, o: 1})
+    expect(letterCount("aaa")).to.deep.eq({a: 3})
+  })
+
+})
+```
+### !end-tests
+
+### !explanation
+
+### !end-explanation
+### !end-challenge
+
+
+
+### !challenge
+* type: code-snippet
+* language: javascript
+* id: 1fec2f7c-8bfd-444b-8d13-5dc7a358d1e7
+* title: JS index
+
+### !question
+## Index
+
+Write a function named index that takes an array of objects, and a property name, and returns an object where the keys are the specified property
+
+Example:
+
+- If you pass `[{id: 1, name: "Joe"}, {id: 2, name: "Sue"}]` it should return:
+  ```js
+  {
+    1: {
+      id: 1,
+      name: "Joe"
+    },
+    2: {
+      id: 2,
+      name: "Sue"
+    }
+  }
+  ```
+### !end-question
+
+### !placeholder
+### !end-placeholder
+
+### !tests
+```js
+describe('index', function() {
+
+  it("returns an empty object when passed an empty array", function() {
+    expect(index([], 'id')).to.deep.eq({})
+  })
+
+  it("returns an object indexed by the given property", function() {
+    expect(index([{id: 1, name: "Will"}, {id: 2, name: "Sue"}], 'id')).to.deep.eq({
+      1: {id: 1, name: "Will"},
+      2: {id: 2, name: "Sue"},
+    })
+
+    expect(index([{name: "Will", age: 32}, {name: "Sue", age: 33}], 'name')).to.deep.eq({
+      'Will': {name: "Will", age: 32},
+      'Sue':  {name: "Sue", age: 33},
+    })
+  })
+
+})
+```
+### !end-tests
+
+### !explanation
+
+### !end-explanation
+### !end-challenge
+
+### !challenge
+* type: code-snippet
+* language: javascript
+* id: 2e4630f6-b3a3-4dfd-b8e8-cfc76e83be57
+* title: JS invert
+
+### !question
+## Invert
+
+Write a function named invert that takes an object and returns an object where the keys and values have been inverted
+
+Example:
+
+- If you pass `{id: 1, name: "Joe"}` it should return `{1: "id", Joe: "name"}`
+### !end-question
+
+### !placeholder
+### !end-placeholder
+
+### !tests
+```js
+describe('invert', function() {
+
+  it("returns an empty object when passed an empty object", function() {
+    expect(invert({})).to.deep.eq({})
+  })
+
+  it("returns an object where the keys and values have been swapped", function() {
+    expect(invert({a: "1", b: "2", c: "3"})).to.deep.eq({1: "a", 2: "b", 3: "c"})
+    expect(invert({"hello": "world"})).to.deep.eq({world: "hello"})
+  })
+
+  it("does not use Object.keys or Object.values", function() {
+    expect(invert.toString()).to.not.match(/Object\.keys|Object\.values/)
+  })
+
+})
+```
+### !end-tests
+
+### !explanation
+
+### !end-explanation
+### !end-challenge
+
 ### !challenge
 
 * type: code-snippet
@@ -6,8 +158,6 @@
 * title: Use Objects as Hash Maps to quickly check for a value, use `delete`
 
 ### !question
-
-# Challenge 4: Objects as Hash Maps
 
 The following objects represent hands in "go fish". The keys are cards that are present in the card. Write a function that looks in the hands for the existence of a card. Remember, in Go Fish, one player says to the other- "Got any 3s?" and the player has to give up any threes, regardless of suit. The function should return false if the is not present, and return true *and delete the property from the card* if it is found (representing the loss of the card.)
 
@@ -81,6 +231,66 @@ describe('goFish', function() {
 
 ### !end-challenge
 
+### !challenge
+* type: code-snippet
+* language: javascript
+* id: 9b80bc28-19e9-48c3-909b-df735279e5cd
+* title: JS addSignature
+
+### !question
+## Add Signature
+
+Write a function named addSignature that takes an object and a name, and returns an object where
+
+- the keys are suffixed with "-signed"
+- the values are suffixed with " - <name>"
+
+Example:
+
+- If you pass `{"contract": "foo"}, "Fred"` it should return `{"contract-signed": "foo - Fred"}`
+### !end-question
+
+### !placeholder
+### !end-placeholder
+
+### !tests
+```js
+describe('addSignature', function() {
+
+  it("returns an empty object when passed an empty object", function() {
+    expect(addSignature({})).to.deep.eq({})
+  })
+
+  it("returns an object where the keys have '-signed' appended", function() {
+    let input = {
+      "Contract": "blah blah"
+    }
+    let expected = {
+      "Contract-signed": "blah blah - Joe"
+    }
+
+    expect(addSignature("Joe", input)).to.deep.eq(expected)
+
+    input = {
+      "Agreement": "something",
+      "Code of Conduct": "blah blah"
+    }
+    expected = {
+      "Agreement-signed": "something - Beth",
+      "Code of Conduct-signed": "blah blah - Beth"
+    }
+
+    expect(addSignature("Beth", input)).to.deep.eq(expected)
+  })
+
+})
+```
+### !end-tests
+
+### !explanation
+
+### !end-explanation
+### !end-challenge
 
 ### !challenge
 
@@ -90,8 +300,6 @@ describe('goFish', function() {
 * title: Object References
 
 ### !question
-
-## Challenge 7: Objects in Arrays in Objects
 
 Write a function that does the following:
 

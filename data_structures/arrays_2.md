@@ -7,8 +7,6 @@
 
 ### !question
 
-## Challenge 2: Nested Arrays
-
 Given the following array of arrays:
 
 ```javascript
