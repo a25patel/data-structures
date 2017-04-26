@@ -28,6 +28,7 @@ Challenges allow you to practice the concepts you're learning before taking an a
 - [Strings 2](data_structures/strings_2.md)
 - [Objects 1](data_structures/objects_1.md)
 - [Objects 2](data_structures/objects_2.md)
+- [JSON 1](data_structures/json_1.md)
 
 ## Assessments
 
