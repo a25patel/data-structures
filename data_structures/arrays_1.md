@@ -178,8 +178,6 @@ describe('Zip Arrays', function() {
 ### !end-challenge
 
 
-### !end-challenge
-
 ### !challenge
 * type: code-snippet
 * language: javascript

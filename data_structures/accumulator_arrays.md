@@ -227,6 +227,7 @@ describe('median', function() {
 
 ### !end-explanation
 
+### !end-challenge
 
 
 ### !challenge
