@@ -127,6 +127,53 @@ describe('Movies Functions: ', function() {
 
 * type: code-snippet
 * language: javascript
+* id: 1ef02d8c-850f-48ab-a6dd-0b936648c68a
+* title: Processing Arrays in Arrays
+
+### !question
+
+* Define a function named `flatten` that takes in one argument.
+  * `arr` (array of arrays)
+* Return a new array that combines all of elements of each inner array. For example, given `[[1], [2, 3], [4]]`, then return `[1, 2, 3, 4]`.
+
+Tips:
+* You only need to flatten one level deep.
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat
+
+
+### !end-question
+
+### !placeholder
+
+function flatten(input) {
+
+}
+
+### !end-placeholder
+
+### !tests
+
+describe('flatten', function() {
+  it('flattens an array of arrays', function() {
+    expect(flatten([])).to.deep.eq([]);
+    expect(flatten([[1], [2], [3], [4]])).to.deep.eq([1, 2, 3, 4]);
+    expect(flatten([[1], [2, 3], [4]])).to.deep.eq([1, 2, 3, 4]);
+    expect(flatten([[1], [2], [3, [[4]]]])).to.deep.eq([1, 2, 3, [[4]]]);
+  });
+});
+
+### !end-tests
+
+### !explanation
+
+### !end-explanation
+
+### !end-challenge
+
+### !challenge
+
+* type: code-snippet
+* language: javascript
 * id: 62647411-bf9a-40ff-8a62-cc683719536b
 * title: Nested Array Access + Algorithm Challenge
 
