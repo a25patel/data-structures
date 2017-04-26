@@ -1,6 +1,6 @@
 # Strings as Data Structures - Level 1
 
-In this exercise, we'll be doing more String Manipulation. For these exercises however, we're going to be thinking of Strings as a Data Structure.
+In this exercise, we'll be doing more String Manipulation. For these exercises however, we're going to be thinking of Strings as a Data Structure. Looping over Strings, as well as using their built-in methods will be our main goal.
 
 ### !challenge
 * type: code-snippet

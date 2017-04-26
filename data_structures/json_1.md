@@ -165,6 +165,90 @@ describe('validateUser', function() {
 
 ### !end-challenge
 
+### !challenge
+
+* type: code-snippet
+* language: javascript
+* id: guid-goes-here
+* title: short friendly title
+
+### !question
+
+Define a function named `pluck` that takes in two arguments.
+   `arr` (array of objects)
+   `key` (string)
+
+Return a new array where each element is the keyed value of each object.
+
+For example, given the array:
+```
+  [
+    { name: 'moe', age: 40 },
+    { name: 'larry', age: 50 },
+    { name: 'curly', age: 60 }
+  ]
+```
+
+and the key `'name'`, then return `['moe', 'larry', 'curly']`.
+
+
+Define a function named `combine` that takes in two arguments.
+  `obj1` (object)
+  `obj2` (object)
+
+Return a new object that has the key-value pairs of both objects. For
+example, given `{ a: 1 }` and `{ b: 2 }`, then return `{ a: 1, b: 2 }`.
+If there's a key in more than one object,
+the latest object to have the key will determine the value. For example,
+given `{c: 3}` and `{c: 4}`, then return `{c: 4}`.
+
+### !end-question
+
+### !placeholder
+
+function pluck(input) {
+// your code here
+}
+
+function combine(input) {
+// your code here
+}
+
+### !end-placeholder
+
+### !tests
+
+describe('combine', function() {
+  it('returns the combination of key-value pairs from two objects', function() {
+    expect(combine({a: 1}, {})).to.deep.eq({a: 1});
+    expect(combine({}, {b: 2})).to.deep.eq({b: 2});
+    expect(combine({a: 1}, {b: 2})).to.deep.eq({a: 1, b: 2});
+    expect(combine({a: 1}, {a: 2})).to.deep.eq({a: 2});
+    expect(combine({}, {})).to.deep.eq({});
+  })
+});
+
+describe('pluck', function() {
+  it('grabs the values from an array of object for a specific key', function() {
+    var stooges = [
+      { name: 'moe', age: 40 },
+      { name: 'larry', age: 50 },
+      { name: 'curly', age: 60 }
+    ];
+
+    expect(pluck([], 'foo')).to.deep.eq([]);
+    expect(pluck(stooges, 'name')).to.deep.eq(['moe', 'larry', 'curly']);
+  });
+});
+
+### !end-tests
+
+### !explanation
+
+### !end-explanation
+
+### !end-challenge
+
 
 ### !challenge
 
@@ -175,7 +259,6 @@ describe('validateUser', function() {
 
 ### !question
 
-## Challenge 5: Nested Object Access
 Given the following object:
 
 ```javascript
@@ -342,8 +425,6 @@ describe('Nested Object Access', function() {
 * title: Abstract Data Modeling with Objects
 
 ### !question
-
-## Challenge 6: Arrays in Objects
 
 Below is a Model of a recipe:
 
