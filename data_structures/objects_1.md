@@ -1,5 +1,7 @@
 # JavaScript Objects Level 1
 
+This set of challenges deals with Objects as Hash Maps, and simple Object access. 
+
 ### !challenge
 * type: code-snippet
 * language: javascript
@@ -340,9 +342,6 @@ describe('biggestProperty', function() {
 
 ### !end-explanation
 ### !end-challenge
-
-
-
 
 ### !challenge
 * type: code-snippet

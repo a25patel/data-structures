@@ -1,3 +1,7 @@
+# Arrays level 2
+
+This set of challenges deals with nested arrays, and techniques for looping over multiple arrays.
+
 ### !challenge
 
 * type: code-snippet

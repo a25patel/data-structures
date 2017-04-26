@@ -1,5 +1,7 @@
 # JavaScript Objects Level 2
 
+This set of exercises deals with more complex operations on Objects as a Data Structure. It also deals with some more realistic programs that require the inginuitive use of Objects.
+
 ### !challenge
 * type: code-snippet
 * language: javascript
@@ -42,8 +44,6 @@ describe('letterCount', function() {
 
 ### !end-explanation
 ### !end-challenge
-
-
 
 ### !challenge
 * type: code-snippet
