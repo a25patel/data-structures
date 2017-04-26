@@ -300,18 +300,18 @@ describe('percentage', function() {
 ### !question
 
 * Define a function named `averageMovieReview` that takes three arguments
-  * user1, user2, user3 (number between 0 and 5)
+  * `user1`, `user2`, `user3` (number between `0` and `5`)
 * Return the average of the three arguments
-  * For example, given 2, 2, and 5, then return 3.
+  * For example, given `2`, `2`, and `5`, then return `3`.
 
 
 * Define a function named `weightedAverageMovieReview` that takes three arguments
-  * user1, user2, user3 (number between 0 and 5)
+  * `user1`, `user2`, `user3` (number between `0` and `5`)
 * Return the weighted average of the three arguments with the following weights
-  * User 1's weight is 0.25
-  * User 2's weight is 1
-  * User 3's weight is 2.2
-  * For example, given 2, 2, and 5, with the above weights, then return 4.5
+  * User 1's weight is `0.25`
+  * User 2's weight is `1`
+  * User 3's weight is `2.2`
+  * For example, given `2`, `2`, and `5`, with the above weights, then return `4.5`
 
 
 ### !end-question
@@ -445,4 +445,104 @@ describe('largestOfThree', function() {
 
 ### !end-explanation
 
+### !end-challenge
+
+
+### !challenge
+* type: code-snippet
+* language: javascript
+* id: c277af64-ebaa-408d-a632-1eba9b78eba1
+* title: JS threeOdds
+
+### !question
+## Three Odds
+
+Write a function named threeOdds that takes 2 numbers and returns true if there are 3 odd numbers _between_ those two numbers
+
+Example:
+
+- If you pass `0,2` it should return `false` because the only number between 0 and 2 is 1
+- If you pass `0,6` it should return `true` because between 0 and six (the numbers 1,2,3,4,5) there are three odds - 1, 3 and 5
+### !end-question
+
+### !placeholder
+### !end-placeholder
+
+### !tests
+```js
+describe('threeOdds', function() {
+
+  it("returns false when passed 0s", function() {
+    expect(threeOdds(0, 0), "Default value is incorrect").to.deep.eq(false)
+  })
+
+  it("returns true if there are at least 3 odd whole numbers between the numbers given", function() {
+    expect(threeOdds(0,6)).to.deep.eq(true)
+    expect(threeOdds(0,7)).to.deep.eq(true)
+    expect(threeOdds(10,18)).to.deep.eq(true)
+  })
+
+  it("returns false if there are not at least 3 odd whole numbers between the numbers given", function() {
+    expect(threeOdds(0,2)).to.deep.eq(false)
+    expect(threeOdds(0,3)).to.deep.eq(false)
+    expect(threeOdds(0,4)).to.deep.eq(false)
+    expect(threeOdds(0,5)).to.deep.eq(false)
+  })
+
+})
+```
+### !end-tests
+
+### !explanation
+
+### !end-explanation
+### !end-challenge
+
+
+### !challenge
+* type: code-snippet
+* language: javascript
+* id: 6dedf777-372b-4068-a749-caf8e5cb8284
+* title: JS factorial
+
+### !question
+## Factorial
+
+Write a function named factorial that takes a number and returns its factorial
+
+Factorial of `4` means `4 * 3 * 2 * 1`
+
+Example:
+
+- If you pass `4` it should return `24` since that's `4 * 3 * 2 * 1`
+- If you pass `5` it should return `120` since that's `5 * 4 * 3 * 2 * 1`
+### !end-question
+
+### !placeholder
+### !end-placeholder
+
+### !tests
+```js
+describe('factorial', function() {
+
+  it("returns 1 when given 0", function() {
+    expect(factorial(0)).to.deep.eq(1)
+  })
+
+  it("returns the factorial of the number", function() {
+    expect(factorial(1)).to.deep.eq(1)
+    expect(factorial(2)).to.deep.eq(2)
+    expect(factorial(3)).to.deep.eq(6)
+    expect(factorial(4)).to.deep.eq(24)
+    expect(factorial(5)).to.deep.eq(120)
+    expect(factorial(6)).to.deep.eq(720)
+  })
+
+})
+```
+### !end-tests
+
+### !explanation
+
+### !end-explanation
 ### !end-challenge
