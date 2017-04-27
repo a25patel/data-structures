@@ -177,7 +177,102 @@ describe('Zip Arrays', function() {
 
 ### !end-challenge
 
+### !challenge
 
+* type: code-snippet
+* language: javascript
+* id: guid-goes-here
+* title: short friendly title
+
+### !question
+
+### Pets
+
+* Create an array in the pets variable.
+* In the array definition, add 4 types of common household pets.
+* Add "crocodiles" to the 5th index, using the push method.
+* Add another type of common household pet, using the push method.
+
+### Chores
+
+* Create an array in the chores variable.
+* Use the push method to add 3 chores to the chores array.
+* Print "finished X", where X is the last chore in the array, using the pop method.
+
+### Alphabet
+
+* Turn the alphabet variable into an array, using the split method. Each letter should have it's own index.
+* Print out each vowel as a string, with " and sometimes " in between "u" and "y"
+* Using the splice method, remove all the vowels from the array
+
+### Meal Log
+
+* Create a new array for each day of the week (Starting on Sunday), and push it to the mealLog array.
+* Add "Oatmeal" in the first position of each array, by accessing the array.
+* Add "Sandwich" to each even numbered day, in the second position, by accessing the array.
+* Add "Soup" to each odd numbered day, in the second position, by accessing the array.
+* Add "Ramen" to each day that ends with y in the third position, by accessing the array.
+* Create a new array with the names for the days of the week.
+* Print each day from your mealLog array, using the join method, so that it prints each day like so:
+  * "Monday: Oatmeal, Soup, Ramen"
+
+### !end-question
+
+### !placeholder
+
+
+
+### !end-placeholder
+
+### !tests
+
+
+describe('Pets', function() {
+
+    it("Has a crocodile for the 4th index", function() {
+      expect(pets[4]).toBe("crocodiles")
+    })
+    it("totals 6 elements", function() {
+      expect(pets.length).toBe(6)
+    })
+
+})
+
+describe('Chores', function() {
+
+    it("Added 4 chores, then popped one", function() {
+      expect(chores.length).toBe(2)
+    })
+
+})
+
+describe('Alphabet', function() {
+
+    it("Has been operated on properly", function() {
+      expect(alphabet).toEqual("bcdfghjklmnpqrstvwxz".split(""));
+    })
+
+})
+
+describe('Meal Log', function() {
+
+    it("Has every piece of data in the correct position", function() {
+      expect(mealLog.length).toBe(7);
+      expect(mealLog[0].length).toBe(3);
+      expect(mealLog[0][1]).toBe("Sandwich");
+      expect(mealLog[1][1]).toBe("Soup");
+      expect(mealLog[0][2]).toBe("Ramen");
+    })
+
+})
+
+### !end-tests
+
+### !explanation
+
+### !end-explanation
+
+### !end-challenge
 ### !challenge
 * type: code-snippet
 * language: javascript
