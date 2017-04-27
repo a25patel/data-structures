@@ -83,7 +83,15 @@ describe('Pre-Challenge: highestSum', function() {
 
 ##### !question
 
-Please detail how you approached the problem. How did you break it down? What things did you try that didn't work?
+Please detail how you approached the problem.
+
+* How did you approach this problem?
+* What things did you try that didn't work?
+* How did you break it down?
+* How did you arrive at the final result?
+* What were the stages along the way?
+* What, if anything, did you look up?
+* Why did you choose (or not choose) to look up what you did?
 
 ##### !end-question
 

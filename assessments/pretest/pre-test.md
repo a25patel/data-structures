@@ -59,6 +59,29 @@ describe('filterMembers', function() {
 
 ### !end-challenge
 
+### !challenge
+
+* type: paragraph
+* id: 5510141f-4f6d-400a-bd0f-5a56723c30f5
+* title: Pretest Explaination
+
+##### !question
+
+Please detail how you approached the problem.
+
+* How did you approach this problem?
+* What things did you try that didn't work?
+* How did you break it down?
+* How did you arrive at the final result?
+* What were the stages along the way?
+* What, if anything, did you look up?
+* Why did you choose (or not choose) to look up what you did?
+
+
+##### !end-question
+
+### !end-challenge
+
 # How did you do?
 
 ## 😱 Help!  I didn't even know where to get started!
