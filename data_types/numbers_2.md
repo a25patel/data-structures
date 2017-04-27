@@ -238,11 +238,12 @@ Your task in this challenge is to determine how populations of swamp creatures c
 
 You are given several variables representing populations of different creatures in a swamp.
 
-* Birds eat 2 fish a day
-* Snakes eat 1 bird a week
-* Crocs eat 20 fish, 1 snake, and 1 bird a week
+* Each 🐊 Croc eats 20 fish a month, 1 snake a week and 1 bird a week
+* Each 🐍 Snake eats 1 bird a week
+* Each 🦆 Bird eats 2 fish a day
+* 🐟 Fish are herbivorous and feed on sea grass and algae (which you are not keeping track of)
 
-If a creature goes without food for a time period it would normally get food in, remove it from the population (it starves 😨)
+If there is not enough food to feed a creature, remove it from the population (it starves 😨)
 
 * Fish reproduce once a month, for every 2 fish there are 100 new fish
 * Birds reproduce once a month, for every 2 birds there are 5 new birds
@@ -256,11 +257,19 @@ Your task is to find out the following information:
 * Bonus: Will birds go extinct in the next 500 years? If so, how many months will it take? Create a variable called `birdExtinction`, set it to `null` if it won't ever happen.
 
 You can assume the following things:
-* There are 4 weeks in every month (to keep things simple)
-* There are 28 days a month (4 * 7)
+* January 1st is the start date.
+* Time moves along 1 month at a time (to keep things simple)
+	* There are 4 weeks in every month
+	* There are 28 days a month (4 * 7)
 * There 12 months in a year
-* Every reproduction event happens on the first day of a week or month, all at once
 * Creatures eat before they reproduce
+	* Crocs eat first.
+		* They Eat Fish first (If there are not enough, some crocs die...)
+		* Then they eat Snakes (If there are not enough, some crocs die...)
+		* Then they eat Birds (If there are not enough, some crocs die...)
+	* Snakes eat second. (If there are not enough birds, some snakes die...)
+	* Birds eat last. (If there are not enough fish, some birds die...)
+* Every reproduction event happens after the creatures eat on the first day of the month, all at once
 
 Tips:
 * Start by looking at the problem, what do you need to know, and what information do you have?
@@ -271,7 +280,7 @@ Tips:
 ### !end-question
 
 ### !placeholder
-// 1st week January populations (don't modify these, just create new variables if you need them)
+// Initial populations (don't modify these, just create new variables if you need them)
 const birds = 700;
 const fish = 11700;
 const crocs = 50;
@@ -305,9 +314,44 @@ describe('The Swamp', function() {
 
     for (let month = 1; month < 500; month++) {
       //eat
-      currentBirdPopulation -= (currentSnakesPopulation * 4) + (currentCrocsPopulation * 4);
-      currentFishPopulation -= ((currentBirdPopulation * 2) * 28) + (currentCrocsPopulation * 20);
-      currentSnakesPopulation -= (currentCrocsPopulation * 4);
+      if(currentCrocsPopulation > 0) {
+        let crocsCanBeFed = Math.floor(currentFishPopulation / 20);
+        if(crocsCanBeFed < currentCrocsPopulation) {
+          currentCrocsPopulation = crocsCanBeFed;
+        }
+        currentFishPopulation -= (currentCrocsPopulation * 20);
+
+        crocsCanBeFed = Math.floor(currentSnakesPopulation / 4);
+        if(crocsCanBeFed < currentCrocsPopulation) {
+          currentCrocsPopulation = crocsCanBeFed;
+        }
+
+        currentSnakesPopulation -= (currentCrocsPopulation * 4);
+
+        crocsCanBeFed = Math.floor(currentBirdPopulation / 4);
+        if(crocsCanBeFed < currentCrocsPopulation) {
+          currentCrocsPopulation = crocsCanBeFed;
+        }
+
+        currentBirdPopulation -= (currentCrocsPopulation * 4);
+      }
+
+      if(currentSnakesPopulation > 0) {
+        let snakesCanBeFed = Math.floor(currentBirdPopulation / 4);
+        if(snakesCanBeFed < currentSnakesPopulation) {
+          currentSnakesPopulation = snakesCanBeFed;
+        }
+        currentBirdPopulation -= (currentSnakesPopulation * 4);
+      }
+
+      if(currentBirdPopulation > 0) {
+        let birdsCanBeFed = Math.floor(currentFishPopulation / 56);
+        if(birdsCanBeFed < currentBirdPopulation) {
+          currentBirdPopulation = birdsCanBeFed;
+        }
+        currentFishPopulation -= (currentBirdPopulation *56);
+      }
+
 
       //reproduce
       currentBirdPopulation += (currentBirdPopulation / 2) * 5;
@@ -345,9 +389,11 @@ describe('The Swamp', function() {
 
   })
 
-  it("Bird Extinction", function() {
-    expect(birdExtinction, "Bird Extinction Date").to.eq(birdExtinctionAnswer);
-  })
+  if(birdExtinction) {
+	  it("Bird Extinction", function() {
+	    expect(birdExtinction, "Bird Extinction Date").to.eq(birdExtinctionAnswer);
+	  })
+  }
 
 })
 ```
