@@ -206,23 +206,23 @@ var extraSlices;
 describe('Bakery', function() {
 
     it("cakesWeCanBake should have a number of cakes that are bakeable in the number of hours left", function() {
-      expect(cakesWeCanBake, "Remember to use (bakers * cake time) * number of hours left").toBe(15);
+      expect(cakesWeCanBake, "Remember to use (bakers * cake time) * number of hours left").to.equal(15);
     })
 
     it("finalSliceCount has the final number of slices", function() {
-      expect(finalSliceCount, "Figure out how many total slices we'll have if we baked all the cakes we can, and added the amount of cakes we already have").toBe(120)
+      expect(finalSliceCount, "Figure out how many total slices we'll have if we baked all the cakes we can, and added the amount of cakes we already have").to.equal(120)
     })
 
     it("extraSlices indicates whether or not we'll have extra slices at the end", function() {
-      expect(extraSlices).toBe(true);
+      expect(extraSlices).to.equal(true);
     })
 
     it("enoughSlicesNow tells us whether we have enough slices - make sure to multiply the number of cakes by the number of slices, and see if it is less than the number of attendees", function() {
-      expect(enoughSlicesNow).toBe(false);
+      expect(enoughSlicesNow).to.equal(false);
     })
 
     it("slicesNeeded tells us how many slices we need beyond the number we already have", function() {
-      expect(slicesNeeded).toBe(30);
+      expect(slicesNeeded).to.equal(30);
     })
 
 })
