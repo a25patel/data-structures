@@ -190,7 +190,7 @@ describe('Zip Arrays', function() {
 
 * Create an array in the pets variable.
 * In the array definition, add 4 types of common household pets.
-* Add "crocodiles" to the 5th index, using the push method.
+* Add "crocodiles" to the 5th space in the array (index 4), using the push method.
 * Add another type of common household pet, using the push method.
 
 ### Chores
@@ -232,8 +232,8 @@ var mealLog = [];
 
 describe('Pets', function() {
 
-    it("Has a crocodile for the 5th index", function() {
-      expect(pets[5]).to.eq("crocodiles")
+    it("Has a crocodile for the 4th index", function() {
+      expect(pets[4]).to.eq("crocodiles")
     })
     it("totals 6 elements", function() {
       expect(pets.length).to.eq(6)
