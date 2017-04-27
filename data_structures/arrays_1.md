@@ -181,7 +181,7 @@ describe('Zip Arrays', function() {
 
 * type: code-snippet
 * language: javascript
-* id: guid-goes-here
+* id: ab5c8641-f70c-442a-b044-7a1023a49f7a
 * title: short friendly title
 
 ### !question

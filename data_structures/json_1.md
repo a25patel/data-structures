@@ -169,7 +169,7 @@ describe('validateUser', function() {
 
 * type: code-snippet
 * language: javascript
-* id: guid-goes-here
+* id: 6bf6a92d-3189-4565-8daa-acfc44f09c19
 * title: short friendly title
 
 ### !question
