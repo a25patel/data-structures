@@ -285,7 +285,7 @@ describe('Meal Log', function() {
 ### !question
 ## Every
 
-Write a function named every that takes an array and a value and returns true if every element of the array equals the value
+Write a function named `every` that takes an array and a value and returns true if every element of the array equals the value
 
 Example:
 
@@ -294,6 +294,11 @@ Example:
 ### !end-question
 
 ### !placeholder
+
+function every(arr) {
+
+}
+
 ### !end-placeholder
 
 ### !tests
@@ -335,7 +340,7 @@ describe('every', function() {
 
 ### !question
 ## Some
-Write a function named some that takes an array and a value and returns true if at least one element of the array equals the value
+Write a function named `some` that takes an array and a value and returns true if at least one element of the array equals the value
 
 Example:
 
@@ -344,6 +349,11 @@ Example:
 ### !end-question
 
 ### !placeholder
+
+function some() {
+
+}
+
 ### !end-placeholder
 
 ### !tests
