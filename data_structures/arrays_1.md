@@ -252,7 +252,7 @@ describe('Chores', function() {
 describe('Alphabet', function() {
 
     it("Has been operated on properly", function() {
-      expect(alphabet).toEqual("bcdfghjklmnpqrstvwxz".split(""));
+      expect(alphabet).to.deep.eq("bcdfghjklmnpqrstvwxz".split(""));
     })
 
 })
