@@ -399,3 +399,5 @@ describe('The Swamp', function() {
 ```
 
 ### !end-tests
+
+### !end-challenge
