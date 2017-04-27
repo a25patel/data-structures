@@ -39,7 +39,6 @@ Assessments prove to us that you know the material.
 
 [Reading JavaScript Expressions](./assessments/js-expressions/reading_javascript_expressions.md)  
 [Writing JavaScript Expressions](./assessments/js-expressions/writing_javascript_expressions.md)  
-[Conditionals and Loops](./assessments/js-loops-and-conditionals/README.md)
 
 This checkpoint relates to the following standards and component skills:
 
