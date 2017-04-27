@@ -232,8 +232,8 @@ var mealLog = [];
 
 describe('Pets', function() {
 
-    it("Has a crocodile for the 4th index", function() {
-      expect(pets[4]).to.eq("crocodiles")
+    it("Has a crocodile for the 3rd index (4th position)", function() {
+      expect(pets[3]).to.eq("crocodiles")
     })
     it("totals 6 elements", function() {
       expect(pets.length).to.eq(6)
@@ -244,7 +244,7 @@ describe('Pets', function() {
 describe('Chores', function() {
 
     it("Added 4 chores, then popped one", function() {
-      expect(chores.length).to.eq(2)
+      expect(chores.length).to.eq(3)
     })
 
 })
