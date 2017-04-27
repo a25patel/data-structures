@@ -50,7 +50,7 @@ describe('doubleLetters', function() {
 
 ### !question
 ## Reverse String
-Write function named reverseString that will reverse a string without calling the built-in `.split` or `.reverse` methods.
+Write function named `reverseString` that will reverse a string without calling the built-in `.split` or `.reverse` methods.
 
 Example:
 
@@ -58,6 +58,9 @@ Example:
 ### !end-question
 
 ### !placeholder
+function reverseString () {
+
+}
 ### !end-placeholder
 
 ### !tests
@@ -95,7 +98,7 @@ describe('reverseString', function() {
 
 ### !question
 ## Repeats
-Write a function named repeats that returns true if the first half of the string equals the last half, and false if not
+Write a function named `repeats` that returns true if the first half of the string equals the last half, and false if not
 
 Example:
 
@@ -105,6 +108,9 @@ Example:
 ### !end-question
 
 ### !placeholder
+function repeats() {
+
+}
 ### !end-placeholder
 
 ### !tests
@@ -148,7 +154,7 @@ describe('repeats', function() {
 
 ### !question
 ## Every Other
-Write a function named everyOther that returns every other character in the string
+Write a function named `everyOther` that returns every other character in the string
 
 Example:
 
@@ -156,6 +162,9 @@ Example:
 ### !end-question
 
 ### !placeholder
+function everyOther () {
+
+}
 ### !end-placeholder
 
 ### !tests
@@ -195,7 +204,7 @@ describe('everyOther', function() {
 ### !question
 ## All Equal
 
-Write a function named allEqual that returns true if every character in the string is the same
+Write a function named `allEqual` that returns true if every character in the string is the same
 
 Example:
 
@@ -204,6 +213,9 @@ Example:
 ### !end-question
 
 ### !placeholder
+function allEqual() {
+
+}
 ### !end-placeholder
 
 ### !tests
@@ -244,7 +256,7 @@ describe('allEqual', function() {
 ### !question
 ## Sum Letters
 
-Write a function named sumLetters that returns the sum of every character in the string
+Write a function named `sumLetters` that returns the sum of every character in the string
 
 Example:
 
@@ -253,6 +265,9 @@ Example:
 ### !end-question
 
 ### !placeholder
+function sumLetters() {
+
+}
 ### !end-placeholder
 
 ### !tests
@@ -286,7 +301,7 @@ describe('sumLetters', function() {
 ### !question
 ## Count Vowels
 
-Write a function named countVowels that returns the number of vowels in a string, excluding "y"
+Write a function named `countVowels` that returns the number of vowels in a string, excluding "y"
 
 Example:
 
@@ -294,6 +309,9 @@ Example:
 ### !end-question
 
 ### !placeholder
+function countVowels() {
+
+}
 ### !end-placeholder
 
 ### !tests
@@ -329,7 +347,7 @@ describe('countVowels', function() {
 ### !question
 ## Split
 
-Write a function named split that takes a string and returns an array of the letters
+Write a function named `split` that takes a string and returns an array of the letters
 
 Example:
 
@@ -339,6 +357,9 @@ NOTE: do not use the builtin `split` method
 ### !end-question
 
 ### !placeholder
+function split() {
+
+}
 ### !end-placeholder
 
 ### !tests
@@ -376,7 +397,7 @@ describe('split', function() {
 ### !question
 ## Left Pad
 
-Write a function called leftPad that takes a string, a length and a fill character and returns a string padded to length with the fill character
+Write a function called `leftPad` that takes a string, a length and a fill character and returns a string padded to length with the fill character
 
 Example:
 
@@ -384,6 +405,9 @@ Example:
 ### !end-question
 
 ### !placeholder
+function leftPad() {
+
+}
 ### !end-placeholder
 
 ### !tests
@@ -426,7 +450,7 @@ describe('leftPad', function() {
 ### !question
 ## Create String
 
-Write a function named createString that takes a number and a letter and creates a string of that many letters
+Write a function named `createString` that takes a number and a letter and creates a string of that many letters
 
 Example:
 
@@ -435,6 +459,9 @@ Example:
 ### !end-question
 
 ### !placeholder
+function createString() {
+  
+}
 ### !end-placeholder
 
 ### !tests
