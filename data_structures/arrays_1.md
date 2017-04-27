@@ -223,7 +223,7 @@ describe('Zip Arrays', function() {
 var pets;
 var chores;
 var alphabet = "abcdefghijklmnopqrstuvwxyz";
-var mealLog = [];q
+var mealLog = [];
 
 ### !end-placeholder
 
