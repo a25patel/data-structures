@@ -232,8 +232,8 @@ var mealLog = [];
 
 describe('Pets', function() {
 
-    it("Has a crocodile for the 3rd index (4th position)", function() {
-      expect(pets[3]).to.eq("crocodiles")
+    it("Has a crocodile for the 5th index", function() {
+      expect(pets[5]).to.eq("crocodiles")
     })
     it("totals 6 elements", function() {
       expect(pets.length).to.eq(6)
