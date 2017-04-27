@@ -223,7 +223,7 @@ describe('Zip Arrays', function() {
 var pets;
 var chores;
 var alphabet = "abcdefghijklmnopqrstuvwxyz";
-var mealLog = [];
+var mealLog = [];q
 
 ### !end-placeholder
 
@@ -233,10 +233,10 @@ var mealLog = [];
 describe('Pets', function() {
 
     it("Has a crocodile for the 4th index", function() {
-      expect(pets[4]).toBe("crocodiles")
+      expect(pets[4]).to.eq("crocodiles")
     })
     it("totals 6 elements", function() {
-      expect(pets.length).toBe(6)
+      expect(pets.length).to.eq(6)
     })
 
 })
@@ -244,7 +244,7 @@ describe('Pets', function() {
 describe('Chores', function() {
 
     it("Added 4 chores, then popped one", function() {
-      expect(chores.length).toBe(2)
+      expect(chores.length).to.eq(2)
     })
 
 })
@@ -260,11 +260,11 @@ describe('Alphabet', function() {
 describe('Meal Log', function() {
 
     it("Has every piece of data in the correct position", function() {
-      expect(mealLog.length).toBe(7);
-      expect(mealLog[0].length).toBe(3);
-      expect(mealLog[0][1]).toBe("Sandwich");
-      expect(mealLog[1][1]).toBe("Soup");
-      expect(mealLog[0][2]).toBe("Ramen");
+      expect(mealLog.length).to.eq(7);
+      expect(mealLog[0].length).to.eq(3);
+      expect(mealLog[0][1]).to.eq("Sandwich");
+      expect(mealLog[1][1]).to.eq("Soup");
+      expect(mealLog[0][2]).to.eq("Ramen");
     })
 
 })
