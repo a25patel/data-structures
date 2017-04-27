@@ -220,7 +220,10 @@ describe('Zip Arrays', function() {
 
 ### !placeholder
 
-
+var pets;
+var chores;
+var alphabet = "abcdefghijklmnopqrstuvwxyz";
+var mealLog = [];
 
 ### !end-placeholder
 
