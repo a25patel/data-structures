@@ -1,13 +1,13 @@
-# Pretest
+# Benchmark
 
-This challenge will help you understand if you're ready to take the final technical assessment!
+This challenge will help you understand if you're ready to take the final technical benchmark!
 
 ### !challenge
 
 * type: code-snippet
 * language: javascript
 * id: 27da80dc-777c-450a-a244-b7a4b8ecc4d7
-* title: Application Prep Pretest
+* title: Application Prep Benchmark
 
 ### !question
 
@@ -63,7 +63,7 @@ describe('filterMembers', function() {
 
 * type: paragraph
 * id: 5510141f-4f6d-400a-bd0f-5a56723c30f5
-* title: Pretest Explaination
+* title: Benchmark Explanation
 
 ##### !question
 

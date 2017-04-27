@@ -1,10 +1,10 @@
-# Web Development Immersive Challenge
+# Web Development Immersive Benchmark
 
 Thank you for your application to the Full Stack Web Development program at Galvanize!
 
-### About the Pre-Challenge
+### About the Benchmark
 
-This technical assessment is an exercise in learning about programming. You do not need know programming in order to apply to Galvanize, but we are looking for a basic level of understanding of coding concepts. If you are not familiar with programming languages, you should spend some time on the tutorials below before you attempt the challenge.
+This technical Benchmark is an exercise in learning about programming. You do not need know programming in order to apply to Galvanize, but we are looking for a basic level of understanding of coding concepts. If you are not familiar with programming languages, you should spend some time on the tutorials below before you attempt the challenge.
 
 This challenge is a chance for us to evaluate how you can use resources in order to work through a challenge.  We are not expecting a perfect answer. Your response will be evaluated based on the content of the answer, not necessarily on the test output.
 
@@ -28,7 +28,7 @@ You should complete this programming challenge in JavaScript. If you do not have
 
 ### !question
 
-## Pre-Challenge Question
+## Programming Challenge Question
 
 For this challenge, we are interested in finding the credit card number whose digits sum to the largest number. If more than one has the same largest sum of digits, we want the last one in the list with that sum.
 Write a single function called `highestSum` that takes one argument. That argument will be an array of credit card numbers. Assume the array can have any number of credit card numbers, and that each one is a string of digits and dashes. Your function should return the credit card number that has the largest sum of digits.
@@ -83,7 +83,9 @@ describe('Pre-Challenge: highestSum', function() {
 
 ##### !question
 
-Please detail how you approached the problem.
+## Problem-Solving Process
+
+Please detail how you approached the problem. Understanding how you approach problems is really critical to your career as an engineer, and we want to know as much as we can about how you think about problem solving, so please leave as detailed an answer as possible.
 
 * How did you approach this problem?
 * What things did you try that didn't work?
