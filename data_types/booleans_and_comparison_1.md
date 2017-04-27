@@ -124,7 +124,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/type
 ### !placeholder
 
 function superPicky () {
-  
+
 }
 
 ### !end-placeholder
@@ -154,5 +154,80 @@ describe('superPicky', function() {
 ### !explanation
 
 ### !end-explanation
+
+### !end-challenge
+
+### !challenge
+
+* type: code-snippet
+* language: javascript
+* id: 0610294e-3d25-4bbd-af76-36b080275633
+* title: Booleans and Comparison: Bakery
+
+### !question
+
+Using comparison operators, we're going to create several boolean values, and store them in variables.
+
+We have to figure out if we can bake enough cakes before the party!
+
+First, figure out if we have enough slices now. Use a comparison operator to figure out if there are enough. Assign the result to the enoughSlicesNow variable.
+Next, figure out how many slices we'll need, if any. Assign the result to the slicesNeeded variable.
+Figure out how many cakes can be baked, using the formula (bakers * cake time) * hours left. Assign the result to the cakesWeCanBake variable.
+Now, figure out if you'll have extra slices, using comparison operators. Assign the total number of slices to the finalSliceCount variable, then check if it is greater than the number of attendees and put the result in the extraSlices variable.
+
+### !end-question
+
+### !placeholder
+
+// Leave these alone
+const cakes = 5;
+const slicesPerCake = 6;
+const attendees = 60;
+const bakers = 3;
+const cakeBakingTime = 1;
+const hoursLeftUntilParty = 5;
+
+//Add comparison operators to the variables below:
+var enoughSlicesNow;
+
+var slicesNeeded;
+
+var cakesWeCanBake;
+
+var finalSliceCount;
+
+var extraSlices;
+
+### !end-placeholder
+
+### !tests
+
+```js
+describe('Bakery', function() {
+
+    it("cakesWeCanBake should have a number of cakes that are bakeable in the number of hours left", function() {
+      expect(cakesWeCanBake, "Remember to use (bakers * cake time) * number of hours left").toBe(15);
+    })
+
+    it("finalSliceCount has the final number of slices", function() {
+      expect(finalSliceCount, "Figure out how many total slices we'll have if we baked all the cakes we can, and added the amount of cakes we already have").toBe(120)
+    })
+
+    it("extraSlices indicates whether or not we'll have extra slices at the end", function() {
+      expect(extraSlices).toBe(true);
+    })
+
+    it("enoughSlicesNow tells us whether we have enough slices - make sure to multiply the number of cakes by the number of slices, and see if it is less than the number of attendees", function() {
+      expect(enoughSlicesNow).toBe(false);
+    })
+
+    it("slicesNeeded tells us how many slices we need beyond the number we already have", function() {
+      expect(slicesNeeded).toBe(30);
+    })
+
+})
+```
+### !end-tests
+
 
 ### !end-challenge
