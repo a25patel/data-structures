@@ -267,8 +267,8 @@ You can assume the following things:
 		* They Eat Fish first (If there are not enough, some crocs die...)
 		* Then they eat Snakes (If there are not enough, some crocs die...)
 		* Then they eat Birds (If there are not enough, some crocs die...)
-	* Snakes eat second.
-	* Birds eat last.
+	* Snakes eat second. (If there are not enough birds, some snakes die...)
+	* Birds eat last. (If there are not enough fish, some birds die...)
 * Every reproduction event happens after the creatures eat on the first day of the month, all at once
 
 Tips:
