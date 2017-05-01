@@ -202,7 +202,6 @@ describe('Zip Arrays', function() {
 ### Alphabet
 
 * Turn the alphabet variable into an array, using the split method. Each letter should have it's own index.
-* Print out each vowel as a string, with " and sometimes " in between "u" and "y"
 * Using the splice method, remove all the vowels from the array
 
 ### Meal Log
