@@ -240,14 +240,14 @@ describe('goFish', function() {
 ### !question
 ## Add Signature
 
-Write a function named addSignature that takes an object and a name, and returns an object where
+Write a function named addSignature that takes a name and an object, and returns an object where
 
 - the keys are suffixed with "-signed"
 - the values are suffixed with " - <name>"
 
 Example:
 
-- If you pass `{"contract": "foo"}, "Fred"` it should return `{"contract-signed": "foo - Fred"}`
+- If you pass `"Fred", {"contract": "foo"}` it should return `{"contract-signed": "foo - Fred"}`
 ### !end-question
 
 ### !placeholder
