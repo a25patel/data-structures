@@ -99,5 +99,6 @@ Please detail how you approached the problem. Understanding how you approach pro
 
 ### !end-challenge
 
-Questions? Reach out to us at [admissions@galvanize.com](mailto:admissions@galvanize.com)
+Questions? Reach out to us at <a href="mailto:admissions@galvanize.com" target="_top">admissions@galvanize.com</a>
+
 By submitting your information below, you agree to our [Terms of Use](http://www.galvanize.com/terms-of-use/) and [Privacy Policy](http://www.galvanize.com/privacy/).
