@@ -26,12 +26,6 @@ Examples:
 
 ### !end-question
 
-## 😱 Help!  I didn't even know where to get started!
-
-That's OK!  We got you 😀
-
-Your best next step is to go to [Unit 2](https://github.com/gSchool/javascript-curriculum/blob/precourse/10_Syntax/README.md) to learn JavaScript!
-
 ### !placeholder
 
 // Your code here
@@ -65,6 +59,12 @@ describe('filterMembers', function() {
 ### !end-tests
 
 ### !end-challenge
+
+## 😱 Help!  I didn't even know where to get started!
+
+That's OK!  We got you 😀
+
+Your best next step is to go to [Unit 2](https://github.com/gSchool/javascript-curriculum/blob/precourse/10_Syntax/README.md) to learn JavaScript!
 
 ### !challenge
 
