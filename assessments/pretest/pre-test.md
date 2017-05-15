@@ -23,6 +23,12 @@ Examples:
 - `filterMembers(["1", 1, "2", 2],[1,2])` should return `["1", "2"]`
 - `filterMembers([1,2,3,4,5,6])` should return `[1,2,3,4,5,6]`
 
+## 😱 Help!  I didn't even know where to get started!
+
+That's OK!  We got you 😀
+
+Your best next step is to go to [Unit 2](https://github.com/gSchool/javascript-curriculum/blob/precourse/10_Syntax/README.md) to learn JavaScript!
+
 ### !end-question
 
 ### !placeholder
@@ -84,11 +90,7 @@ Please detail how you approached the problem.
 
 # How did you do?
 
-## 😱 Help!  I didn't even know where to get started!
 
-That's OK!  We got you 😀
-
-Your best next step is to go to [Unit 2](https://github.com/gSchool/javascript-curriculum/blob/precourse/10_Syntax/README.md) to learn JavaScript!
 
 ## 🤔 Phew!  That was rough, but I did it
 
