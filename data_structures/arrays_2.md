@@ -176,6 +176,75 @@ describe('flatten', function() {
 
 * type: code-snippet
 * language: javascript
+* id: a4c9bec4-62f3-4c6f-8385-ca16e7247e93
+* title: Deck of Cards
+
+### !question
+
+## Deck of Cards
+Write a function called `createDeck` that creates a deck of cards, which takes two inputs:
+* `suits` - an array of strings containing the card suits
+* `faces` - an array of strings and numbers containing the card faces
+
+* Using two for loops, loop through the input arrays.
+* Create a string using the two elements that represents the cards, like this: "Ace of Spades"
+* Push that element into the deck
+
+Your deck by the end should look something like this:
+```js
+var deck = ["Ace of Hearts", "2 of Hearts" ...etc ];
+```
+
+It's not critical that you order them properly, because once you have a dynamically created array of cards...
+
+#### Bonus
+
+Shuffle your deck! Move cards around until there aren't three cards of the same suit in a row. Check out splice(https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice) for this.
+
+
+### !end-question
+
+### !placeholder
+
+var suits = ["Hearts", "Diamonds", "Spades", "Clovers"];
+var faces = ["Ace", 2, 3, 4, 5, 6, 7, 8, 9, 10, "Jack", "Queen", "Kings"]
+
+function createDeck(suits, faces) {
+// return a complete deck of cards
+}
+
+### !end-placeholder
+
+### !tests
+
+allCards = [];
+describe("createDeck", function() {
+
+	before(function() {
+		var suits = ["Hearts", "Diamonds", "Spades", "Clovers"];
+		var faces = ["Ace", 2, 3, 4, 5, 6, 7, 8, 9, 10, "Jack", "Queen", "Kings", "Joker"];
+		for(var suit=0; suit < suits.length; suit++) {
+		    for(var face=0; face < faces.length-1; face++) {
+		        allCards.push(faces[face] + " of " + suits[suit]);
+		    }
+		}
+	})
+	it("dynamically creates a deck of cards from suits and faces", function() {
+		for (var i=0; i<allCards.length; i++) {
+    expect(deck.indexOf(allCards[i])).not.toBe(-1);
+	}
+	})
+})
+
+### !end-tests
+
+### !explanation
+
+
+### !challenge
+
+* type: code-snippet
+* language: javascript
 * id: 62647411-bf9a-40ff-8a62-cc683719536b
 * title: Nested Array Access + Algorithm Challenge
 
