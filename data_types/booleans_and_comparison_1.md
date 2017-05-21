@@ -1,16 +1,6 @@
 # Booleans and Comparison - Level 1
 
-These exercises will give you a chance to practice and check your skills in:
-
-Storing and Manipulating Data
-- Data Types
-- Data Operations
-  - Comparison
-
-Problem Solving with JavaScript
-- Programming Techniques
-  - Control Flow / Logical Expressions & Operators
-  - Functions
+These exercises will give you a chance to check your data comparison skills, as well as your flex your logic muscles!
 
 ### !challenge
 
