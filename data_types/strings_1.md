@@ -1,19 +1,7 @@
 # Strings in JavaScript - Level 1
 
-These exercises will give you a chance to practice and check your skills in:
+These exercises will help you practice working with **Strings**, as well as use **Functions**. You'll use **String Concatenation**, °°String Comparison**, and some **String Methods**.
 
-Storing and Manipulating Data
-  - Data Types
-    - Strings
-  - Data Operations
-    - String Manipulation
-
-Problem Solving with JavaScript
-- Programming Techniques
-  - Control Flow / Logical Expressions & Operators
-  - Functions
-- Language Implementation
-  - Data Types & Primitives
 
 ### !challenge
 
@@ -24,7 +12,7 @@ Problem Solving with JavaScript
 
 ### !question
 
-* Define a function named `greet` that takes 2 arguments
+Define a function named `greet` that takes 2 arguments
   * firstName (string)
   * lastName (string)
 * Return a string in the format 'Hello, Kelly Rippa!' using these arguments
@@ -79,7 +67,7 @@ describe('greet', function() {
 
 ### !question
 
-* Define a function named `toSentence` that takes four arguments
+Define a function named `toSentence` that takes four arguments
   * word1 (string)
   * word2 (string)
   * word3 (string)
@@ -134,21 +122,21 @@ describe('toSentence', function() {
 
 ### !question
 
-* Define a function named `capitalize` that takes one argument
+Define a function named `capitalize` that takes one argument
   * message (string)
 * Return the argument with the first letter capitalized.
-  * For example, given `'oh, you'`, then return `'Oh, you'`.
+* For example, given `'oh, you'`, then return `'Oh, you'`.
 
-* Define a function named `shout` that takes one argument
+Define a function named `shout` that takes one argument
   * `message` (string)
 * Return the same argument but all in uppercase letters. For example, given
-  * `'Shut the front door'`, then return `'SHUT THE FRONT DOOR'`
+* `'Shut the front door'`, then return `'SHUT THE FRONT DOOR'`
 
-* Define a function named `whisper` that takes one argument
+Define a function named `whisper` that takes one argument
   * `message` (string)
 * Return the same argument but all in lowercase letters and prefixed by
  `'shhh... '`.
-  * For example, given `'GOLF TIME'`, then return `"shhh... golf time"`
+* For example, given `'GOLF TIME'`, then return `"shhh... golf time"`
 
 Tips:
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
@@ -202,7 +190,7 @@ describe('whisper', function() {
 
 ### !question
 
-* Define a function named `isVowel` that takes one argument
+Define a function named `isVowel` that takes one argument
   * `letter` (string)
 * If the `letter` is a vowel
   * Return `true`
@@ -256,7 +244,7 @@ describe('isVowel', function() {
 
 ### !question
 
-* Define a function named `iceCreamPosition` that takes two arguments
+Define a function named `iceCreamPosition` that takes two arguments
   * `pieTemperature` (string)
   * `iceCreamFlavor` (string)
 * If `iceCreamFlavor` is `'cardamom'`
@@ -274,7 +262,7 @@ describe('isVowel', function() {
 ### !placeholder
 
 function iceCreamPosition () {
-  
+
 }
 
 ### !end-placeholder
