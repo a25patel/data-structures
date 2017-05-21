@@ -401,7 +401,7 @@ describe('toDollar', function() {
 ### !question
 
 * Define a function named `largestOfThree` which takes three arguments
-  * value1, value2, value3 (numbers)
+  * `value1`, `value2`, `value3` (numbers)
 * Return the largest argument by value
 
 Tips:
@@ -499,7 +499,7 @@ describe('threeOdds', function() {
 ### !question
 ## Factorial
 
-Write a function named factorial that takes a number and returns its factorial
+Write a function named `factorial` that takes a number and returns its factorial
 
 Factorial of `4` means `4 * 3 * 2 * 1`
 
