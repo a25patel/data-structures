@@ -1,6 +1,6 @@
 # Strings in JavaScript - Level 1
 
-These exercises will help you practice working with **Strings**, as well as use **Functions**. You'll use **String Concatenation**, °°String Comparison**, and some **String Methods**.
+These exercises will help you practice working with **Strings**, as well as use **Functions**. You'll use **String Concatenation**, **String Comparison**, and some **String Methods**.
 
 
 ### !challenge
