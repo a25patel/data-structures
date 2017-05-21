@@ -1,49 +1,6 @@
 # JavaScript Objects Level 2
 
-This set of exercises deals with more complex operations on Objects as a Data Structure. It also deals with some more realistic programs that require the ingenuitive use of Objects.
-
-### !challenge
-* type: code-snippet
-* language: javascript
-* id: 243b94dc-a643-4dfd-b1bc-10127bc39b95
-* title: JS letterCount
-
-### !question
-## Letter Count
-
-Write a function named letterCount that takes a string and returns an object with the letters and the number of their occurrences
-
-Example:
-
-- If you pass `"Yo"` it should return `{Y: 1, o: 1}`
-- If you pass `"Hello"` it should return `{"H": 1, "e": 1, "l": 2, "o": 1}`
-### !end-question
-
-### !placeholder
-### !end-placeholder
-
-### !tests
-```js
-describe('letterCount', function() {
-
-  it("returns an empty object when given an empty string", function() {
-    expect(letterCount(""), "Default value is incorrect").to.deep.eq({})
-  })
-
-  it("returns an object that maps letters to the number of occurrences", function() {
-    expect(letterCount("up")).to.deep.eq({u: 1, p: 1})
-    expect(letterCount("Hello")).to.deep.eq({H: 1, e: 1, l: 2, o: 1})
-    expect(letterCount("aaa")).to.deep.eq({a: 3})
-  })
-
-})
-```
-### !end-tests
-
-### !explanation
-
-### !end-explanation
-### !end-challenge
+This set of exercises deals with more complex operations on Objects as a Data Structure. It also deals with some more realistic programs that require some ingenious use of Objects.
 
 ### !challenge
 * type: code-snippet
