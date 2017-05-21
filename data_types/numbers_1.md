@@ -164,16 +164,14 @@ describe('sumAndProduct', function() {
 
 ### !question
 
-* Define a function named `isEven` that takes one argument
+Define a function named `isEven` that takes one argument
   * `num` (always an integer)
-
 * If the number is even
   * Return `true`
 * Otherwise
   * Return `false`
 
-
-* Define a function named `isOdd` that takes one argument
+Define a function named `isOdd` that takes one argument
   * `num` (always an integer)
 * If the number is odd
   * Return `true`
@@ -243,7 +241,7 @@ describe('isOdd', function() {
 
 ### !question
 
-* Define a function named `percentage` that takes two arguments
+Define a function named `percentage` that takes two arguments
   * `numerator` (number)
   * `denominator` (number)
 * Return the percentage of the first argument divided by the second as a floating point number. For
@@ -290,19 +288,19 @@ describe('percentage', function() {
 
 ### !question
 
-* Define a function named `averageMovieReview` that takes three arguments
+Define a function named `averageMovieReview` that takes three arguments
   * `user1`, `user2`, `user3` (number between `0` and `5`)
 * Return the average of the three arguments
-  * For example, given `2`, `2`, and `5`, then return `3`.
+* For example, given `2`, `2`, and `5`, then return `3`.
 
 
-* Define a function named `weightedAverageMovieReview` that takes three arguments
+Define a function named `weightedAverageMovieReview` that takes three arguments
   * `user1`, `user2`, `user3` (number between `0` and `5`)
 * Return the weighted average of the three arguments with the following weights
   * User 1's weight is `0.25`
   * User 2's weight is `1`
   * User 3's weight is `2.2`
-  * For example, given `2`, `2`, and `5`, with the above weights, then return `4.5`
+* For example, given `2`, `2`, and `5`, with the above weights, then return `4.5`
 
 
 ### !end-question
@@ -400,7 +398,7 @@ describe('toDollar', function() {
 
 ### !question
 
-* Define a function named `largestOfThree` which takes three arguments
+Define a function named `largestOfThree` which takes three arguments
   * `value1`, `value2`, `value3` (numbers)
 * Return the largest argument by value
 
@@ -446,14 +444,14 @@ describe('largestOfThree', function() {
 * title: JS threeOdds
 
 ### !question
-## Three Odds
 
-Write a function named threeOdds that takes 2 numbers and returns true if there are 3 odd numbers _between_ those two numbers
+Write a function named `threeOdds` that takes 2 numbers and returns `true` if there are 3 odd numbers _between_ those two numbers.
 
 Example:
 
 - If you pass `0,2` it should return `false` because the only number between 0 and 2 is 1
-- If you pass `0,6` it should return `true` because between 0 and six (the numbers 1,2,3,4,5) there are three odds - 1, 3 and 5
+- If you pass `0,6` it should return `true` because between 0 and 6 (the numbers 1,2,3,4,5) there are three odds - 1, 3 and 5
+
 ### !end-question
 
 ### !placeholder
