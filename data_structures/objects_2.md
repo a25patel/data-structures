@@ -1,6 +1,6 @@
 # JavaScript Objects Level 2
 
-This set of exercises deals with more complex operations on Objects as a Data Structure. It also deals with some more realistic programs that require the inginuitive use of Objects.
+This set of exercises deals with more complex operations on Objects as a Data Structure. It also deals with some more realistic programs that require the ingenuitive use of Objects.
 
 ### !challenge
 * type: code-snippet
