@@ -1,21 +1,6 @@
 # Numbers in JavaScript - Level 1
 
-These exercises will give you a chance to practice and check your skills in:
-
-Storing and Manipulating Data
-  - Data Types
-    - Numbers
-  - Data Operations
-    - Comparison
-    - Math
-    - Conversion
-
-Problem Solving with JavaScript
-- Programming Techniques
-  - Control Flow / Logical Expressions & Operators
-  - Functions
-- Language Implementation
-  - Data Types & Primitives
+In the following exercises, you'll use the datatype **Number** along with some **Operators** and the **Boolean** datatype to solve some logic problems. You'll also be introduced to _Functions_, but you don't need to fully understand functions to do this lesson.
 
 ### !challenge
 
@@ -91,6 +76,8 @@ describe('Characters with Ages', function() {
 
 ### !question
 
+In this exercise, you're using [Functions](https://github.com/gSchool/javascript-curriculum/blob/master/10_Syntax/04_Functions.md). If you haven't used a function before, don't worry! Just try to make your functions look like the example function provided. Put the `return` keyword right before what you want to output from your function.
+
 * Example: Define a function named `sum` that takes two arguments:
   * It takes two arguments: a (number), b (number)
   * Return the sum of these two arguments
@@ -120,11 +107,11 @@ function sum(a, b) {
 }
 
 function product(a, b) {
-  // YOUR CODE HERE
+  return undefined; // Replace undefined with your code
 }
 
 function sumAndProduct(x, y, z) {
-
+  return undefined; // Replace undefined with your code
 }
 
 ### !end-placeholder
@@ -178,7 +165,7 @@ describe('sumAndProduct', function() {
 ### !question
 
 * Define a function named `isEven` that takes one argument
-  * integer (number)
+  * `num` (always an integer)
 
 * If the number is even
   * Return `true`
@@ -187,7 +174,7 @@ describe('sumAndProduct', function() {
 
 
 * Define a function named `isOdd` that takes one argument
-  * integer (number)
+  * `num` (always an integer)
 * If the number is odd
   * Return `true`
 * Otherwise
@@ -202,7 +189,11 @@ Tips:
 
 ### !placeholder
 
-function isEven() {
+function isEven(num) {
+
+}
+
+function isOdd(num) {
 
 }
 
@@ -253,8 +244,8 @@ describe('isOdd', function() {
 ### !question
 
 * Define a function named `percentage` that takes two arguments
-  * numerator (number)
-  * denominator (number)
+  * `numerator` (number)
+  * `denominator` (number)
 * Return the percentage of the first argument divided by the second as a floating point number. For
 example, given `1` and `4`, then return `25.0`.
 
@@ -262,7 +253,7 @@ example, given `1` and `4`, then return `25.0`.
 
 ### !placeholder
 
-function percentage() {
+function percentage(numerator, denominator) {
 
 }
 
