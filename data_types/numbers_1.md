@@ -78,12 +78,12 @@ describe('Characters with Ages', function() {
 
 In this exercise, you're using [Functions](https://github.com/gSchool/javascript-curriculum/blob/master/10_Syntax/04_Functions.md). If you haven't used a function before, don't worry! Just try to make your functions look like the example function provided. Put the `return` keyword right before what you want to output from your function.
 
-* Example: Define a function named `sum` that takes two arguments:
+_Example_: Define a function named `sum` that takes two arguments:
   * It takes two arguments: a (number), b (number)
   * Return the sum of these two arguments
 
 
-* Define a function named `product`
+Define a function named `product`
   * It takes two arguments: a (number), b (number)
   * Return the product of these two arguments
 
