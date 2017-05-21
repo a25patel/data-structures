@@ -164,6 +164,7 @@ describe('sumAndProduct', function() {
 
 ### !question
 
+
 Define a function named `isEven` that takes one argument
   * `num` (always an integer)
 * If the number is even
@@ -180,8 +181,8 @@ Define a function named `isOdd` that takes one argument
 
 Tips:  
 
+* Both of these can be solved with one line, as long as you understand your comparison operators!
 * What number will give you a remainder of 0 if the argument is even?
-* If you get stuck, try copy-pasting the directions into your code, and replace each line with a line of JavaScript that does what the directions say.
 
 ### !end-question
 
@@ -403,6 +404,7 @@ Define a function named `largestOfThree` which takes three arguments
 * Return the largest argument by value
 
 Tips:
+* You might need to use an [If Statement](https://github.com/gSchool/javascript-curriculum/blob/master/10_Syntax/02_Control_Flow.md)
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
 
 ### !end-question
