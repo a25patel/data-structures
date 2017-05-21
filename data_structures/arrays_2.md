@@ -238,8 +238,7 @@ describe("createDeck", function() {
 
 ### !end-tests
 
-### !explanation
-
+### !end-challenge
 
 ### !challenge
 
