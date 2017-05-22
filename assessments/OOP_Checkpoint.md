@@ -19,13 +19,9 @@ Classname.prototype.methodName = function() {};
 * type: code-snippet
 * language: javascript
 * id: adcf9deb-aead-4f87-ace4-048e19002b21
-* title: Modeling Objects with State and Behavior
+* title: Create Objects with State and Behavior
 
 ### !question
-
-This Checkpoint proves you know how to:
-* Create Objects with State and Behavior
-
 
 ### The Cat
 _Write yourself a virtual cat - animals with a CLI are so much nicer than ones with fur._
@@ -157,9 +153,6 @@ describe('Cat',function () {
 
 ### !question
 
-This Checkpoint proves you know how to:
-Problem-Solve using a common Design Pattern
-
 ### The Book List
 
 _An object-oriented book-list!_
@@ -176,7 +169,7 @@ This booklist program should allow you to keep track of all the books you've rea
 	*   A reference to the current book being read (book instance)
 	*   A reference to the last book read (book instance)
 	*   An array of all the Books
-*   Each **Book** should have several properties:
+*   Each **Book** should have the following properties:
 	*   Title
 	*   Genre
 	*   Author
@@ -194,7 +187,7 @@ This booklist program should allow you to keep track of all the books you've rea
 		*   Point "current **book**" reference to be whatever is in the "next book" reference
 		*   Change the "next **book**" reference to be the first unread book you find in the list of books (you'll have to look through the array to find one)
 
-*   **Booklists** and **Books** might need more methods than that. Try to think of more that might be useful.
+*   **Booklists** and **Books** might need more methods than that. Feel free to _abstract_ some functionality into multiple methods.
 
 ### !end-question
 
