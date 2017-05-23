@@ -51,9 +51,9 @@ This booklist program should allow you to keep track of all the books you've rea
 		* if the "current book" property is empty, it should set the newly added book to the the current book, unless that book has already been read.
 		* If the "next book" property is empty, it should set the newly added book to be the next book, unless that book has already been read.
 	*   .finishCurrentBook()
-		*   Should change the status of the **book** that is currently being read to "read"
+		*   Should change the status of the **book** that is currently being read's `read` property to `true`
 		*   Give the current book a read date of new Date(Date.now())
-		*   Point the "last **book* read" reference at the current book
+		*   Point the "last book read" reference at the current book
 		*   Point "current **book**" reference to be whatever is in the "next book" reference
 		*   Change the "next **book**" reference to be the first unread book you find in the list of books (you'll have to look through the array to find one)
 
