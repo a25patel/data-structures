@@ -1,6 +1,6 @@
 # Checkpoint: Create Objects with State and Behavior
 
-This checkpoint tells us you can Model and Create Objects with State and Behavior in JavaScript.
+This checkpoint tells us you can Create Classes with Attributes and Methods to Model Objects with State and Behavior in JavaScript.
 
 #### Cheatsheet
 
@@ -19,7 +19,7 @@ Classname.prototype.methodName = function() {};
 * type: code-snippet
 * language: javascript
 * id: adcf9deb-aead-4f87-ace4-048e19002b21
-* title: Create Objects with State and Behavior
+* title: Create Classes with Attributes and Methods to Model Objects with State and Behavior
 
 ### !question
 
