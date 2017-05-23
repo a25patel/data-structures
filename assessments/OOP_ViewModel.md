@@ -1,6 +1,6 @@
 # Checkpoint: Problem-Solve using a common Design Pattern
 
-This checkpoint tells us you can Problem-Solve using a common Design Pattern.
+This checkpoint tells us you can Problem-Solve using a common Design Pattern. It relates to the [Design Patterns Unit](https://github.com/gSchool/javascript-curriculum/blob/master/30_Object_Oriented_Programming/OOP_Patterns.md).
 
 #### Cheatsheet
 
