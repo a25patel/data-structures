@@ -29,35 +29,42 @@ _An object-oriented book-list!_
 
 This booklist program should allow you to keep track of all the books you've read. You should be able to always find out what book you last read, what book you're reading now, and what book you want to read next. You should also be able to mark your current book as "finished", which will update all of the information about your current reading accordingly.
 
-*   Create a class through the constructor invocation pattern. ` BookList = function() {} `
-*   Create another class called Book. `Book = function() {}`
+* Create a class called `BookList`
+	* The tests will create it like this: `let bookList = new BookList()`
+* Create another class called `Book`
+	*	The tests will create it like this: `let book = new Book("Harry Potter and the Source Code of Doom", "Sci-Fi", "Cake the Cat", false);`
 
-*   **BookLists** should have the following properties:
-	*   Number of books marked as read
-	*   Number of books marked not read yet
-	*   A reference to the next book to read (which should be an instance of a book object)
-	*   A reference to the current book being read (book instance)
-	*   A reference to the last book read (book instance)
-	*   An array of all the Books
-*   Each **Book** should have the following properties:
-	*   Title
-	*   Genre
-	*   Author
-	*   Read (true or false)
-	*   Read date, can be blank, otherwise needs to be a [JS Date() object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
-*   Every **Booklist** should have a few methods:
-	* .add(book)
-		* should add a **book** to the books list.
-		* if the "current book" property is empty, it should set the newly added book to the the current book, unless that book has already been read.
-		* If the "next book" property is empty, it should set the newly added book to be the next book, unless that book has already been read.
-	*   .finishCurrentBook()
-		*   Should change the status of the **book** that is currently being read's `read` property to `true`
-		*   Give the current book a read date of new Date(Date.now())
-		*   Point the "last book read" reference at the current book
-		*   Point "current **book**" reference to be whatever is in the "next book" reference
-		*   Change the "next **book**" reference to be the first unread book you find in the list of books (you'll have to look through the array to find one)
 
-*   **Booklists** and **Books** might need more methods than that. Feel free to _abstract_ some functionality into multiple methods.
+* **BookLists** should have the following properties:
+  * `books` - An array of all the Books
+  * `readBooks`- Number of books marked as read (default to 0)
+  * `unreadBooks`- Number of books marked not read yet (default to 0)
+  * `nextBook` - A reference to the next book to read (which should be an instance of a book object) (default to `null`)
+  * `currentBook` - A reference to the current book being read (book instance) (default to `null`)
+  * `lastBook` - A reference to the last book read (book instance) (default to `null`)
+* Each **Book** should have the following properties:
+  * `title`- a string title of the book
+  * `genre`- a string genre of the book
+  * `author`- a string of the author's name
+  * `read`-  (`true` or `false`) indicating whether or not it's been read
+  * `readDate`- initially set to `null`, set to a [JS Date() object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) when the book is read.
+
+
+* Every **Booklist** should have a few methods:
+  * `.add(book)`
+    * should add a `Book` to the `BookList` by putting it in the `books` array
+    * if the `currentBook` property is `null`, it should set the newly added book to the the current book, unless that book has already been read
+    * If the `nextBook` property is `null`, it should set the newly added book to be the next book, unless that book has already been read
+    * Based on the book that is added, update the `readBooks` and `unreadBooks` properties
+  * `.finishCurrentBook()`
+    * Should change the status of the `Book` referenced by the `currentBook` property, set it's `read` property to `true`
+    * Update the `readBooks` and `unreadBooks` properties
+    * Give the `currentBook` a `Date()` of the current time
+    * Point the `lastBook` reference at the `currentBook`
+    * Point `currentBook` reference to the `nextBook` reference
+    * Set the `nextBook` reference to be the first unread `Book` you find in the `books` property
+
+* **Booklists** and **Books** might need more methods than that. Feel free to _abstract_ some functionality into multiple methods.
 
 ### !end-question
 
