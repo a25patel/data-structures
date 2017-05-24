@@ -1,6 +1,6 @@
-# Checkpoint: Problem-Solve using a common Design Pattern
+# Checkpoint: Accurately classify and use idiomatic JavaScript Design Patterns to solve real-world problems
 
-This checkpoint tells us you can Problem-Solve using a common Design Pattern. It relates to the [Design Patterns Unit](https://github.com/gSchool/javascript-curriculum/blob/master/30_Object_Oriented_Programming/OOP_Patterns.md).
+This checkpoint tells us you can Accurately classify and use idiomatic JavaScript Design Patterns to solve real-world problems. It relates to the [Design Patterns Unit](https://github.com/gSchool/javascript-curriculum/blob/master/30_Object_Oriented_Programming/Patterns_README.md).
 
 #### Cheatsheet
 
