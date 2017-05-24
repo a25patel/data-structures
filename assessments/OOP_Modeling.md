@@ -26,7 +26,7 @@ Classname.prototype.methodName = function() {};
 ### The Cat
 _Write yourself a virtual cat - animals with a CLI are so much nicer than ones with fur._
 
-*   Create an object with the constructor invocation pattern: `Cat = function() {}` that represents a Cat. It should have properties for `tiredness`, `hunger`, `loneliness` and `happiness`
+*   Create a class that represents a Cat. It should have properties for `tiredness`, `hunger`, `loneliness` and `happiness`
 *   Next, write methods that increase and decrease those properties. Name them `feed`, `sleep`, and `pet`
 *   Make the methods take **arguments** that increase or decrease arbitrary amounts set by given **parameters**
 *   Write a method that returns the cat's overall status formatted like this:
@@ -36,7 +36,7 @@ Hunger: 5
 Loneliness: 3
 Happiness: 12
 ```
-*   Bonus: Make the functions as arbitrary as cats are - sometimes make it so the cat doesn't _want_ to be petted. Check out `Math.random()`! Then, write a test that runs the `pet()` method a few times to make sure that your cat will sometimes reject being petted.
+* 🌟 Bonus: Make the functions as arbitrary as cats are - sometimes make it so the cat doesn't _want_ to be petted. Check out `Math.random()`! Then, write a test that runs the `pet()` method a few times to make sure that your cat will sometimes reject being petted.
 
 ### !end-question
 
