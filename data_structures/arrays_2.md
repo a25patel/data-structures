@@ -231,7 +231,7 @@ describe("createDeck", function() {
 	it("dynamically creates a deck of cards from suits and faces", function() {
     var deck = createDeck(suits, faces);
 		for (var i=0; i<allCards.length; i++) {
-      expect(deck.indexOf(allCards[i])).not.toBe(-1);
+      expect(deck.indexOf(allCards[i])).to.not.equal(-1);
 	  }
 	})
 })
