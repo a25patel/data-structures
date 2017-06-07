@@ -217,12 +217,11 @@ function createDeck(suits, faces) {
 
 ### !tests
 
-allCards = [];
+var allCards = [];
+var suits = ["Hearts", "Diamonds", "Spades", "Clovers"];
+var faces = ["Ace", 2, 3, 4, 5, 6, 7, 8, 9, 10, "Jack", "Queen", "Kings", "Joker"];
 describe("createDeck", function() {
-
 	before(function() {
-		var suits = ["Hearts", "Diamonds", "Spades", "Clovers"];
-		var faces = ["Ace", 2, 3, 4, 5, 6, 7, 8, 9, 10, "Jack", "Queen", "Kings", "Joker"];
 		for(var suit=0; suit < suits.length; suit++) {
 		    for(var face=0; face < faces.length-1; face++) {
 		        allCards.push(faces[face] + " of " + suits[suit]);
@@ -230,9 +229,10 @@ describe("createDeck", function() {
 		}
 	})
 	it("dynamically creates a deck of cards from suits and faces", function() {
+    var deck = createDeck(suits, faces);
 		for (var i=0; i<allCards.length; i++) {
-    expect(deck.indexOf(allCards[i])).not.toBe(-1);
-	}
+      expect(deck.indexOf(allCards[i])).not.toBe(-1);
+	  }
 	})
 })
 
