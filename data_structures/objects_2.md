@@ -348,11 +348,12 @@ describe('stuff', function() {
 
     it("Users have Friends", function() {
       findFriends(general);
-      expect(bobo.friends).to.deep.include.members([zorro, jorge, tom, tammy]);
-      expect(zorro.friends).to.deep.include.members([bobo, jorge, tom, tammy]);
-      expect(jorge.friends).to.deep.include.members([bobo, zorro, tom, tammy]);
-      expect(tom.friends).to.deep.include.members([bobo, zorro, jorge, tammy]);
-      expect(tammy.friends).to.deep.include.members([bobo, zorro, jorge, tom]);
+      expect(bobo.friends).to.deep.include.members([zorro, jorge, tom, tammy, victoria]);
+      expect(zorro.friends).to.deep.include.members([bobo, jorge, tom, tammy, victoria]);
+      expect(jorge.friends).to.deep.include.members([bobo, zorro, tom, tammy, victoria]);
+      expect(tom.friends).to.deep.include.members([bobo, zorro, jorge, tammy, victoria]);
+      expect(tammy.friends).to.deep.include.members([bobo, zorro, jorge, tom, victoria]);
+      expect(victoria.friends).to.deep.include.members([bobo, zorro, jorge, tom, tammy]);
     })
 
     it("renderChat renders the chatroom", function() {
