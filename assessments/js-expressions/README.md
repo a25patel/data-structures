@@ -1,24 +1,10 @@
 # Write and Evaluate JS Expressions
 
-This checkpoint relates to the following standards:
+## Success Criteria
 
-- Problem Solving with JavaScript
-- Storing and Manipulating Data
-
-It covers the following component skills:
-
-- Problem Solving with JavaScript: Programming Techniques: Control Flow, Logical Expressions, and Operators
-- Storing and Manipulating Data: Data Types
-- Storing and Manipulating Data: Data Operations: Comparison
-- Storing and Manipulating Data: Data Operations: Math and String Manipulation
-- Storing and Manipulating Data: Data Structures: Arrays
-- Storing and Manipulating Data: Data Structures: Objects
-
-## Objectives
-
-- Define each primitive data type in Javascript (String, Number, Boolean, Undefined, Null)
-- Use logical operators(&&, ||)
-- Use comparison Operators ==, ===, !=, !==
+- Define each primitive data type in Javascript 
+- Use logical operators
+- Use comparison Operators 
 - Perform String Concatenation
 - Perform Math operations with binary operators
 - Evaluate a statement using language Operator Precedence rules
