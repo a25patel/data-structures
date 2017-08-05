@@ -266,22 +266,30 @@ On the 5th day of Christmas my true love gave to me, five golden rings! four cal
 
 ### !end-placeholder
 
+### !setup
+var sinon = require('sinon')
+
+function christmasSong() {
+### !end-setup
+
 ### !tests
 
 ```js
+}
+
 describe('Christmas Song', function() {
-  const logs = [];
 
   beforeEach(() => {
     console.log('Setting up beforeEach...');
-    const originalLog = console.log;
-    console.log = function() {
-      logs.push(arguments[0]);
-      originalLog.apply(this, arguments);
-    }
+    global.cStub = sinon.stub(console, "log")
   });
 
   it("Sings the song",function () {
+    christmasSong()
+
+    // grab all the calls, and the first argument that console.log was called with
+    let logs = spy.getCalls().map((call) => call.args[0])
+
     expect(logs[0]).to.match(/[oO]n the 1st day of Christmas my true love gave to me, a partridge in a pear tree./);
     expect(logs[1]).to.match(/[oO]n the 2nd day of Christmas my true love gave to me, two turtle doves and a partridge in a pear tree./);
     expect(logs[2]).to.match(/[oO]n the 3rd day of Christmas my true love gave to me, three french hens, two turtle doves and a partridge in a pear tree./);
