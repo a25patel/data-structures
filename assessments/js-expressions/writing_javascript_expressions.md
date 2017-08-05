@@ -279,9 +279,11 @@ function christmasSong() {
 
 describe('Christmas Song', function() {
 
+  const spy
+
   beforeEach(() => {
     console.log('Setting up beforeEach...');
-    global.cStub = sinon.stub(console, "log")
+    spy = sinon.spy(console, "log")
   });
 
   it("Sings the song",function () {
