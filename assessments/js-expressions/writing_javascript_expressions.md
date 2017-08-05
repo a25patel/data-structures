@@ -296,7 +296,7 @@ describe('Christmas Song', function() {
     expect(logs[1]).to.match(/[oO]n the 2nd day of Christmas my true love gave to me, two turtle doves and a partridge in a pear tree./);
     expect(logs[2]).to.match(/[oO]n the 3rd day of Christmas my true love gave to me, three french hens, two turtle doves and a partridge in a pear tree./);
     expect(logs[3]).to.match(/[oO]n the 4th day of Christmas my true love gave to me, four calling birds, three french hens, two turtle doves and a partridge in a pear tree./);
-    expect(logs[4]).to.match(/[oO]n the 5th day of Christmas my true love gave to me, five golden rings! four calling birds, three french hens, two turtle doves and a partridge in a pear tree./);
+    expect(logs[4]).to.match(/[oO]n the 5th day of Christmas my true love gave to me, five golden rings, four calling birds, three french hens, two turtle doves and a partridge in a pear tree./);
   })
 
 });
