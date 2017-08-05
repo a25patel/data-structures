@@ -279,7 +279,7 @@ function christmasSong() {
 
 describe('Christmas Song', function() {
 
-  const spy
+  let spy
 
   beforeEach(() => {
     console.log('Setting up beforeEach...');
