@@ -172,7 +172,7 @@ Now, figure out if you'll have extra slices, using comparison operators. Assign 
 // Leave these alone
 const cakes = 5;
 const slicesPerCake = 6;
-const attendees = 60;
+const attendees = 30;
 const bakers = 3;
 const cakeBakingTime = 1;
 const hoursLeftUntilParty = 5;
