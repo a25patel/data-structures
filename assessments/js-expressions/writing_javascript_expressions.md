@@ -198,7 +198,7 @@ describe('i', function() {
 
 Choose between `var`, `let` and `const` to create a variable called `coolBears`, which we'll update several times in a loop.
 
-By the end, the string should read "paddington is a pretty cool bear, smokey bear is a pretty cool bear, etc", with every bear represented, proclaiming it's coolness.
+By the end, the string should read "paddington is a pretty cool bear, smokey is a pretty cool bear, etc", with every bear represented, proclaiming it's coolness.
 
 ### !end-question
 
