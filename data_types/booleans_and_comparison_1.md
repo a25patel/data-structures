@@ -195,6 +195,14 @@ var extraSlices;
 ```js
 describe('Bakery', function() {
 
+    it("enoughSlicesNow tells us whether we have enough slices - make sure to multiply the number of cakes by the number of slices, and see if it is greater than or equal to the number of attendees", function() {
+      expect(enoughSlicesNow).to.equal(true);
+    })
+    
+    it("slicesNeeded tells us how many slices we need beyond the number we already have", function() {
+      expect(slicesNeeded).to.equal(30);
+    })
+
     it("cakesWeCanBake should have a number of cakes that are bakeable in the number of hours left", function() {
       expect(cakesWeCanBake, "Remember to use (bakers * cake time) * number of hours left").to.equal(15);
     })
@@ -205,14 +213,6 @@ describe('Bakery', function() {
 
     it("extraSlices indicates whether or not we'll have extra slices at the end", function() {
       expect(extraSlices).to.equal(true);
-    })
-
-    it("enoughSlicesNow tells us whether we have enough slices - make sure to multiply the number of cakes by the number of slices, and see if it is greater than or equal to the number of attendees", function() {
-      expect(enoughSlicesNow).to.equal(true);
-    })
-
-    it("slicesNeeded tells us how many slices we need beyond the number we already have", function() {
-      expect(slicesNeeded).to.equal(30);
     })
 
 })
