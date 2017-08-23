@@ -207,8 +207,8 @@ describe('Bakery', function() {
       expect(extraSlices).to.equal(true);
     })
 
-    it("enoughSlicesNow tells us whether we have enough slices - make sure to multiply the number of cakes by the number of slices, and see if it is less than the number of attendees", function() {
-      expect(enoughSlicesNow).to.equal(false);
+    it("enoughSlicesNow tells us whether we have enough slices - make sure to multiply the number of cakes by the number of slices, and see if it is greater than or equal to the number of attendees", function() {
+      expect(enoughSlicesNow).to.equal(true);
     })
 
     it("slicesNeeded tells us how many slices we need beyond the number we already have", function() {
