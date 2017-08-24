@@ -162,8 +162,9 @@ We have to figure out if we can bake enough cakes before the party! Every attend
 
 1. First, figure out if we have enough slices for our attendees. Use a comparison operator to figure out if there are enough slices. Assign the result to the `enoughSlicesNow` variable.
 1. Next, figure out how many additional slices we'll need, if any. Assign the result to the `slicesNeeded` variable. We need to figure out how many attendees will not have a slice of cake if we don't bake some cakes soon!
-1. Figure out how many cakes can be baked, using the formula (bakers * cake time) * hours left. Assign the result to the cakesWeCanBake variable. Hopefully we can bake enough to satisfy all of our attendees!
-1. Now, figure out if you'll have extra slices after baking cakes, using comparison operators. Assign the total number of slices to the `finalSliceCount` variable, then check if it is greater than the number of attendees and put the result in the `extraSlices` variable.
+1. Figure out how many cakes can be baked, using the formula (bakers * cake time) * hours left. Assign the result to the `cakesWeCanBake` variable. Hopefully we can bake enough to satisfy all of our attendees!
+1. Now, figure out if you'll have extra slices after baking cakes, using comparison operators. Assign the total number of slices to the `finalSliceCount` variable.
+1. Then, check if `finalSliceCount` is greater than the number of attendees and put the result in the `extraSlices` variable.
 
 ### !end-question
 
