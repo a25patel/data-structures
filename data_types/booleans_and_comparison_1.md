@@ -156,14 +156,14 @@ describe('superPicky', function() {
 
 ### !question
 
-Using comparison operators, we're going to create several boolean values, and store them in variables.
+Using comparison operators (`==`, `===`, `<`, `<=`, `>`, `>=`), we're going to create several boolean values, and store them in variables.
 
-We have to figure out if we can bake enough cakes before the party!
+We have to figure out if we can bake enough cakes before the party! Every attendee gets a single slice of cake.
 
-First, figure out if we have enough slices now. Use a comparison operator to figure out if there are enough. Assign the result to the enoughSlicesNow variable.
-Next, figure out how many slices we'll need, if any. Assign the result to the slicesNeeded variable.
-Figure out how many cakes can be baked, using the formula (bakers * cake time) * hours left. Assign the result to the cakesWeCanBake variable.
-Now, figure out if you'll have extra slices, using comparison operators. Assign the total number of slices to the finalSliceCount variable, then check if it is greater than the number of attendees and put the result in the extraSlices variable.
+1. First, figure out if we have enough slices for our attendees. Use a comparison operator to figure out if there are enough slices. Assign the result to the `enoughSlicesNow` variable.
+1. Next, figure out how many additional slices we'll need, if any. Assign the result to the `slicesNeeded` variable. We need to figure out how many attendees will not have a slice of cake if we don't bake some cakes soon!
+1. Figure out how many cakes can be baked, using the formula (bakers * cake time) * hours left. Assign the result to the cakesWeCanBake variable. Hopefully we can bake enough to satisfy all of our attendees!
+1. Now, figure out if you'll have extra slices after baking cakes, using comparison operators. Assign the total number of slices to the `finalSliceCount` variable, then check if it is greater than the number of attendees and put the result in the `extraSlices` variable.
 
 ### !end-question
 
@@ -195,11 +195,11 @@ var extraSlices;
 ```js
 describe('Bakery', function() {
 
-    it("enoughSlicesNow tells us whether we have enough slices - make sure to multiply the number of cakes by the number of slices, and see if it is greater than or equal to the number of attendees", function() {
+    it("enoughSlicesNow tells us whether we have enough slices before baking any cakes - make sure to multiply the number of cakes by the number of slices, and see if it is greater than or equal to the number of attendees", function() {
       expect(enoughSlicesNow).to.equal(false);
     })
     
-    it("slicesNeeded tells us how many slices we need beyond the number we already have", function() {
+    it("slicesNeeded tells us how many slices we need beyond the number of slices we already have", function() {
       expect(slicesNeeded).to.equal(30);
     })
 
