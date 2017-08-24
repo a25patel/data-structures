@@ -172,7 +172,7 @@ Now, figure out if you'll have extra slices, using comparison operators. Assign 
 // Leave these alone
 const cakes = 5;
 const slicesPerCake = 6;
-const attendees = 30;
+const attendees = 60;
 const bakers = 3;
 const cakeBakingTime = 1;
 const hoursLeftUntilParty = 5;
@@ -196,7 +196,7 @@ var extraSlices;
 describe('Bakery', function() {
 
     it("enoughSlicesNow tells us whether we have enough slices - make sure to multiply the number of cakes by the number of slices, and see if it is greater than or equal to the number of attendees", function() {
-      expect(enoughSlicesNow).to.equal(true);
+      expect(enoughSlicesNow).to.equal(false);
     })
     
     it("slicesNeeded tells us how many slices we need beyond the number we already have", function() {
