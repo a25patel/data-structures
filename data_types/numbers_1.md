@@ -1,15 +1,4 @@
-# Numbers in JavaScript - Level 1
 
-In the following exercises, you'll use the datatype **Number** along with some **Operators** and the **Boolean** datatype to solve some logic problems. You'll also be introduced to _Functions_, but you don't need to fully understand functions to do this lesson.
-
-### !challenge
-
-* type: code-snippet
-* language: javascript
-* id: 46956410-0657-43f2-bdc1-6d943d408b4d
-* title: Create Numbers and Compare Them
-
-### !question
 
 Create 5 variables, named `alice`, `bob`, `carol`, `dave`, `eve`.
 
@@ -24,78 +13,9 @@ Give each character ages as Numbers such that:
 
 ### !end-question
 
-### !placeholder
-
-
-
-### !end-placeholder
-
-### !tests
-
-```js
-describe('Characters with Ages', function() {
-
-  it("Alice is older than Bob", function() {
-    expect(alice > bob, "Alice is not older than Bob").to.eq(true)
-  })
-
-  it("Bob is twice as old as Carol", function() {
-    expect(bob == carol*2, "Bob is not twice as old as Carol").to.eq(true)
-  })
-
-  it("Alice is three times as old as Carol", function() {
-    expect(alice == carol*3, "Alice is not three times as old as Carol").to.eq(true)
-  })
-
-  it("Dave is younger than Alice but older than Eve", function() {
-    expect(dave < alice, "Dave is not younger than Alice").to.eq(true)
-    expect(dave > eve, "Dave is not older than Eve").to.eq(true)
-  })
-
-  it("Eve is older than Carol and older than Bob", function() {
-    expect(eve > carol, "Eve is not older than Carol").to.eq(true)
-    expect(eve > bob, "Eve is not older than Bob").to.eq(true)
-  })
-
-})
-```
-### !end-tests
-
-### !explanation
-
-### !end-explanation
-
-### !end-challenge
-
-### !challenge
-
-* type: code-snippet
-* language: javascript
-* id: 18b6bc49-5313-4076-9866-0fafd1771c6a
-* title: Calculate with Integers
 
 ### !question
 
-In this exercise, you're using [Functions](https://github.com/gSchool/javascript-curriculum/blob/master/10_Syntax/04_Functions.md). If you haven't used a function before, don't worry! Just try to make your functions look like the example function provided. Put the `return` keyword right before what you want to output from your function.
-
-_Example_: Define a function named `sum` that takes two arguments:
-  * It takes two arguments: a (number), b (number)
-  * Return the sum of these two arguments
-
-
-Define a function named `product`
-  * It takes two arguments: a (number), b (number)
-  * Return the product of these two arguments
-
-
-Define a function named `sumAndProduct` that takes three arguments:
-* It takes two arguments: x (number) , y (number), z (number)
-* Return the sum of the first two arguments multiplied by the third argument.
-  * For example, given 1, 2, and 5, then return 15.
-
-Tips:
-
-* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Grouping
 
 
 ### !end-question
