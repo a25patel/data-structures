@@ -1,61 +1,3 @@
-# JSON Level 1
-
-These challenges have to do with treating Objects as Data. You'll access deeply nested Objects, as you might do in the real world when given some JSON from an API.
-
-### !challenge
-
-* type: code-snippet
-* language: javascript
-* id: 40155475-a698-40d6-a7d7-e47b3c85b092
-* title: Cartesian Distance
-
-### !question
-
-* Define a function named `distance` that takes in two arguments.
-  * `point1` (object)
-  * `point2` (object)
-
-* Assume each point argument has the following format.
-  * `{ x: NUMBER, y: NUMBER }`
-
-* Return the distance between the two points on a Cartesian coordinate system.
-  * For example, given `{ x: 3, y: 2 }` and `{ x: 9, y: 7 }`, then return approximately `7.810249675906654`.
-
-Tip: Use Google to learn more about calculating the distance.
-
-### !end-question
-
-### !placeholder
-
-function distance(point1, point2) {
-  // Your code here
-}
-
-### !end-placeholder
-
-### !tests
-
-describe('distance', function() {
-  it('returns the distance between two points', function() {
-    expect(distance({x: 0, y: 3}, {x: 0, y: 0})).to.be.closeTo(3,0.01);
-    expect(distance({x: -1, y: 1}, {x: 0, y: 0})).to.be.closeTo(Math.sqrt(2), 0.01);
-  });
-});
-
-### !end-tests
-
-### !explanation
-
-### !end-explanation
-
-### !end-challenge
-
-### !challenge
-
-* type: code-snippet
-* language: javascript
-* id: 5aa0341d-0a64-4f3f-9b51-0875a032286d
-* title: Validate Data and Access an Object
 
 ### !question
 
@@ -100,14 +42,6 @@ var user4 = {
 ```
 
 ### !end-question
-
-### !placeholder
-
-function validateUser() {
-
-}
-
-### !end-placeholder
 
 ### !tests
 
@@ -165,12 +99,6 @@ describe('validateUser', function() {
 
 ### !end-challenge
 
-### !challenge
-
-* type: code-snippet
-* language: javascript
-* id: 6bf6a92d-3189-4565-8daa-acfc44f09c19
-* title: short friendly title
 
 ### !question
 

@@ -145,3 +145,47 @@ function keyForValue(obj, value) {
 // console.log(keyForValue({}, 12));
 // console.log(keyForValue({a:1, c:5}, 5));
 // console.log(keyForValue({foo:12, bar:5, baz:3}, 12));
+
+// Index
+function index(arr, property) {
+  var obj = {};
+  for (var i = 0; i < arr.length; i++) {
+    obj[arr[i][property]] = arr[i]
+  }
+  return obj;
+}
+
+// console.log(index([], 'id'));
+// console.log(index([{id: 1, name: 'Will'}, {id: 2, name: 'Sue'}], 'id'));
+// console.log(index([{name: 'Will', age: '32'}, {name: 'Sue', age: 33}], 'name'));
+
+// Invert
+function invert(obj) {
+  var newObj = {};
+  for(var key in obj){
+    newObj[obj[key]] = key;
+  }
+  return newObj;
+}
+
+// console.log(invert({}));
+// console.log(invert({a: "1", b: "2", c: "3"}));
+// console.log(invert({"hello": "world"}));
+
+// Add Signature
+function addSignature(name, obj) {
+  var newObj = {};
+  for(var key in obj){
+    newObj[key + '-signed'] = obj[key] + '-' + name
+  }
+  return newObj;
+}
+
+// console.log(addSignature({}));
+// console.log(addSignature("Joe", {"Contract": "blah blah"}));
+// console.log(addSignature("Beth", {"Agreement": "something",  "Code of Conduct": "blah blah"}));
+
+// Find Friends
+function findFriends() {
+
+}
