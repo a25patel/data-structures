@@ -2,14 +2,8 @@
 
 In these exercises, we'll start to explore Code Points and other intracacies of Strings as Data Structures.
 
-### !challenge
-* type: code-snippet
-* language: javascript
-* id: 5d920524-51f5-41af-97b3-1d96c93f0cb8
-* title: JS getCodePoints
-
 ### !question
-## Get Code Points
+## Get Code Pointsg 
 
 Write a function named getCodePoints that takes a string and returns an array of the codePoints of the letters
 
@@ -38,21 +32,6 @@ describe('getCodePoints', function() {
 
 })
 ```
-### !end-tests
-
-### !explanation
-
-### !end-explanation
-### !end-challenge
-
-
-
-### !challenge
-
-* type: code-snippet
-* language: javascript
-* id: b8a3b640-7ea7-46f4-aba7-11f94e8cf932
-* title: Caesar cipher
 
 ### !question
 
@@ -219,12 +198,3 @@ describe('caesarShiftInt', function() {
       expect(decodeMessage('uryyb, gurer!')).to.eq('hello, there!');
     });
   });
-
-
-### !end-tests
-
-### !explanation
-
-### !end-explanation
-
-### !end-challenge

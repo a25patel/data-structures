@@ -166,6 +166,25 @@ function createString(num, ltr) {
 // console.log(createString(1, 'r'));
 // console.log(createString(3, 'w'));
 
+// InterWeave
+function interWeave(array1, array2) {
+  var newArr = [];
+  for (var i = 0; i < array1.length; i++) {
+    newArr.push(array1[i]);
+    newArr.push(array2[i]);
+  }
+  return newArr;
+}
+
+var array1 = ["a", "b", "c"];
+var array2 = ["x", "y", "z"];
+var array3 = [1,2,3,4];
+var array4 = [5,6,7,8];
+
+// console.log(interWeave(array1, array2));
+// console.log(interWeave(array3, array4));
+
+
 //Code Points (NOT WORKING!! )
 function getCodePoints(str) {
   var array = [];
@@ -183,5 +202,9 @@ function getCodePoints(str) {
 // console.log(getCodePoints(''));
 // console.log(getCodePoints('Hello'));
 // console.log(getCodePoints('hi'));
+
+
+
+
 
 // Ceasar Shift (Not Done!)
