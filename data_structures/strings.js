@@ -185,6 +185,15 @@ var array4 = [5,6,7,8];
 // console.log(interWeave(array3, array4));
 
 
+
+
+
+
+
+
+
+
+
 //Code Points (NOT WORKING!! )
 function getCodePoints(str) {
   var array = [];
